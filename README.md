@@ -11,3 +11,16 @@ Renoir.St
 - **License**: MIT
 - **Supported Platforms**: [Pharo 3](http://www.pharo-project.org/)
 - **Source Code**: RenoirSt project in [Smalltalk Hub](http://www.smalltalkhub.com)
+
+###Get started!
+
+Open a workspace and evaluate:
+
+```smalltalk
+Gofer it    
+    url: 'http://smalltalkhub.com/mc/gcotelli/RenoirSt/main';
+    package: 'ConfigurationOfRenoirSt';
+load.
+
+(Smalltalk at: #ConfigurationOfRenoirSt) project lastVersion load
+```
