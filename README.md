@@ -5,9 +5,9 @@ Renoir.St
 
 ##Goals
 - Improve CSS integration with existing Web Frameworks
-- Write in Smalltalk deploy to CSS
+- Write & refactor in Smalltalk, deploy to CSS
 
 ###Highlights:
 - **License**: MIT
-- **Supported Platforms**: Pharo 3
+- **Supported Platforms**: [Pharo 3](http://www.pharo-project.org/)
 - **Source Code**: RenoirSt project in [Smalltalk Hub](http://www.smalltalkhub.com)
