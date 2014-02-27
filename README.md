@@ -12,9 +12,13 @@ Renoir.St
 ###License:
 This project is MIT licensed. Any contribution submitted to the code repository is considered to be under the same license.
 
+###Benefits:
+- Keep in sync your code changes with the changes in the CSS
+- Use your favorite browsing and refactoring tools inside the same Pharo image to handle CSS  
+
 ###Highlights:
 - **Supported Platforms**: [Pharo 3](http://www.pharo-project.org/)
-- **Source Code Repository**: RenoirSt project in [Smalltalk Hub](http://www.smalltalkhub.com)
+- **Source Code Repository**: **RenoirSt** project in [Smalltalk Hub](http://www.smalltalkhub.com)
 - **Issue Tracking**: In this GitHub repository.
 
 ###Get started!
