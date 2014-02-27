@@ -3,6 +3,8 @@ Renoir.St
 
 *A DSL enabling programmatic cascading style sheet generation for Pharo Smalltalk*
 
+[![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt)](https://ci.inria.fr/pharo-contribution/job/RenoirSt/)
+
 ##Goals
 - Improve CSS integration with existing Web Frameworks
 - Write & refactor in Smalltalk, deploy to CSS
