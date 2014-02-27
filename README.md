@@ -9,12 +9,19 @@ Renoir.St
 - Improve CSS integration with existing Web Frameworks
 - Write & refactor in Smalltalk, deploy to CSS
 
+###License:
+This project is MIT licensed. Any contribution submitted to the code repository is considered to be under the same license.
+
 ###Highlights:
-- **License**: MIT
 - **Supported Platforms**: [Pharo 3](http://www.pharo-project.org/)
-- **Source Code**: RenoirSt project in [Smalltalk Hub](http://www.smalltalkhub.com)
+- **Source Code Repository**: RenoirSt project in [Smalltalk Hub](http://www.smalltalkhub.com)
+- **Issue Tracking**: In this GitHub repository.
 
 ###Get started!
+
+Download a ready to use [Pharo 3 image] (https://ci.inria.fr/pharo-contribution/job/RenoirSt/PHARO=30,VERSION=last,VM=vm/lastSuccessfulBuild/artifact/)
+
+or
 
 Open a workspace and evaluate:
 
