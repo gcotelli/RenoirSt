@@ -46,8 +46,17 @@ and try the Hello World:
 
 | builder |
 builder := CascadingStyleSheetBuilder  new.
-builder 
+builder
 	declareRuleSetFor: [:selector | selector body before]
 	with: [:style | style content: '"Hello World"'];
 	build
+
+```
+
+you should see something like this:
+```css
+ body::before
+{
+	content: "Hello World";
+}
 ```
