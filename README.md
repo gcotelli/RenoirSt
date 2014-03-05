@@ -23,6 +23,8 @@ This project is MIT licensed. Any contribution submitted to the code repository 
 
 ###Get started!
 
+Remember Issue #5 is not finished yet. Give us a couple of days.
+
 Download a ready to use [Pharo 3 image] (https://ci.inria.fr/pharo-contribution/job/RenoirSt/PHARO=30,VERSION=last,VM=vm/lastSuccessfulBuild/artifact/)
 
 or
