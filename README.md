@@ -23,7 +23,7 @@ This project is MIT licensed. Any contribution submitted to the code repository 
 
 ###Get started!
 
-Remember Issue #5 is not finished yet. Give us a couple of days.
+Remember there's still some pending issues for 1.0 release!
 
 Download a ready to use [Pharo 3 image] (https://ci.inria.fr/pharo-contribution/job/RenoirSt/PHARO=30,VERSION=last,VM=vm/lastSuccessfulBuild/artifact/)
 
@@ -38,4 +38,16 @@ Gofer it
 load.
 
 (Smalltalk at: #ConfigurationOfRenoirSt) project lastVersion load
+```
+
+and try the Hello World:
+
+```smalltalk
+
+| builder |
+builder := CascadingStyleSheetBuilder  new.
+builder 
+	declareRuleSetFor: [:selector | selector body before]
+	with: [:style | style content: '"Hello World"'];
+	build
 ```
