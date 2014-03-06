@@ -1,9 +1,7 @@
-Renoir.St
+Renoir.St [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt)](https://ci.inria.fr/pharo-contribution/job/RenoirSt/)
 =========
 
 *A DSL enabling programmatic cascading style sheet generation for Pharo Smalltalk*
-
-[![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt)](https://ci.inria.fr/pharo-contribution/job/RenoirSt/)
 
 ##Goals
 - Improve CSS integration with existing Web Frameworks
@@ -45,7 +43,7 @@ and try the Hello World:
 ```smalltalk
 
 | builder |
-builder := CascadingStyleSheetBuilder  new.
+builder := CascadingStyleSheetBuilder new.
 builder
 	declareRuleSetFor: [:selector | selector body before]
 	with: [:style | style content: '"Hello World"'];
@@ -55,7 +53,7 @@ builder
 
 you should see something like this:
 ```css
- body::before
+body::before
 {
 	content: "Hello World";
 }
