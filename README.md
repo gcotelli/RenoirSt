@@ -41,14 +41,10 @@ load.
 and try the Hello World:
 
 ```smalltalk
-
-| builder |
-builder := CascadingStyleSheetBuilder new.
-builder
+CascadingStyleSheetBuilder new
 	declareRuleSetFor: [:selector | selector body before]
 	with: [:style | style content: '"Hello World"'];
 	build
-
 ```
 
 you should see something like this:
