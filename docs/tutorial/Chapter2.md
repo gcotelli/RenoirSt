@@ -3,11 +3,11 @@ Tutorial - Chapter 2
 
 ## Selectors
 
-So far our focus was on the *style* part. Let's focus now on the *selectors* alternatives. Remember that a CSS selector represents a structure that can be used as a condition that determines which elements a selector matches in the document tree.
+So far our focus was on the *style* part. Let's focus now on the *selectors* alternatives. Remember that a CSS selector represents a structure that can be used as a condition that determines which elements a selector matches in the document tree. This chapter asume some familiarity with the CSS selectors and will not go in detail about the exact meaning of each one, for more details take a look at http://www.w3.org/TR/css3-selectors/.
 
 ### Type selectors
 
-This selectors matches an specific element type in the DOM. The library provide out-of-the-box support for HTML elements, mostly using the same names that the `Seaside` framework. One example is the `div` selector used in the previous sections, or:
+This selectors matches an specific element type in the DOM. The library provide out-of-the-box support for HTML elements, mostly using the same names that the `Seaside` framework. One example is the `div` selector used in the previous chapter, or this one:
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
@@ -142,12 +142,12 @@ input:checked
 ```smalltalk
 CascadingStyleSheetBuilder new 
   declareRuleSetFor: [:selector | (selector lang: 'es') > selector div ]
-  with: [:style | style quotes: { '"«"'. '"»"' }  ];
+  with: [:style | style quotes: { '"Â«"'. '"Â»"' }  ];
   build
 ```
 ```css
 :lang(es) > div
 {
-	quotes: "«" "»";
+	quotes: "Â«" "Â»";
 }
 ```
