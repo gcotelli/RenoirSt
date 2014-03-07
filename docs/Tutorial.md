@@ -237,19 +237,21 @@ div.pastoral#account5
 ```
 > **Hint:** Don't harcode the classes and ids, ask it to the same object that holds it for the HTML generation. Probably you have some place in your code setting the class or id to a particular HTML element.
 
-##Pseudo-Classes
-The pseudo-class concept is introduced to permit selection based on information that lies outside of the document tree or that cannot be expressed using the other simple selectors.
+### Pseudo-Classes
+The pseudo-class concept is introduced to permit selection based on information that lies outside of the document tree or that cannot be expressed using the other simple selectors. Most pseudo-classes are supported just by sending a one of the following messages `link`, `visited`, `active`, `hover`, `focus`, `target`, `enabled`, `disabled` or `checked`.
 
-###Dynamic Pseudo-Classes
-Dynamic pseudo-classes classify elements on characteristics other than their name, attributes, or content, in principle characteristics that cannot be deduced from the document tree. Dynamic pseudo-classes do not appear in the document source or document tree.
-
+Here is some small example showing this pseudo-classes:
 ```smalltalk
 CascadingStyleSheetBuilder new 
   declareRuleSetFor: [:selector | selector anchor link ]
   with: [:style | style color: CssSVGColors blue ];
   declareRuleSetFor: [:selector | selector anchor visited active]
   with: [:style | style color: CssSVGColors green ];
-  declareRuleSetFor: [:selector | selector anchor focus hover]
+  declareRuleSetFor: [:selector | selector anchor focus hover enabled]
+  with: [:style | style color: CssSVGColors green ];
+  declareRuleSetFor: [:selector | (selector paragraph class: 'note') target disabled]
+  with: [:style | style color: CssSVGColors green ];
+  declareRuleSetFor: [:selector | selector input checked ]
   with: [:style | style color: CssSVGColors green ];
   build
 ```
@@ -264,22 +266,32 @@ a:visited:active
 	color: green;
 }
 
-a:focus:hover
+a:focus:hover:enabled
+{
+	color: green;
+}
+
+p.note:target:disabled
+{
+	color: green;
+}
+
+input:checked
 {
 	color: green;
 }
 ```
-###Target Pseudo-Class
-Some URIs refer to a location within a resource. This kind of URI ends with a "number sign" (#) followed by an anchor identifier (called the fragment identifier). URIs with fragment identifiers link to a certain element within the document, known as the target element. For instance, here is a URI pointing to an anchor named `section` in an HTML document: `http://example.com/html/top.html#section`. This kind of target elements can be matched the following way:
+
+#### Language Pseudo-class:
 ```smalltalk
 CascadingStyleSheetBuilder new 
-  declareRuleSetFor: [:selector | (selector paragraph class: 'note') target ]
-  with: [:style | style color: CssSVGColors blue ];
+  declareRuleSetFor: [:selector | (selector lang: 'es') > selector div ]
+  with: [:style | style quotes: { '"«"'. '"»"' }  ];
   build
 ```
 ```css
-p.note:target
+:lang(es) > div
 {
-	color: blue;
+	quotes: "«" "»";
 }
 ```
