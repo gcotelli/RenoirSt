@@ -135,14 +135,14 @@ Some properties support a wide range of values. For example the `margin` propert
 ```smalltalk
 CascadingStyleSheetBuilder new 
   declareRuleSetFor: [:selector | selector div ]
-  with: [:style | style margin: { 2 px. 4px } ];
+  with: [:style | style margin: { 2 px. 4 px } ];
   build
 ```
 being the resulting style sheet:
 ```css
 div
 {
-	margin: 2px 4 px;
+	margin: 2px 4px;
 }
 ```
 ## Selectors
