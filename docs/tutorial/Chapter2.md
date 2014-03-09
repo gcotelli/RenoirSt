@@ -1,5 +1,5 @@
-Tutorial - Chapter 2
-====================
+Tutorial - Part II
+==================
 
 ## Selectors
 
@@ -94,7 +94,7 @@ div.pastoral#account5
 > **Hint:** Don't harcode the classes and ids, ask it to the same object that holds it for the HTML generation. Probably you have some place in your code setting the class or id to a particular HTML element.
 
 ### Pseudo-Classes
-The pseudo-class concept is introduced to permit selection based on information that lies outside of the document tree or that cannot be expressed using the other simple selectors. Most pseudo-classes are supported just by sending a one of the following messages `link`, `visited`, `active`, `hover`, `focus`, `target`, `enabled`, `disabled` or `checked`.
+The pseudo-class concept is introduced to permit selection based on information that lies outside of the document tree or that cannot be expressed using the other simple selectors. Most pseudo-classes are supported just by sending one of the following messages `link`, `visited`, `active`, `hover`, `focus`, `target`, `enabled`, `disabled` or `checked`.
 
 Here is some small example showing this pseudo-classes:
 ```smalltalk
@@ -150,4 +150,17 @@ CascadingStyleSheetBuilder new
 {
 	quotes: "«" "»";
 }
+```
+#### Structural Pseudo-classes
+This selectors permits selection based on extra information that lies in the document tree but cannot be represented by other simple selectors or combinators.
+
+Standalone text and other non-element nodes are not counted when calculating the position of an element in the list of children of its parent. When calculating the position of an element in the list of children of its parent, the index numbering starts at 1. 
+
+##### Root Pseudo-class
+The :root pseudo-class represents an element that is the root of the document. To build this kind of selector just send the message `root` to another selector:
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector root ]
+  with: [:style | style color: CssSVGColors grey ];
+  build
 ```
