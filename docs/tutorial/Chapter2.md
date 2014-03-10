@@ -203,3 +203,64 @@ The rest of this kind of selectors is modeled as follows:
 - `only-child` -> `onlyChild`
 - `only-of-type` -> `onlyOfType`
 - `empty` -> `empty`
+
+### Pseudo-Elements
+
+Pseudo-elements create abstractions about the document tree beyond those specified by the document language. For instance, document languages do not offer mechanisms to access the first letter or first line of an element's content. Pseudo-elements allow authors to refer to this otherwise inaccessible information. Pseudo-elements may also provide authors a way to refer to content that does not exist in the source document.
+
+#### First line
+This selector describes the contents of the first formatted line of an element.
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector paragraph firstLine ]
+  with: [:style | style textTransform: CssConstants uppercase ];
+  build
+```
+```css
+p::first-line
+{
+	text-transform: uppercase;
+}
+```
+
+#### First letter
+
+This pseudo-element represents the first letter of an element, if it is not preceded by any other content (such as images or inline tables) on its line.
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector paragraph firstLetter ]
+  with: [:style | style fontSize: 200 percent ];
+  build
+```
+```css
+p::first-letter
+{
+	font-size: 200%;
+}
+```
+
+#### Before and After
+
+This pseudo-elements can be used to describe generated content before or after an element's content. The `content` property, in conjunction with these pseudo-elements, specifies what is inserted.
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | (selector paragraph class: 'note') before ]
+  with: [:style | style content: '"Note: "' ];
+  declareRuleSetFor: [:selector | (selector paragraph class: 'note') after ]
+  with: [:style | style content: '"[*]"' ];
+  build
+```
+```css
+p.note::before
+{
+	content: "Note: ";
+}
+
+p.note::after
+{
+	content: "[*]";
+} 
+```
