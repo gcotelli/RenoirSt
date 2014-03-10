@@ -164,3 +164,42 @@ CascadingStyleSheetBuilder new
   with: [:style | style color: CssSVGColors grey ];
   build
 ```
+
+##### Kind of nth-child pseudo-classes
+
+The `:nth-child(an+b)` pseudo-class notation represents an element that has `an+b-1` siblings before it in the document tree, for any positive integer or zero value of n, and has a parent element. For values of a and b greater than zero, this effectively divides the element's children into groups of a elements (the last group taking the remainder), and selecting the bth element of each group. The a and b values must be integers (positive, negative, or zero). The index of the first child of an element is 1.
+
+In addition to this, :nth-child() can take ‘odd’ and ‘even’ as arguments instead. ‘odd’ has the same signification as 2n+1, and ‘even’ has the same signification as 2n.
+
+The library is still missing the abstraction for this kind of formulae, but a plain string can be used or an integer if `n` is not required.
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector childAt: '3n+1' ]
+  with: [:style | style color: CssSVGColors blue ];
+  declareRuleSetFor: [:selector | selector childAt: 5 ]
+  with: [:style | style color: CssSVGColors blue ];
+  build
+```
+```css
+:nth-child(3n+1)
+{
+	color: blue;
+}
+
+:nth-child(5)
+{
+	color: blue;
+}
+```
+The rest of this kind of selectors is modeled as follows:
+- `nth-last-child()` -> `childFromLastAt:` 
+- `nth-of-type()` -> `siblingOfTypeAt:`
+- `nth-last-of-type()` -> `siblingOfTypeFromLastAt:`
+- `first-child` -> `firstChild`
+- `last-child` -> `lastChild`
+- `first-of-type` -> `firstOfType`
+- `last-of-type` -> `lastOfType`
+- `only-child` -> `onlyChild`
+- `only-of-type` -> `onlyOfType`
+- `empty` -> `empty`
