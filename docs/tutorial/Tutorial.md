@@ -2,12 +2,16 @@ Tutorial
 ========
 
 ### Table Of Contents
-- Introduction
-- Basics
-- Selectors
-- Important Rules
-- Media Queries
-- Web Frameworks Integration
-- Advanced Tips
-- Links
-
+- [Part I](Tutorial - Part I.md)
+  - Introduction
+  - Basics
+- [Part II](Tutorial - Part II.md)
+  - Selectors
+    - Type Selectors
+    - Combinators
+    - Class and Id Selectors
+    - Pseudo-Classes
+    - Pseudo-Elements
+- [Part III](Tutorial - Part III.md )
+  - Important Rules
+  - Media Queries
