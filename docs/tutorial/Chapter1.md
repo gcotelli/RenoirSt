@@ -134,3 +134,27 @@ div
 	margin: 2px 4px;
 }
 ```
+#### URLs
+
+`ZnUrl` instances can be used as the value for properties requiring an URI. Both relative or absolute URLs are acceptable. 
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector div class: 'logo' ]
+  with: [:style | style backgroundImage: 'images/logo.png' asZnUrl ];
+  declareRuleSetFor: [:selector | selector div class: 'logo' ]
+  with: [:style | style backgroundImage: 'http://www.example.com/images/logo.png' asZnUrl ];
+  build
+```
+being the resulting style sheet:
+```css
+div.logo
+{
+	background-image: url("images/logo.png");
+}
+
+div.logo
+{
+	background-image: url("http://www.example.com/images/logo.png");
+}
+```
