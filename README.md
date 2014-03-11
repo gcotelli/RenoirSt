@@ -25,7 +25,7 @@ This project is MIT licensed. Any contribution submitted to the code repository 
 
 or
 
-- Install it using the Configuration Browser
+- Load it using the Configuration Browser
 
 or
 
