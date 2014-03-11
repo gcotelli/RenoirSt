@@ -30,10 +30,8 @@ or
 ```smalltalk
 Gofer it    
     url: 'http://smalltalkhub.com/mc/gcotelli/RenoirSt/main';
-    package: 'ConfigurationOfRenoirSt';
-load.
-
-(Smalltalk at: #ConfigurationOfRenoirSt) project stableVersion load
+    configurationOf: 'RenoirSt';
+    loadStable
 ```
 
 ***********************************************
