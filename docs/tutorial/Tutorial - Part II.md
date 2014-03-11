@@ -264,3 +264,22 @@ p.note::after
 	content: "[*]";
 } 
 ```
+
+### Selector Groups
+
+A comma-separated list of selectors represents the union of all elements selected by each of the individual selectors in the list. For example, in CSS when several selectors share the same declarations, they may be grouped into a comma-separated list. 
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | (selector div class: 'note') after , (selector paragraph class: 'note') before ]
+  with: [:style | style content: '"Note: "' ];
+  build
+```
+
+```css
+div.note::after ,
+p.note::before
+{
+	content: "Note: ";
+}
+```
