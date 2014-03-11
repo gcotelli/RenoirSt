@@ -21,9 +21,7 @@ This project is MIT licensed. Any contribution submitted to the code repository 
 
 ###Get started!
 
-Remember there's still some pending issues for 1.0 release!
-
-Download a ready to use [Pharo 3 image] (https://ci.inria.fr/pharo-contribution/job/RenoirSt/PHARO=30,VERSION=last,VM=vm/lastSuccessfulBuild/artifact/)
+Download a ready to use [Pharo 3 image] (https://ci.inria.fr/pharo-contribution/job/RenoirSt/PHARO=30,VERSION=stable,VM=vm/lastSuccessfulBuild/artifact/)
 
 or
 
@@ -35,7 +33,7 @@ Gofer it
     package: 'ConfigurationOfRenoirSt';
 load.
 
-(Smalltalk at: #ConfigurationOfRenoirSt) project lastVersion load
+(Smalltalk at: #ConfigurationOfRenoirSt) project stableVersion load
 ```
 
 and try the Hello World:
