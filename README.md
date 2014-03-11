@@ -21,11 +21,11 @@ This project is MIT licensed. Any contribution submitted to the code repository 
 
 ###Get started!
 
-Download a ready to use [Pharo 3 image] (https://ci.inria.fr/pharo-contribution/job/RenoirSt/PHARO=30,VERSION=stable,VM=vm/lastSuccessfulBuild/artifact/)
+- Download a ready to use [Pharo 3 image] (https://ci.inria.fr/pharo-contribution/job/RenoirSt/PHARO=30,VERSION=stable,VM=vm/lastSuccessfulBuild/artifact/)
 
 or
 
-Open a workspace and evaluate:
+- Open a workspace and evaluate:
 
 ```smalltalk
 Gofer it    
@@ -36,7 +36,9 @@ load.
 (Smalltalk at: #ConfigurationOfRenoirSt) project stableVersion load
 ```
 
-and try the Hello World:
+***********************************************
+
+Now you can try the Hello World:
 
 ```smalltalk
 CascadingStyleSheetBuilder new
