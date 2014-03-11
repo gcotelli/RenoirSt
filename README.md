@@ -25,6 +25,10 @@ This project is MIT licensed. Any contribution submitted to the code repository 
 
 or
 
+- Load it using the Configuration Browser
+
+or
+
 - Open a workspace and evaluate:
 
 ```smalltalk
