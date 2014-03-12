@@ -111,6 +111,7 @@ CascadingStyleSheetBuilder new
   with: [:style | style textAlign: CssConstants justify ];
   build
 ```
+Evaluates to:
 ```css
 div
 {
