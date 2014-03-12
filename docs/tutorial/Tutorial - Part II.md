@@ -3,11 +3,11 @@ Tutorial - Part II
 
 ## Selectors
 
-So far our focus was on the *style* part. Let's focus now on the *selectors* alternatives. Remember that a CSS selector represents a structure that can be used as a condition that determines which elements a selector matches in the document tree. This chapter asume some familiarity with the CSS selectors and will not go in detail about the exact meaning of each one, for more details take a look at http://www.w3.org/TR/css3-selectors/.
+So far our focus was on the *style* part of the rule. Let's focus now on the available *selectors*. Remember that a CSS selector represents a structure used to match elements in the document tree. This chapter asume some familiarity with the CSS selectors and will not go in detail about the exact meaning of each one. For more details you can take a look at http://www.w3.org/TR/css3-selectors/.
 
 ### Type selectors
 
-This selectors matches an specific element type in the DOM. The library provide out-of-the-box support for HTML elements, mostly using the same names that the `Seaside` framework. One example is the `div` selector used in the previous chapter, or this one:
+These selectors match a specific element type in the DOM. The library provides out-of-the-box support for HTML elements, mostly using the same names that the `Seaside` framework. One example is the `div` selector used in the previous chapter. Another is the following:
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
@@ -24,7 +24,7 @@ ol
 
 ### Combinators
 
-One of the most common use cases are the use of the **descendant combinator**.
+One of the most common use cases is the **descendant combinator**.
 ```smalltalk
 CascadingStyleSheetBuilder new 
   declareRuleSetFor: [:selector | selector div orderedList ]
@@ -91,12 +91,12 @@ div.pastoral#account5
 	list-style-type: lower-roman;
 }
 ```
-> **Hint:** Don't harcode the classes and ids, ask it to the same object that holds it for the HTML generation. Probably you have some place in your code setting the class or id to a particular HTML element.
+> **Hint:** You should not hardcode the classes and ids, they should be obtained from the same object that holds them for the HTML generation. You probably have some code setting the class(es) and/or id(s) to a particular HTML element.
 
 ### Pseudo-Classes
-The pseudo-class concept is introduced to permit selection based on information that lies outside of the document tree or that cannot be expressed using the other simple selectors. Most pseudo-classes are supported just by sending one of the following messages `link`, `visited`, `active`, `hover`, `focus`, `target`, `enabled`, `disabled` or `checked`.
+The pseudo-class concept is introduced to allow selection based on information that lies outside of the document tree or that cannot be expressed using the simpler selectors. Most pseudo-classes are supported just by sending one of the following messages `link`, `visited`, `active`, `hover`, `focus`, `target`, `enabled`, `disabled` or `checked`.
 
-Here is some small example showing this pseudo-classes:
+Here is a small example that uses the pseudo-classes:
 ```smalltalk
 CascadingStyleSheetBuilder new 
   declareRuleSetFor: [:selector | selector anchor link ]
@@ -152,7 +152,7 @@ CascadingStyleSheetBuilder new
 }
 ```
 #### Structural Pseudo-classes
-This selectors permits selection based on extra information that lies in the document tree but cannot be represented by other simple selectors or combinators.
+These selectors allow selection based on extra information that lies in the document tree but cannot be represented by other simpler selectors nor combinators.
 
 Standalone text and other non-element nodes are not counted when calculating the position of an element in the list of children of its parent. When calculating the position of an element in the list of children of its parent, the index numbering starts at 1. 
 
@@ -165,13 +165,13 @@ CascadingStyleSheetBuilder new
   build
 ```
 
-##### Kind of nth-child pseudo-classes
+##### Kind of nth-child Pseudo-classes
 
 The `:nth-child(an+b)` pseudo-class notation represents an element that has `an+b-1` siblings before it in the document tree, for any positive integer or zero value of n, and has a parent element. For values of a and b greater than zero, this effectively divides the element's children into groups of a elements (the last group taking the remainder), and selecting the bth element of each group. The a and b values must be integers (positive, negative, or zero). The index of the first child of an element is 1.
 
-In addition to this, :nth-child() can take ‘odd’ and ‘even’ as arguments instead. ‘odd’ has the same signification as 2n+1, and ‘even’ has the same signification as 2n.
+In addition to this, `:nth-child()` can take ‘odd’ and ‘even’ as arguments instead. The value ‘odd’ is equivalent to 2n+1, whereas ‘even’ is equivalent to 2n.
 
-The library is still missing the abstraction for this kind of formulae, but a plain string can be used or an integer if `n` is not required.
+The library does not currently include the abstraction for this kind of formulae, but a plain string can be used, or just an integer if `n` is not required.
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
@@ -192,7 +192,7 @@ CascadingStyleSheetBuilder new
 	color: blue;
 }
 ```
-The rest of this kind of selectors is modeled as follows:
+The rest of the selectors in this category are modeled using the following messsages:
 - `nth-last-child()` -> `childFromLastAt:` 
 - `nth-of-type()` -> `siblingOfTypeAt:`
 - `nth-last-of-type()` -> `siblingOfTypeFromLastAt:`
@@ -243,7 +243,7 @@ p::first-letter
 
 #### Before and After
 
-This pseudo-elements can be used to describe generated content before or after an element's content. The `content` property, in conjunction with these pseudo-elements, specifies what is inserted.
+These pseudo-elements can be used to describe generated content before or after an element's content. The `content` property, in conjunction with these pseudo-elements, specifies what is inserted.
 
 ```smalltalk
 CascadingStyleSheetBuilder new 

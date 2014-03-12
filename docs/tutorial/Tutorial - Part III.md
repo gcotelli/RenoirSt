@@ -22,7 +22,7 @@ CascadingStyleSheetBuilder new
   ];
   build
 ```
-will produce
+Evaluates to:
 ```css
 p
 {
@@ -31,14 +31,14 @@ p
 	font-size: 18pt;
 }
 ```
-Note that the important properties must be created by sending the messages to `importantStyle` argument and not the original `style`.
+Note that the important properties must be created by sending the messages to the inner argument `importantStyle` instead of the outer argument `style`.
 
 ##### References:
 - http://www.w3.org/TR/CSS2/cascade.html#important-rules
 
 ## Media Queries
 
-An `@media` rule specifies the target media types of a set of statements. The `@media` construct allows style sheet rules for various media in the same style sheet. Style rules outside of `@media` rules apply to all media types that the style sheet applies to. At-rules inside `@media` are invalid in CSS2.1.
+A `@media` rule specifies the target media types of a set of statements. The `@media` construct allows style sheet rules that apply to various media in the same style sheet. Style rules outside of `@media` rules apply to all media types that the style sheet applies to. At-rules inside `@media` are invalid in CSS2.1.
 
 The most basic media rule consists of specifying just a media type:
 ```smalltalk
@@ -48,18 +48,19 @@ CascadingStyleSheetBuilder new
 			declareRuleSetFor: [ :selector | selector id: #oop ] 
 			with: [ :style | style color: CssSVGColors red ]
 		]
-	forMediaMatching: [ :queryBuilder | queryBuilder type: CssMediaQueryConstants print ].
+	forMediaMatching: [ :queryBuilder | queryBuilder type: CssMediaQueryConstants print ];
+	build
 ```
 
 To use media queries in the library just send the message `declare:forMediaMatching:` to the builder. The first closure is evaluated with an instance of a `CascadingStyleSheetBuilder` and the second one with a builder of media queries.
 
-The media query builder by default will match any media type, to specify a media type send to it the message `type:` with the corresponding media type. The class `CssMediaQueryConstants`provide easy access to the following media types: 
+The media query builder will match any media type by default. To specify a media type just send it the message `type:` with the corresponding media type. The class `CssMediaQueryConstants` provides easy access to the following media types: 
 `braille`, `embossed`, `handheld`, `print`, `projection`, `screen`, `speech`, `tty` and `tv`.
 
 The media query builder supports a variety of messages for additional conditions (called media features). Media features are used in expressions to describe requirements of the output device.
 
 The following media feature messages are supported:
-- Accepting a `CssLength`
+- Accepting a `CssLenght`
 	- `width:` 
 	- `minWidth:`
 	- `maxWidht:`
@@ -84,7 +85,7 @@ The following media feature messages are supported:
 	- `color:` the argument describes the number of bits per color component of the output device
 	- `minColor:`
 	- `maxColor:`
-	- `colorIndex:` the argument describes the number of entries in the color lookup table of the output device. 
+	- `colorIndex:` the argument describes the number of entries in the color lookup table of the output device
 	- `minColorIndex:`
 	- `maxColorIndex:`
 	- `monochrome:` the argument describes the number of bits per pixel in a monochrome frame buffer
@@ -99,7 +100,7 @@ The following media feature messages are supported:
 
 A new basic type is added: `CssResolution`. This kind of measures can be created sending the messages `dpi` (dots per inch) or `dpcm` (dots per centimeter) to an integer or float.
 
-Let's see some final example to better understand the media features support:
+Let's see a final example to better understand the media features support:
 ```smalltalk
 CascadingStyleSheetBuilder new 
 	declare: [ :cssBuilder | 
@@ -114,7 +115,7 @@ CascadingStyleSheetBuilder new
 		];
 	build
 ```
-obtaining:
+Evaluates to:
 ```css
 @media all and (orientation: landscape) and (resolution: 300dpi)
 {

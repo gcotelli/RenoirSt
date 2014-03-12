@@ -5,13 +5,13 @@ Tutorial - Part I
 
 This tutorial asumes some knowledge of CSS and Pharo Smalltalk.
 
-The main entry point for the library is the class `CascadingStyleSheetBuilder`. Let's see some minimalist example. Copy in a workspace and `Inspect-it (Alt+i)`:
+The main entry point for the library is the class `CascadingStyleSheetBuilder`. Let's see some minimalist example. Copy the following in a workspace and `Inspect-it (Alt+i)`:
 
 ```smalltalk
 CascadingStyleSheetBuilder new build
 ```
 
-Beautiful! you have now an inspector on your fisrt (empty and useless) style sheet. Let's do now something more useful. Real stylesheets are composed of rules (or rule-sets), where each one has a selector and a declaration group. The selector determines if the rule applies to some element in the DOM, and the declaration group specifies the style to apply.
+Beautiful! You have now an inspector on your fisrt (empty and useless) style sheet. Let's do something more useful now. Real stylesheets are composed of rules (or rule-sets), where each has a selector and a declaration group. The selector determines if the rule applies to some element in the DOM, and the declaration group specifies the style to apply.
 
 ## Basics
 
@@ -23,24 +23,24 @@ CascadingStyleSheetBuilder new
   with: [:style | style margin: 2 px ];
   build
 ```
-the expected result is:
+Evaluates to:
 ```css
 div
 {
   margin: 2px;
 }
 ```
-Let's analyze it. The message `declareRuleSetFor:with:` is used to configure a rule-set in the builder. It uses two closures, the first one is used to define the *selector* and the second one the *style*. The `selector`argument of the first closure provides an API to construct the selector (more on this later). The `style`argument on the second closure provides the API to declare CSS properties and his values.
+Let's analyze it. The message `declareRuleSetFor:with:` is used to configure a rule-set in the builder. It uses two closures, the first one is used to define the *selector* and the second one the *style*. The `selector` argument of the first closure provides an API to construct the selector (more on this later). The `style` argument on the second closure provides the API to declare CSS properties with their corresponding values.
 
-The properties API is mostly defined following this rules:
-- Properties without dashes in the name are directly mapped: `margin` became `margin:` message send.
-- Properties with one or more dashes are mapped using camel case: `margin-top` became `marginTop:` message send.
+The properties API is mostly defined following these rules:
+- Properties without dashes in the name are directly mapped: to define `margin` we use the message `margin:`.
+- Properties with one or more dashes are mapped using camel case: to define `margin-top` we use the message `marginTop:`.
 
 ### Basic CSS Types
 
 #### Lenghts
 
-Another interest thing is `2 px` message send. This message send produces a `CssLenght`. The library provides out-of-the-box support for the lenght units in the CSS spec. There's extensions to `Integer` and `Float` classes allowing to obtain lenghts. The supported units are: 
+Another to note is how `2 px` was interpreted. The resulting object is a `CssLenght`. The library provides out-of-the-box support for the lenght units in the CSS spec. There are extensions for `Integer` and `Float` classes allowing to obtain lenghts. The supported units are: 
 - `em` relative to font size
 - `ex` relative to "x" height
 - `cm` centimeters
@@ -50,9 +50,9 @@ Another interest thing is `2 px` message send. This message send produces a `Css
 - `pt` points 
 - `px` pixels (note that CSS has some special definition for pixel)
 
-It also support the creation of percentages: `50 percent` is expressed as `50%` in the resulting CSS.
+It also supports the creation of percentages: `50 percent` is expressed as `50%` in the resulting CSS.
 
-Some properties requires integer or floating point values. In this cases just use the Pharo provided integer and float support. For example: 
+Some properties require integer or floating point values. In this cases just use the Pharo provided integer and float support. For example: 
 ```smalltalk
 CascadingStyleSheetBuilder new 
   declareRuleSetFor: [:selector | selector div ]
@@ -62,7 +62,7 @@ CascadingStyleSheetBuilder new
 
 #### Colors
 
-The library also supports abstractions for properties requiring color values. It provides a shared pool `CssSVGColors` providing easy access to colors in the SVG 1.0 list, and some abstractions (`CssRGBColor` y `CssHSLColor`) to create colors in the rgb or hsl space including alpha support.
+The library also supports abstractions for properties requiring color values. The shared pool `CssSVGColors` provides easy access to colors in the SVG 1.0 list, and the abstractions `CssRGBColor` and `CssHSLColor` allow the creation of colors in the RGB or HSL space including alpha support.
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
@@ -74,7 +74,7 @@ CascadingStyleSheetBuilder new
   build
 ```
 
-creates an stlye sheet for
+Evaluates to:
 ```css
 div
 {
@@ -82,7 +82,7 @@ div
 	border-color: rgba(0,128,0,0.5);
 }
 ```
-> **Hint:** In a real scenario don't harcode the colors like this examples, put it in some object representing a theme or something similar and use a more functional name.
+> **Hint:** In a real scenario you should never hardcode the colors as in the examples, instead put them in objects representing a theme or something that gives them a name related to your application.
 
 RGB-Colors also support percentual values:
 
@@ -92,17 +92,18 @@ CascadingStyleSheetBuilder new
   with: [:style | style borderColor: (CssRGBColor red: 0 percent green: 50 percent blue: 0 percent) ];
   build
 ```
-notice the difference in the function name because there's no alpha channel specification:
+Evaluates to:
 ```css
 div
 {
 	border-color: rgb(0%,50%,0%);
 }
 ```
+Notice the difference in the message used because there is no alpha channel specification.
 
 #### Constants
 
-A lot of properties values are just keyword constants. This support is provided by the class `CssConstants`.
+A lot of values for CSS properties are just keyword constants. This support is provided by the class `CssConstants`.
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
@@ -110,6 +111,7 @@ CascadingStyleSheetBuilder new
   with: [:style | style textAlign: CssConstants justify ];
   build
 ```
+Evaluates to:
 ```css
 div
 {
@@ -127,7 +129,7 @@ CascadingStyleSheetBuilder new
   with: [:style | style margin: { 2 px. 4 px } ];
   build
 ```
-being the resulting style sheet:
+Evaluates to:
 ```css
 div
 {
@@ -136,7 +138,7 @@ div
 ```
 #### URLs
 
-`ZnUrl` instances can be used as the value for properties requiring an URI. Both relative or absolute URLs are acceptable. 
+`ZnUrl` instances can be used as the value for properties requiring an URI. Both relative and absolute URLs are accepted.
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
@@ -146,7 +148,7 @@ CascadingStyleSheetBuilder new
   with: [:style | style backgroundImage: 'http://www.example.com/images/logo.png' asZnUrl ];
   build
 ```
-being the resulting style sheet:
+Evaluates to:
 ```css
 div.logo
 {
