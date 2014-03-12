@@ -171,13 +171,15 @@ The `:nth-child(an+b)` pseudo-class notation represents an element that has `an+
 
 In addition to this, `:nth-child()` can take ‘odd’ and ‘even’ as arguments instead. The value ‘odd’ is equivalent to 2n+1, whereas ‘even’ is equivalent to 2n.
 
-The library does not currently include the abstraction for this kind of formulae, but a plain string can be used, or just an integer if `n` is not required.
+Since version 1.1.0 the library supports an abstraction for this kind of formulae (`CssLinealPolynomial`), or just an integer if `n` is not required.
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
-  declareRuleSetFor: [:selector | selector childAt: '3n+1' ]
+  declareRuleSetFor: [:selector | selector childAt: 3 n + 1 ]
   with: [:style | style color: CssSVGColors blue ];
   declareRuleSetFor: [:selector | selector childAt: 5 ]
+  with: [:style | style color: CssSVGColors blue ];
+  declareRuleSetFor: [:selector | selector childAt: CssConstants even]
   with: [:style | style color: CssSVGColors blue ];
   build
 ```
@@ -191,7 +193,22 @@ CascadingStyleSheetBuilder new
 {
 	color: blue;
 }
+
+:nth-child(even)
+{
+	color: blue;
+}
 ```
+
+`CssLinealPolynomial` instances can be created by sending the message `n` to an integer, and later this instances can receive the messages `+` or `-` to configure the independent coefficient.
+
+Some examples:
+```smalltalk
+1 n "Prints as: n".
+2 n -3 "Prints as: 2n-3".
+3 n + 1 "Prints as: 3n+1"
+```
+
 The rest of the selectors in this category are modeled using the following messsages:
 - `nth-last-child()` -> `childFromLastAt:` 
 - `nth-of-type()` -> `siblingOfTypeAt:`
