@@ -8,7 +8,9 @@ Renoir.St [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/ic
 - Write & refactor in Smalltalk, deploy to CSS
 
 ###License:
-This project is MIT licensed. Any contribution submitted to the code repository is considered to be under the same license.
+The project source code is [MIT](LICENSE) licensed. Any contribution submitted to the code repository is considered to be under the same license.
+
+The documentation is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
 
 ###Benefits:
 - Keep in sync your code changes with the changes in the CSS
