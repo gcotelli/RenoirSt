@@ -160,3 +160,23 @@ div.logo
 	background-image: url("http://www.example.com/images/logo.png");
 }
 ```
+
+### Comments
+
+When declaring rule sets the library support attaching comments to them. To do that send the message `declareRuleSetFor:with:andComment:`, for example:
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector div ]
+  with: [:style | style margin: 2 pc ]
+  andComment: 'Two picas margin';
+  build
+```
+Evaluates to:
+```css
+/*Two picas margin*/
+div
+{
+	margin: 2pc;
+}
+```
