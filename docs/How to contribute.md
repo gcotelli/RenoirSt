@@ -23,7 +23,7 @@ Gofer it
     configurationOf: 'RenoirSt';
     loadDevelopment
 ```
-or taking the latests development image from the [Continous Integration] Server(https://ci.inria.fr/pharo-contribution/job/RenoirSt/).
+or taking the latests development image from the [Continous Integration Server](https://ci.inria.fr/pharo-contribution/job/RenoirSt/).
 
 ## How to contribute documentation
 
