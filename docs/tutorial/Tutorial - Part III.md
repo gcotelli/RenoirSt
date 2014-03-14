@@ -128,3 +128,10 @@ Evaluates to:
 ##### References:
 - http://www.w3.org/TR/CSS2/media.html
 - http://www.w3.org/TR/css3-mediaqueries/
+
+## Interaction with other frameworks and libraries
+
+### Units
+
+The `Units` package (available using the ConfigurationBrowser in Pharo) includes some extensions that collides with RenoirSt.  Since version `1.1.0` this library is able to load automatically a compatibility package if it's loaded after `Units` package. To test this integration there's an [specific job](https://ci.inria.fr/pharo-contribution/job/RenoirSt-UnitsCompatibility/) in the contribution server, that loads first `Units` and later `RenoirSt`.
+[![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-UnitsCompatibility)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-UnitsCompatibility/)
