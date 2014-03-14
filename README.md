@@ -58,3 +58,5 @@ body::before
 	content: "Hello World";
 }
 ```
+### Contributing
+If you want to help check the ["How to contribute" doc](docs/How to contribute.md)
