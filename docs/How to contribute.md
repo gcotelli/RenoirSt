@@ -3,11 +3,11 @@ How to contribute
 
 There's several ways to contribute to the project: reporting bugs, sending feedback, proposing ideas for new features, fixing or adding documentation, promoting the project, or even contributing code changes.
 
-# How to report issues
+## How to report issues
 
 The issue tracker is this GitHub repository. Please use the labels to categorize the issue. 
 
-# How to contribute code
+## How to contribute code
 
 Some initial highlights:
 
@@ -25,12 +25,12 @@ Gofer it
 ```
 or taking the latests development image from the [Continous Integration] Server(https://ci.inria.fr/pharo-contribution/job/RenoirSt/).
 
-# How to contribute documentation
+## How to contribute documentation
 
 The project documentation is mantained in this GitHub repository in the `docs` folder. The `stable` branch contains the documentation of the latest stable version and `master` the documentation updated with the latest changes in the development branch. To contribute some documentation or improve the existing, feel free to fork this repository, make your changes and send a pull request.
 
 Remember the docs are licensed under a CC Share-Alike license. 
 
-## Useful References:
+### Useful References:
 
 - [W3c Css Home](http://www.w3.org/Style/CSS/)
