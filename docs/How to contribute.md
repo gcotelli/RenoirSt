@@ -29,7 +29,7 @@ or taking the latests development image from the [Continous Integration Server](
 
 The project documentation is mantained in this GitHub repository in the `docs` folder. The `stable` branch contains the documentation of the latest stable version and `master` the documentation updated with the latest changes in the development branch. To contribute some documentation or improve the existing, feel free to fork this repository, make your changes and send a pull request.
 
-Remember the docs are licensed under a CC Share-Alike license. 
+Remember the docs are licensed under a CC Attribution-ShareAlike license. 
 
 ### Useful References:
 
