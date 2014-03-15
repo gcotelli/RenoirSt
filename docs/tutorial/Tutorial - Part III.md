@@ -135,3 +135,28 @@ Evaluates to:
 
 The `Units` package (available using the ConfigurationBrowser in Pharo) includes some extensions that collides with RenoirSt.  Since version `1.1.0` this library is able to load automatically a compatibility package if it's loaded after `Units` package. To test this integration there's an [specific job](https://ci.inria.fr/pharo-contribution/job/RenoirSt-UnitsCompatibility/) in the contribution server, that loads first `Units` and later `RenoirSt`.
 [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-UnitsCompatibility)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-UnitsCompatibility/)
+
+### Seaside
+
+The library includes an optional group called `Seaside` including some useful extensions. The [Seaside](www.seaside.st) framework includes your own class modeling URLs, when the optional group is loaded the instances of `WAUrl` can be used in the properties requiring an URI:
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector div class: 'logo' ]
+  with: [:style | style backgroundImage: 'images/logo.png' seasideUrl ];
+  build
+```
+Evaluates to:
+```css
+div.logo
+{
+    background-image: url("images/logo.png");
+}
+```
+
+This optional group algo extends `CssDeclarationBlock` so it can be used as a `JSObject` in plugins requiring some style parameter.
+
+To load this group try something like:
+```smalltalk
+(ConfigurationOfRenoirSt project version: #stable) load: 'Seaside'
+```
