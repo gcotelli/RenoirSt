@@ -138,7 +138,7 @@ The `Units` package (available using the ConfigurationBrowser in Pharo) includes
 
 ### Seaside
 
-The library includes an optional group called `Seaside` including some useful extensions. The [Seaside](www.seaside.st) framework includes your own class modeling URLs, when the optional group is loaded the instances of `WAUrl` can be used in the properties requiring an URI:
+The library includes an optional configuration called `ConfigurationOfRenoirtStPlusSeaside` including some useful extensions. The [Seaside](www.seaside.st) framework includes your own class modeling URLs, when this configuration is loaded the instances of `WAUrl` can be used in the properties requiring an URI:
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
@@ -154,9 +154,14 @@ div.logo
 }
 ```
 
-This optional group algo extends `CssDeclarationBlock` so it can be used as a `JSObject` in plugins requiring some style parameter.
+This optional configuration also loads extensions to `CssDeclarationBlock` so it can be used as a `JSObject` in plugins requiring some style parameter.
 
-To load this group try something like:
+To load this extensions use the Configuration Browser or try something like:
 ```smalltalk
-(ConfigurationOfRenoirSt project version: #stable) load: 'Seaside'
+Gofer it    
+    url: 'http://smalltalkhub.com/mc/gcotelli/RenoirSt/main';
+    configurationOf: 'RenoirStPlusSeaside';
+    loadStable
 ```
+
+There's an integration job in the CI server, testing this specific configuration: [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-SeasideIntegration)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-SeasideIntegration/)
