@@ -128,3 +128,40 @@ Evaluates to:
 ##### References:
 - http://www.w3.org/TR/CSS2/media.html
 - http://www.w3.org/TR/css3-mediaqueries/
+
+## Interaction with other frameworks and libraries
+
+### Units
+
+The `Units` package (available using the ConfigurationBrowser in Pharo) includes some extensions that collides with RenoirSt.  Since version `1.1.0` this library is able to load automatically a compatibility package if it's loaded after `Units` package. To test this integration there's an [specific job](https://ci.inria.fr/pharo-contribution/job/RenoirSt-UnitsCompatibility/) in the contribution server, that loads first `Units` and later `RenoirSt`.
+[![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-UnitsCompatibility)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-UnitsCompatibility/)
+
+### Seaside
+
+The library includes an optional configuration called `ConfigurationOfRenoirtStPlusSeaside` including some useful extensions. The [Seaside](www.seaside.st) framework includes your own class modeling URLs, when this configuration is loaded the instances of `WAUrl` can be used in the properties requiring an URI:
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector div class: 'logo' ]
+  with: [:style | style backgroundImage: 'images/logo.png' seasideUrl ];
+  build
+```
+Evaluates to:
+```css
+div.logo
+{
+    background-image: url("images/logo.png");
+}
+```
+
+This optional configuration also loads extensions to `CssDeclarationBlock` so it can be used as a `JSObject` in plugins requiring some style parameter.
+
+To load this extensions use the Configuration Browser or try something like:
+```smalltalk
+Gofer it    
+    url: 'http://smalltalkhub.com/mc/gcotelli/RenoirSt/main';
+    configurationOf: 'RenoirStPlusSeaside';
+    loadStable
+```
+
+There's an integration job in the CI server, testing this specific configuration: [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-SeasideIntegration)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-SeasideIntegration/)
