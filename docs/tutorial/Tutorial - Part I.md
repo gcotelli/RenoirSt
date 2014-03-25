@@ -40,7 +40,7 @@ The properties API is mostly defined following these rules:
 
 #### Lengths, Angles, Times and Frequencies
 
-Another thing to note is how `2 px` was interpreted. The resulting object is a `CssMeasure`. The library provides out-of-the-box support for the lenght, angle, time and frequency units in the CSS spec. There are extensions for `Integer` and `Float` classes allowing to obtain lenghts. The supported length units are: 
+Another thing to note is how `2 px` was interpreted. The resulting object is a `CssMeasure`. The library provides out-of-the-box support for the length, angle, time and frequency units in the CSS spec. There are extensions for `Integer` and `Float` classes allowing to obtain lengths. The supported length units are: 
 - `em` relative to font size
 - `ex` relative to "x" height
 - `ch` relative to width of the zero glyph in the element's font
