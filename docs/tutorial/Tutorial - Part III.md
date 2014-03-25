@@ -98,7 +98,7 @@ The following media feature messages are supported:
 	- `maxResolution:`
 - `scan:` accepting `CssMediaQueryConstants progressive` or `CssMediaQueryConstants interlace`
 
-A new basic type is added: `CssResolution`. This kind of measures can be created sending the messages `dpi` (dots per inch) or `dpcm` (dots per centimeter) to an integer or float.
+New units are added using the `CssMeasure` abstraction. This kind of measures can be created sending the messages `dpi` (dots per inch), `dpcm` (dots per centimeter) or `dppx` (dots per pixel unit) to an integer or float.
 
 Let's see a final example to better understand the media features support:
 ```smalltalk
