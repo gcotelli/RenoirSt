@@ -1,0 +1,1 @@
+red: aRedComponent green: aGreenComponent blue: aBlueComponent alpha: aNumber		^ self		red: aRedComponent		green: aGreenComponent		blue: aBlueComponent		alphaChannel: (CssAlphaChannelProvided withValue: aNumber)

@@ -1,0 +1,1 @@
+thick	^'thick'

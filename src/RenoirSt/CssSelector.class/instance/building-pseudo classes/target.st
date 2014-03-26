@@ -1,0 +1,1 @@
+target	^ CssPseudoClassSelector targetOn: self

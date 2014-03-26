@@ -1,0 +1,1 @@
+select	 ^self descendantOfType: 'select'

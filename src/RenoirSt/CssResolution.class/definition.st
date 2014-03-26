@@ -1,0 +1,1 @@
+CssObject subclass: #CssResolution	instanceVariableNames: 'quantity unit'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Units'

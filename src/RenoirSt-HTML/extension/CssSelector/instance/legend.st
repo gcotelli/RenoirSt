@@ -1,0 +1,1 @@
+legend	 ^self descendantOfType: 'legend'

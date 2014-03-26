@@ -1,0 +1,1 @@
+div	 ^self descendantOfType: 'div'

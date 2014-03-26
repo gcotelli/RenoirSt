@@ -1,0 +1,1 @@
+disabledOn: aSelector 		^self named: 'disabled' over: aSelector 

@@ -1,0 +1,1 @@
+initializeOn: aWriteStream 		stream := aWriteStream 

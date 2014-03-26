@@ -1,0 +1,1 @@
+CssAlphaChannel subclass: #CssAlphaChannelProvided	instanceVariableNames: 'value'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Colors'

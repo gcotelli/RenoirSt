@@ -1,0 +1,1 @@
+listStyleImage: aCssValue	self propertyAt: 'list-style-image' put: aCssValue 

@@ -1,0 +1,1 @@
+Object subclass: #ConfigurationOfRenoirSt	instanceVariableNames: 'project'	classVariableNames: 'LastVersionLoad'	poolDictionaries: ''	category: 'ConfigurationOfRenoirSt'

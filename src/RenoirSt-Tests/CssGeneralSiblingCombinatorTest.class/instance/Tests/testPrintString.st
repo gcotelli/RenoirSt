@@ -1,0 +1,1 @@
+testPrintString	| predecessor sucessor |		predecessor := CssUniversalSelector implicit class: 'custom'.	sucessor := CssTypeSelector ofType: 'div'.		self assert: (CssGeneralSiblingCombinator between: predecessor and: sucessor) printString equals: '.custom ~ div'

@@ -1,0 +1,1 @@
+testPrintStringOfLinkPseudoClasses	| baseSelector |	baseSelector := CssUniversalSelector explicit.	self		assert: (CssPseudoClassSelector linkOn: baseSelector) printString equals: '*:link';		assert: (CssPseudoClassSelector visitedOn: baseSelector) printString equals: '*:visited'

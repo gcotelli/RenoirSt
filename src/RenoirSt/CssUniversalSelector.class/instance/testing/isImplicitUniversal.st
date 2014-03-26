@@ -1,0 +1,1 @@
+isImplicitUniversal	^ representation isEmpty

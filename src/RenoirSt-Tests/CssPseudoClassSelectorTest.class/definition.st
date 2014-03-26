@@ -1,0 +1,1 @@
+TestCase subclass: #CssPseudoClassSelectorTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests-Selectors'

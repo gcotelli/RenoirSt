@@ -1,0 +1,1 @@
+disabled	^ CssPseudoClassSelector disabledOn:  self

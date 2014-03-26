@@ -1,0 +1,1 @@
+initializeWithValue: aNumber 		value := aNumber 

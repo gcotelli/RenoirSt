@@ -1,0 +1,1 @@
+smallCaps	^'small-caps'

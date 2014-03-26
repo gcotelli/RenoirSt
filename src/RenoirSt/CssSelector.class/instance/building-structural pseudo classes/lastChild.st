@@ -1,0 +1,1 @@
+lastChild	^ CssPseudoClassSelector lastChildOn: self

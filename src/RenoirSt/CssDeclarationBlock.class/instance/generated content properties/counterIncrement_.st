@@ -1,0 +1,1 @@
+counterIncrement: aCssValue	self propertyAt: 'counter-increment' put: aCssValue 

@@ -1,0 +1,1 @@
+CssSelector subclass: #CssAttributeSelector	instanceVariableNames: 'selector attributeName matchingCondition'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Selectors'

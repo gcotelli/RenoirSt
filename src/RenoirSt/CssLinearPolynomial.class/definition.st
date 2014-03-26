@@ -1,0 +1,1 @@
+CssObject subclass: #CssLinearPolynomial	instanceVariableNames: 'dependentCoefficient independentCoefficient'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Selectors'

@@ -1,0 +1,1 @@
+TestCase subclass: #CssIdentifiedColorTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests-Colors'

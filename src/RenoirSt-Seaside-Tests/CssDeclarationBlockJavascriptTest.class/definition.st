@@ -1,0 +1,1 @@
+TestCase subclass: #CssDeclarationBlockJavascriptTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Seaside-Tests'

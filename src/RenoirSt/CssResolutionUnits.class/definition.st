@@ -1,0 +1,1 @@
+SharedPool subclass: #CssResolutionUnits	instanceVariableNames: ''	classVariableNames: 'DotsPerCentimeter DotsPerInch'	poolDictionaries: ''	category: 'RenoirSt-Units'

@@ -1,0 +1,1 @@
+direction: aCssValue	self propertyAt: 'direction' put: aCssValue 

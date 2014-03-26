@@ -1,0 +1,1 @@
+functionNameFor: aString 		^aString 

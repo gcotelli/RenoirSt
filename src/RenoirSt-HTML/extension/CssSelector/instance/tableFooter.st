@@ -1,0 +1,1 @@
+tableFooter	 ^self descendantOfType: 'tfoot'

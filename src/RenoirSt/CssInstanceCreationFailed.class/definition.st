@@ -1,0 +1,1 @@
+Error subclass: #CssInstanceCreationFailed	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Common'

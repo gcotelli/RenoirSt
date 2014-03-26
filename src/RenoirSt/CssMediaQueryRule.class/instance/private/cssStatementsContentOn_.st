@@ -1,0 +1,1 @@
+cssStatementsContentOn: aStream	| tabStream |	tabStream := TabOnNewLineWriteStream on: aStream.	tabStream newLine.	styleSheet cssContentOn: tabStream

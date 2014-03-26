@@ -1,0 +1,1 @@
+initializeIdentifiedBy: anIdentifier	identifier := anIdentifier 

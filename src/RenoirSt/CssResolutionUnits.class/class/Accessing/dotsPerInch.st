@@ -1,0 +1,1 @@
+dotsPerInch	^DotsPerInch 

@@ -1,0 +1,1 @@
+firstLetterOf: aSelector 		^self named: 'first-letter' of: aSelector 

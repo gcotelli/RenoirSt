@@ -1,0 +1,1 @@
+initialize		Centimeter := CssUnit identifiedBy: 'cm'.	FontSize := CssUnit identifiedBy: 'em'.	Inch := CssUnit identifiedBy: 'in'.	Millimeter := CssUnit identifiedBy: 'mm'.	Pica := CssUnit identifiedBy: 'pc'.	Pixel := CssUnit identifiedBy: 'px'.	Point := CssUnit identifiedBy: 'pt'.	XHeight := CssUnit identifiedBy: 'ex'

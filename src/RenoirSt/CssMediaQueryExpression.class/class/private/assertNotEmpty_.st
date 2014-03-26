@@ -1,0 +1,1 @@
+assertNotEmpty: aString	aString isEmpty		ifTrue: [ CssInstanceCreationFailed signal: 'A media feature name can''t be empty' ]

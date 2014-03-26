@@ -1,0 +1,1 @@
+root	^ CssPseudoClassSelector rootOn:  self

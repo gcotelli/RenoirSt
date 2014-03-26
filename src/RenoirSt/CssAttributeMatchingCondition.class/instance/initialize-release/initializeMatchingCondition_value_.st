@@ -1,0 +1,1 @@
+initializeMatchingCondition: aCondition value: aValue	condition := aCondition.	attributeValue := aValue

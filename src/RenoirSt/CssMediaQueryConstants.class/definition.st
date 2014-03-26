@@ -1,0 +1,1 @@
+SharedPool subclass: #CssMediaQueryConstants	instanceVariableNames: ''	classVariableNames: 'Braille Embossed Handheld Interlace Landscape Portrait Print Progressive Projection Screen Speech TTY Tv'	poolDictionaries: ''	category: 'RenoirSt-MediaQueries'

@@ -1,0 +1,1 @@
+with: a 	^ self new initializeWith: a 

@@ -1,0 +1,1 @@
+clear: aCssValue	self propertyAt: 'clear' put: aCssValue 

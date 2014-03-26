@@ -1,0 +1,1 @@
+hover	^ CssPseudoClassSelector hoverOn: self

@@ -1,0 +1,1 @@
+CssObject subclass: #CssRuleSet	instanceVariableNames: 'selector declarationBlock comment'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt'

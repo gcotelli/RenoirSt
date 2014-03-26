@@ -1,0 +1,1 @@
+initializeForFeatureNamed: aString withValues: aCollection	mediaFeature := aString.	values := aCollection

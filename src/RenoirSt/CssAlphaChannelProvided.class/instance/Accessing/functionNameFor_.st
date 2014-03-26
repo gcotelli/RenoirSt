@@ -1,0 +1,1 @@
+functionNameFor: aString 		^'<1s>a' expandMacrosWith: aString 

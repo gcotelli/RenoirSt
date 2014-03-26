@@ -1,0 +1,1 @@
+testInstanceCreation	| unit |		unit := CssUnit identifiedBy: 'px'.		self assert: (CssLength quantity: 4 unit: unit) printString = '4px'

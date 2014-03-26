@@ -1,0 +1,1 @@
+identifiedBy: aString	self subclassResponsibility 

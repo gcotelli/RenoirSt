@@ -1,0 +1,1 @@
+TestCase subclass: #CssImportantDeclarationTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests'

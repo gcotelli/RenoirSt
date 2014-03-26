@@ -1,0 +1,1 @@
+lastOfType	^ CssPseudoClassSelector lastOfTypeOn: self

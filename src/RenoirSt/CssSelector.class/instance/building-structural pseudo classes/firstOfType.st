@@ -1,0 +1,1 @@
+firstOfType	^ CssPseudoClassSelector firstOfTypeOn: self

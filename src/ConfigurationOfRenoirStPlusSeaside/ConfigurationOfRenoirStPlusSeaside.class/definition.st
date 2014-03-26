@@ -1,0 +1,1 @@
+Object subclass: #ConfigurationOfRenoirStPlusSeaside	instanceVariableNames: 'project'	classVariableNames: 'LastVersionLoad'	poolDictionaries: ''	category: 'ConfigurationOfRenoirStPlusSeaside'

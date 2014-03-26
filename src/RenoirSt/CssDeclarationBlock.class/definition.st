@@ -1,0 +1,1 @@
+CssObject subclass: #CssDeclarationBlock	instanceVariableNames: 'declarations rulePrecedencePolicy'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt'

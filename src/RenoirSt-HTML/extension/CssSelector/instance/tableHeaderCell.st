@@ -1,0 +1,1 @@
+tableHeaderCell	 ^self descendantOfType: 'th'
