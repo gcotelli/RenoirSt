@@ -1,1 +1,1 @@
-pt	 ^CssLength quantity: self unit: CssLengthUnits point 
+pt	 ^self newMeasureWith: CssLengthUnits point 

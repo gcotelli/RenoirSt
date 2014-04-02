@@ -1,1 +1,1 @@
-initialize		DotsPerCentimeter := 'dpcm'.	DotsPerInch := 'dpi'
+initialize		DotsPerCentimeter := 'dpcm'.	DotsPerInch := 'dpi'.	DotsPerPixelUnit := 'dppx'

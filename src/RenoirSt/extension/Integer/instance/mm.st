@@ -1,1 +1,1 @@
-mm	 ^CssLength quantity: self unit: CssLengthUnits millimeter   
+mm	 ^self newMeasureWith:  CssLengthUnits millimeter   

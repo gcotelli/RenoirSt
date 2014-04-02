@@ -1,0 +1,1 @@
+noCommonLigatures		^'no-common-ligatures'

@@ -1,1 +1,1 @@
-em	 ^CssLength quantity: self unit: CssLengthUnits fontSize
+em	 ^self newMeasureWith: CssLengthUnits fontSize

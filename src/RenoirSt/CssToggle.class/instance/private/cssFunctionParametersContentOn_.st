@@ -1,0 +1,1 @@
+cssFunctionParametersContentOn: aWriteStream	values		do: [ :value | value cssContentOn: aWriteStream ]		separatedBy: [ 			aWriteStream				nextPut: $,;				space ]

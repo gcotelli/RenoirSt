@@ -1,0 +1,1 @@
+titlingCaps		^'titling-caps'

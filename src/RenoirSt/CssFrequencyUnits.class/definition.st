@@ -1,0 +1,1 @@
+SharedPool subclass: #CssFrequencyUnits	instanceVariableNames: ''	classVariableNames: 'Hertz KiloHertz'	poolDictionaries: ''	category: 'RenoirSt-Units'

@@ -1,1 +1,1 @@
-ex	 ^CssLength quantity: self unit: CssLengthUnits xHeight 
+ex	 ^self newMeasureWith: CssLengthUnits xHeight 

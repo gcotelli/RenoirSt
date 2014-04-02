@@ -1,1 +1,1 @@
-px	 ^CssLength quantity: self unit: CssLengthUnits pixel
+px	 ^self newMeasureWith: CssLengthUnits pixel

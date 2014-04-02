@@ -1,0 +1,1 @@
+initializeWithValue: aCssValue	value := aCssValue

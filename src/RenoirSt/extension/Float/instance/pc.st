@@ -1,1 +1,1 @@
-pc	 ^CssLength quantity: self unit: CssLengthUnits pica
+pc	 ^self newMeasureWith: CssLengthUnits pica

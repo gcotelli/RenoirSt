@@ -1,0 +1,1 @@
+Object subclass: #CssFontConstants	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Fonts'

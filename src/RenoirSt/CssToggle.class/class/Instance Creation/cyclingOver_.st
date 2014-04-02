@@ -1,0 +1,1 @@
+cyclingOver: aCollection 		^self new initializeCyclingOver: aCollection 

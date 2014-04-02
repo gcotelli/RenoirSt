@@ -1,1 +1,1 @@
-in	 ^CssLength quantity: self unit: CssLengthUnits inch 
+in	 ^self newMeasureWith:  CssLengthUnits inch 

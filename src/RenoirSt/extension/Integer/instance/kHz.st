@@ -1,0 +1,1 @@
+kHz	^ self newMeasureWith: CssFrequencyUnits kiloHertz 

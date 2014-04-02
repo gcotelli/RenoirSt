@@ -1,0 +1,1 @@
+initializeCyclingOver: aCollection 		values := aCollection 

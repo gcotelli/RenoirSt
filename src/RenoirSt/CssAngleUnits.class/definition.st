@@ -1,0 +1,1 @@
+SharedPool subclass: #CssAngleUnits	instanceVariableNames: ''	classVariableNames: 'Degree Gradian Radian Turn'	poolDictionaries: ''	category: 'RenoirSt-Units'

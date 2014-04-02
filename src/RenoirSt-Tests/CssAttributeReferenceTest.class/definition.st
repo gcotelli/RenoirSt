@@ -1,0 +1,1 @@
+TestCase subclass: #CssAttributeReferenceTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests-Units'

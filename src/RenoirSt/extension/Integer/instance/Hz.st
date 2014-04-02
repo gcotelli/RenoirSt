@@ -1,0 +1,1 @@
+Hz	^ self newMeasureWith: CssFrequencyUnits hertz

@@ -1,1 +1,1 @@
-dpi	 ^CssResolution quantity: self unit: CssResolutionUnits dotsPerInch 
+dpi	 ^self newMeasureWith: CssResolutionUnits dotsPerInch 

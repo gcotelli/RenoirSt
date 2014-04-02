@@ -1,1 +1,1 @@
-cm	 ^CssLength quantity: self unit: CssLengthUnits centimeter  
+cm	 ^self newMeasureWith:  CssLengthUnits centimeter  
