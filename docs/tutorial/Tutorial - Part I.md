@@ -123,7 +123,7 @@ Notice the difference in the message used because there is no alpha channel spec
 
 #### Constants
 
-A lot of values for CSS properties are just keyword constants. This support is provided by the class `CssConstants`.
+A lot of values for CSS properties are just keyword constants. This support is provided by the classes `CssConstants` and `CssFontConstants`.
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
