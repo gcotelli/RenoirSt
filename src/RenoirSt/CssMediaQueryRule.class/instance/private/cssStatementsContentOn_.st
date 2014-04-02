@@ -1,1 +1,1 @@
-cssStatementsContentOn: aStream	| tabStream |	tabStream := TabOnNewLineWriteStream on: aStream.	tabStream newLine.	styleSheet cssContentOn: tabStream
+cssStatementsContentOn: aStream	| tabStream |	tabStream := IndentOnNewLineWriteStream on: aStream.	tabStream newLine.	styleSheet cssContentOn: tabStream
