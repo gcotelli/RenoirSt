@@ -1,0 +1,1 @@
+ofType: aString	^ self new initializeOfType: aString 

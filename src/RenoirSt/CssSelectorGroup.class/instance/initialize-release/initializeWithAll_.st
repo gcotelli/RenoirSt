@@ -1,0 +1,1 @@
+initializeWithAll: aCollection 		selectors := aCollection 

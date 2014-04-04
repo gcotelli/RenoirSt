@@ -1,0 +1,1 @@
+visited	^ CssPseudoClassSelector visitedOn: self

@@ -1,0 +1,1 @@
+lowerLatin	^'lower-latin'

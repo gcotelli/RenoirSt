@@ -1,0 +1,1 @@
+Lengths refer to horizontal or vertical measurements.

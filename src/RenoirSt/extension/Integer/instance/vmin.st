@@ -1,0 +1,1 @@
+vmin	 ^self newMeasureWith:  CssLengthUnits onePercentOfViewportSmallerDimension 

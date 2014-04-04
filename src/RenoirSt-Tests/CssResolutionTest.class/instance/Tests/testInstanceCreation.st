@@ -1,0 +1,1 @@
+testInstanceCreation	| unit |		unit := CssUnit identifiedBy: 'dpi'.		self assert: (CssResolution quantity: 4 unit: unit) printString = '4dpi'

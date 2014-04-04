@@ -1,0 +1,1 @@
+borderStyle: aBorderWidth		self propertyAt: 'border-style' put: aBorderWidth 

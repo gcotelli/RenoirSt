@@ -1,0 +1,1 @@
+testCreationShortcuts		self		assert: 4 dpi printString = '4dpi';		assert: 1 dpcm printString = '1dpcm'

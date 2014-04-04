@@ -1,0 +1,1 @@
+There are two types of length units: relative and absolute. Relative length units specify a length relative to another length property. Style sheets that use relative units will more easily scale from one medium to another (e.g., from a computer display to a laser printer).

@@ -1,0 +1,1 @@
+listItem	 ^self descendantOfType: 'li'

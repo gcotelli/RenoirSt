@@ -1,0 +1,1 @@
+listStyle: aCssValue	self propertyAt: 'list-style' put: aCssValue 

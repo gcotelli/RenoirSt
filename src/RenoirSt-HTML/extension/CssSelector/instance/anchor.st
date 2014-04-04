@@ -1,0 +1,1 @@
+anchor	 ^self descendantOfType: 'a'

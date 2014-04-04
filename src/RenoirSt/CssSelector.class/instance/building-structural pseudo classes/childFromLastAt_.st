@@ -1,0 +1,1 @@
+childFromLastAt: anIndex	^ CssPseudoClassSelector childFromLastAt: anIndex on: self

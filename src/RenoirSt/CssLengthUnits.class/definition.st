@@ -1,0 +1,1 @@
+SharedPool subclass: #CssLengthUnits	instanceVariableNames: ''	classVariableNames: 'Centimeter FontSize FontSizeOfRootElement Inch Millimeter OnePercentOfViewportHeight OnePercentOfViewportLargerDimension OnePercentOfViewportSmallerDimension OnePercentOfViewportWidth Pica Pixel Point XHeight ZeroWidth'	poolDictionaries: ''	category: 'RenoirSt-Units'

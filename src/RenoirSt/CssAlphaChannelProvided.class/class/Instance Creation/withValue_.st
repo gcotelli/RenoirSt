@@ -1,0 +1,1 @@
+withValue: aNumber 		self assertBetweenZeroAndOne: aNumber.	^self new initializeWithValue: aNumber 

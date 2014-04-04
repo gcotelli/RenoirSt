@@ -1,0 +1,1 @@
+CssFunction subclass: #CssToggle	instanceVariableNames: 'values'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt'

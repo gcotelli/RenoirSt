@@ -1,0 +1,1 @@
+table	 ^self descendantOfType: 'table'

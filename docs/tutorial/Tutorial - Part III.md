@@ -60,7 +60,7 @@ The media query builder will match any media type by default. To specify a media
 The media query builder supports a variety of messages for additional conditions (called media features). Media features are used in expressions to describe requirements of the output device.
 
 The following media feature messages are supported:
-- Accepting a `CssLenght`
+- Accepting a `CssMeasure` with length units
 	- `width:` 
 	- `minWidth:`
 	- `maxWidht:`
@@ -92,13 +92,13 @@ The following media feature messages are supported:
 	- `minMonochrome:`
 	- `maxMonochrome:`
 	- `grid:` the argument must be 1 or 0
-- Accepting a `CssResolution`
+- Accepting a `CssMeasure` with resolution units
 	- `resolution:`
 	- `minResolution:`
 	- `maxResolution:`
 - `scan:` accepting `CssMediaQueryConstants progressive` or `CssMediaQueryConstants interlace`
 
-A new basic type is added: `CssResolution`. This kind of measures can be created sending the messages `dpi` (dots per inch) or `dpcm` (dots per centimeter) to an integer or float.
+New units for resolutions are added using the `CssMeasure` abstraction. This kind of measures can be created sending the messages `dpi` (dots per inch), `dpcm` (dots per centimeter) or `dppx` (dots per pixel unit) to an integer or float.
 
 Let's see a final example to better understand the media features support:
 ```smalltalk

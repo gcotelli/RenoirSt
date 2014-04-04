@@ -1,0 +1,1 @@
+rem	 ^self newMeasureWith: CssLengthUnits fontSizeOfRootElement  

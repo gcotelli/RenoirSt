@@ -1,0 +1,1 @@
+quantity: aNumber unit: aCssLenghtUnit 		^self new initializeQuantity: aNumber unit: aCssLenghtUnit 

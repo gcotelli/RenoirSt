@@ -1,0 +1,1 @@
+TestCase subclass: #CssRGBColorTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests-Colors'

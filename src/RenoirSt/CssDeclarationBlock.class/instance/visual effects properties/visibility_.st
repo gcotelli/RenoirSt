@@ -1,0 +1,1 @@
+visibility: aCssValue	self propertyAt: 'visibility' put: aCssValue 

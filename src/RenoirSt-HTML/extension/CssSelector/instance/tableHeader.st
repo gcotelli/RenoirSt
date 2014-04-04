@@ -1,0 +1,1 @@
+tableHeader	 ^self descendantOfType: 'thead'

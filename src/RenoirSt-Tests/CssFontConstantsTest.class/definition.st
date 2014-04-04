@@ -1,0 +1,1 @@
+TestCase subclass: #CssFontConstantsTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests-Fonts'

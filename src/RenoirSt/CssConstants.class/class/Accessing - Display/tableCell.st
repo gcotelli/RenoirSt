@@ -1,0 +1,1 @@
+tableCell		^ 'table-cell'

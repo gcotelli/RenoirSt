@@ -1,0 +1,1 @@
+Object subclass: #CssRulePrecedencePolicy	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt'

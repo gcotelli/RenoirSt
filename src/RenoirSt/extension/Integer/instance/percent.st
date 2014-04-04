@@ -1,0 +1,1 @@
+percent	 ^CssPercentage of: self

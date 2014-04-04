@@ -1,0 +1,1 @@
+initializeWithAll: anStatementCollection	statements := anStatementCollection

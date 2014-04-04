@@ -1,0 +1,1 @@
+havingAttribute: aString 	 	^CssAttributeSelector having: self theAttribute: aString 

@@ -1,0 +1,1 @@
+before	^CssPseudoElementSelector before: self

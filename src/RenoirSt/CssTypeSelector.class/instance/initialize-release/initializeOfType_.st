@@ -1,0 +1,1 @@
+initializeOfType: aString		elementType  := aString. 

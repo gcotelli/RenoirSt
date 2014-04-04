@@ -1,0 +1,1 @@
+borderRadius: aCssValue	self propertyAt: 'border-radius' put: aCssValue  

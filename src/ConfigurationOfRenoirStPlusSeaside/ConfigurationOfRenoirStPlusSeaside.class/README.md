@@ -1,0 +1,1 @@
+Metacello configuration of RenoirSt + Seaside

@@ -1,0 +1,1 @@
+captionSide: aCssValue	self propertyAt: 'caption-side' put: aCssValue 

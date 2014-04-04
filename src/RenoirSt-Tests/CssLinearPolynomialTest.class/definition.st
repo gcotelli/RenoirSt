@@ -1,0 +1,1 @@
+TestCase subclass: #CssLinearPolynomialTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests-Selectors'

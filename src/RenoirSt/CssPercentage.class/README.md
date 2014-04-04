@@ -1,0 +1,1 @@
+A CssPercentage is a representation for a number expressed as percentage.

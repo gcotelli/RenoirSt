@@ -1,0 +1,1 @@
+span	 ^self descendantOfType: 'span'

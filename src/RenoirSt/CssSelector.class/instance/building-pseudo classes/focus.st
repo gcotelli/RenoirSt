@@ -1,0 +1,1 @@
+focus	^ CssPseudoClassSelector focusOn: self

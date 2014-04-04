@@ -1,0 +1,1 @@
+siblingOfTypeAt: anIndex	^ CssPseudoClassSelector siblingOfTypeAt:  anIndex on: self

@@ -1,0 +1,1 @@
+sansSerif		^ 'sans-serif'

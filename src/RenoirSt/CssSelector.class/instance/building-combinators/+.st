@@ -1,0 +1,1 @@
++ aSelector	^CssAdjacentSiblingCombinator between: self and: aSelector 

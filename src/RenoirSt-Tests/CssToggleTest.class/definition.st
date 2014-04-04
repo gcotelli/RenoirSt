@@ -1,0 +1,1 @@
+TestCase subclass: #CssToggleTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests'

@@ -1,0 +1,1 @@
+newLine		stream		newLine;		tab

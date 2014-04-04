@@ -1,0 +1,1 @@
+applyTo: aCssDeclaration 		^CssImportantDeclaration over: aCssDeclaration 

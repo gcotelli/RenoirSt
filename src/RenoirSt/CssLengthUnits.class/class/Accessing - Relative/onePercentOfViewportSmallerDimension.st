@@ -1,0 +1,1 @@
+onePercentOfViewportSmallerDimension 	^OnePercentOfViewportSmallerDimension 

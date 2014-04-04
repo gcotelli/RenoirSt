@@ -1,0 +1,1 @@
+A CssAttributeReference represents a CSS function allowed as a component value in properties applied to an element or pseudo-element. It returns the value of an attribute on the element. If used on a pseudo-element, it returns the value of the attribute on the pseudo-element's originating element.

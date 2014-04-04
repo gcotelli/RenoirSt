@@ -1,0 +1,1 @@
+inlineTable		^ 'inline-table'

@@ -1,0 +1,1 @@
+CssObject subclass: #CssPercentage	instanceVariableNames: 'number'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Units'

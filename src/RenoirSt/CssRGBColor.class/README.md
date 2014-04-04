@@ -1,0 +1,1 @@
+The RGB color model is used in numerical color specifications.

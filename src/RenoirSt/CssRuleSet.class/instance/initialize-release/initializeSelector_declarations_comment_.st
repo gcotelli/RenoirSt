@@ -1,0 +1,1 @@
+initializeSelector: aSelector declarations: aDeclarationBlock comment: aComment		selector := aSelector.	declarationBlock := aDeclarationBlock.	comment := aComment

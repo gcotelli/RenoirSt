@@ -1,0 +1,1 @@
+withAll: anStatementCollection		^self new initializeWithAll: anStatementCollection

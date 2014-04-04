@@ -1,0 +1,1 @@
+cssContentOn: aStream	self cssCommentContentOn: aStream.	selector cssContentOn: aStream.	aStream newLine.	declarationBlock cssContentOn: aStream

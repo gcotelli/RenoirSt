@@ -1,0 +1,1 @@
+deg	 ^self newMeasureWith: CssAngleUnits degree    

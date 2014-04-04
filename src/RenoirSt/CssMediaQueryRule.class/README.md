@@ -1,0 +1,1 @@
+A media query is a logical expression that is either true or false. A media query is true if the media type of the media query matches the media type of the device where the user agent is running (as defined in the "Applies to" line), and all expressions in the media query are true.

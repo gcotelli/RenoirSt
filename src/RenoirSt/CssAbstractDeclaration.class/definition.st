@@ -1,0 +1,1 @@
+CssObject subclass: #CssAbstractDeclaration	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt'

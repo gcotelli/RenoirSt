@@ -1,0 +1,1 @@
+A CssColorUnit is an abstract color unit for CSS

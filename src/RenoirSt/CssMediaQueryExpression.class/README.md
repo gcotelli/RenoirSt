@@ -1,0 +1,1 @@
+A CssMediaQueryExpression represents a condition to check of a particular media feature.

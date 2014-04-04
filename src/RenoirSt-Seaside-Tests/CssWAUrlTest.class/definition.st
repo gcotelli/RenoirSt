@@ -1,0 +1,1 @@
+TestCase subclass: #CssWAUrlTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Seaside-Tests'

@@ -1,0 +1,1 @@
+A CSS style sheet, for any level of CSS, consists of a list of statements. There are two kinds of statements: at-rules and rule sets. There may be white space around the statements.

@@ -38,17 +38,37 @@ The properties API is mostly defined following these rules:
 
 ### Basic CSS Types
 
-#### Lenghts
+#### Lengths, Angles, Times and Frequencies
 
-Another to note is how `2 px` was interpreted. The resulting object is a `CssLenght`. The library provides out-of-the-box support for the lenght units in the CSS spec. There are extensions for `Integer` and `Float` classes allowing to obtain lenghts. The supported units are: 
+Another thing to note is how `2 px` was interpreted. The resulting object is a `CssMeasure`. The library provides out-of-the-box support for the length, angle, time and frequency units in the CSS spec. There are extensions for `Integer` and `Float` classes allowing to obtain lengths. The supported length units are: 
 - `em` relative to font size
 - `ex` relative to "x" height
+- `ch` relative to width of the zero glyph in the element's font
+- `rem` relative to font size of root element
+- `vw` 1% of viewport's width
+- `vh` 1% of viewport's height
+- `vmin` 1% of viewport's smaller dimension
+- `vmax` 1% of viewport's larger dimension
 - `cm` centimeters
 - `mm` millimeteres
 - `in` inches
 - `pc` picas
 - `pt` points 
 - `px` pixels (note that CSS has some special definition for pixel)
+
+The supported angle units are:
+- `deg` degrees
+- `grad` gradians
+- `rad` radians
+- `turn` turns
+
+The supported time units are:
+- `s` seconds
+- `ms` milliseconds
+
+The supported frequency units are:
+- `Hz` Hertz
+- `kHz` KiloHertz
 
 It also supports the creation of percentages: `50 percent` is expressed as `50%` in the resulting CSS.
 
@@ -103,7 +123,7 @@ Notice the difference in the message used because there is no alpha channel spec
 
 #### Constants
 
-A lot of values for CSS properties are just keyword constants. This support is provided by the class `CssConstants`.
+A lot of values for CSS properties are just keyword constants. This support is provided by the classes `CssConstants` and `CssFontConstants`.
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
@@ -178,5 +198,93 @@ Evaluates to:
 div
 {
 	margin: 2pc;
+}
+```
+
+### Functional Notation
+
+A functional notation is a type of CSS component value that can represent more complex types or invoke special processing. The following notations are supported:
+
+#### Mathematical Expressions: `calc()`
+
+The library provides support for math expressions using the  `CssMathExpression` abstraction. This math expressions are built instantiating a `CssMathExpression` with the first operand, and sending to it `+`, `-`, `*` or `/` messages. Lets see some example:
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector div ]
+  with: [:style | style margin: (CssMathExpression on: 2 pc) / 3 + 2 percent ];
+  build
+```
+Evaluates to:
+```css
+div
+{
+	margin: calc(2pc / 3 + 2%);
+}
+```
+
+#### Toggling between values: `toggle()`
+
+This kind of expressions allows descendant elements to cycle over a list of values instead of inheriting the same value. It's supported using the `CssToggle` abstraction. 
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector unorderedList unorderedList ]
+  with: [:style | style listStyleType: (CssToggle cyclingOver: { CssConstants disc. CssConstants circle. CssConstants square}) ];
+  build
+```
+Evaluates to:
+```css
+ul ul
+{
+	list-style-type: toggle(disc, circle, square);
+}
+```
+
+#### Attribute references: `attr()`
+
+The attr() function is allowed as a component value in properties applied to an element or pseudo-element. It returns the value of an attribute on the element. If used on a pseudo-element, it returns the value of the attribute on the pseudo-element's originating element. It's supported using the `CssAttributeReference` abstraction. This function can be used simply providing an attribute name:
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector div before ]
+  with: [:style | style content: (CssAttributeReference toAttributeNamed: 'title') ];
+  build
+```
+Evaluates to:
+```css
+div::before
+{
+	content: attr(title string);
+}
+```
+or providing also the type or unit of the attribute (if no type or unit is specified the `string` type is assumed):
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector div  ]
+  with: [:style | style width: (CssAttributeReference toAttributeNamed: 'height' ofType: CssLengthUnits pixels) ];
+  build
+```
+Evaluates to:
+```css
+div
+{
+	width: attr(height px);
+}
+```
+
+also it's possible to provide a fallback value in case the attribute is not present:
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector div before ]
+  with: [:style | style content: (CssAttributeReference toAttributeNamed: 'title' ofType: 'string' withFallback: '"Missing title"') ];
+  build
+```
+Evaluates to:
+```css
+div::before
+{
+	content: attr(title string, "Missing title");
 }
 ```

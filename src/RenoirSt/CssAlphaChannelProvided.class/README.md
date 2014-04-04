@@ -1,0 +1,1 @@
+A CssAlphaChannelProvided represents the presence of an alpha channel value

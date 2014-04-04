@@ -1,0 +1,1 @@
+initializeAbsoluteUnits	Centimeter := CssUnit identifiedBy: 'cm'.	Inch := CssUnit identifiedBy: 'in'.	Millimeter := CssUnit identifiedBy: 'mm'.	Pica := CssUnit identifiedBy: 'pc'.	Pixel := CssUnit identifiedBy: 'px'.	Point := CssUnit identifiedBy: 'pt'

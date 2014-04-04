@@ -1,0 +1,1 @@
+maxColor: anInteger 	self addExpressionForFeatureNamed: 'max-color' withValue: anInteger 

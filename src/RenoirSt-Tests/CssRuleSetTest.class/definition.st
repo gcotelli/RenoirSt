@@ -1,0 +1,1 @@
+TestCase subclass: #CssRuleSetTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests'

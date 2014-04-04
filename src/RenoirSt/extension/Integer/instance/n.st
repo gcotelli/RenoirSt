@@ -1,0 +1,1 @@
+n	 ^CssLinearPolynomial with: self
