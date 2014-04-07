@@ -1,0 +1,1 @@
+A CssComment is a representation of a textual comment

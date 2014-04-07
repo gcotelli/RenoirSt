@@ -201,6 +201,18 @@ div
 }
 ```
 
+Since version 1.3.0 is possible to also define stand-alone comments (not attached to any rule):
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  comment: 'A general comment';
+  build
+```
+Evaluates to:
+```css
+/*A general comment*/
+```
+
 ### Functional Notation
 
 A functional notation is a type of CSS component value that can represent more complex types or invoke special processing. The following notations are supported:
