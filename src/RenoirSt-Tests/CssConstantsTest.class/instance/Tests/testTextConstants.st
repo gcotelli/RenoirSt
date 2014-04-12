@@ -1,0 +1,1 @@
+testTextConstants		self		assert: CssConstants filled equals: 'filled';		assert: CssConstants open equals: 'open';		assert: CssConstants dot equals: 'dot';		assert: CssConstants doubleCircle equals: 'double-circle';		assert: CssConstants triangle equals: 'triangle';		assert: CssConstants sesame equals: 'sesame';		assert: CssConstants over equals: 'over'
