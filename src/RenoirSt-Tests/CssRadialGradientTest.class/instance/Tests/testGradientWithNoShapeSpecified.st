@@ -1,0 +1,1 @@
+testGradientWithNoShapeSpecified	| gradient |		gradient := CssRadialGradient fading: { CssSVGColors white. CssSVGColors red }.	self assert: gradient printString equals: 'radial-gradient(white, red)'

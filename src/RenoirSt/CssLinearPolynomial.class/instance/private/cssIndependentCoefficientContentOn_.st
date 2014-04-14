@@ -1,1 +1,1 @@
-cssIndependentCoefficientContentOn: aWriteStream	independentCoefficient isZero		ifFalse: [ 			independentCoefficient positive				ifTrue: [ aWriteStream nextPut: $+ ].			independentCoefficient cssContentOn: aWriteStream ]
+cssIndependentCoefficientContentOn: aWriteStream	independentCoefficient isZero		ifTrue: [ ^ self ].	independentCoefficient positive		ifTrue: [ aWriteStream nextPut: $+ ].	independentCoefficient cssContentOn: aWriteStream

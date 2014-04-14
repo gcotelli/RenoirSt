@@ -1,0 +1,1 @@
+CssObject subclass: #CssColorStop	instanceVariableNames: 'color stop'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Colors'
