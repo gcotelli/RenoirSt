@@ -1,0 +1,1 @@
+fading: aColorStopCollection 		^self shape: '' fading: aColorStopCollection 

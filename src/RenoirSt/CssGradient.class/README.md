@@ -1,0 +1,1 @@
+A gradient is an image that smoothly fades from one color to another. 

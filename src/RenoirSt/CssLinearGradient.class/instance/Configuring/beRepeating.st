@@ -1,0 +1,1 @@
+beRepeating	functionName := 'repeating-linear-gradient'

@@ -300,3 +300,105 @@ div::before
 	content: attr(title string, "Missing title");
 }
 ```
+
+#### Gradients: `linear-gradient()` `radial-gradient()` `repeating-linear-gradient()` `repeating-radial-gradient()`
+
+A gradient is an image that smoothly fades from one color to another. These are commonly used for subtle shading in background images, buttons, and many other things. The gradient notations described in this section allow an author to specify such an image in a terse syntax, so that the UA can generate the image automatically when rendering the page. This notation is supported using `CssLinearGradient` and `CssRadialGradient` asbtractions. 
+
+Let's see some examples for linear gradients:
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector div ]
+  with: [:style | style background: (CssLinearGradient fading: { CssSVGColors yellow. CssSVGColors blue }) ];
+  declareRuleSetFor: [:selector | selector div ]
+  with: [:style | style background: (CssLinearGradient to: CssConstants bottom fading: { CssSVGColors yellow. CssSVGColors blue }) ];
+  declareRuleSetFor: [:selector | selector div ]
+  with: [:style | style background: (CssLinearGradient rotated: 45 deg fading: { CssSVGColors yellow. CssSVGColors blue }) ];
+  declareRuleSetFor: [:selector | selector div ]
+  with: [:style | style background: (CssLinearGradient rotated: 90 deg fading: { CssSVGColors yellow. (CssColorStop for: CssSVGColors blue at: 30 percent) }) ];
+  declareRuleSetFor: [:selector | selector div ]
+  with: [:style | style background: (CssLinearGradient fading: { CssSVGColors yellow. (CssColorStop for: CssSVGColors blue at: 20 percent). CssSVGColors green}) ];
+  declareRuleSetFor: [:selector | selector div ]
+  with: [:style | style background: (CssLinearGradient to: { CssConstants top. CssConstants right } fading: { CssSVGColors red.  CssSVGColors white. CssSVGColors blue }) ];
+  build
+```
+
+evaluates to: 
+
+```css
+div
+{
+	background: linear-gradient(yellow, blue);
+}
+
+div
+{
+	background: linear-gradient(to bottom, yellow, blue);
+}
+
+div
+{
+	background: linear-gradient(45deg, yellow, blue);
+}
+
+div
+{
+	background: linear-gradient(90deg, yellow, blue 30%);
+}
+
+div
+{
+	background: linear-gradient(yellow, blue 20%, green);
+}
+
+div
+{
+	background: linear-gradient(to top right, red, white, blue);
+}
+```
+
+and some for radial gradients:
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector div ]
+  with: [:style | style background: (CssRadialGradient fading: { CssSVGColors yellow. CssSVGColors green }) ];
+  declareRuleSetFor: [:selector | selector div ]
+  with: [:style | style background: (CssRadialGradient elliptical: CssConstants farthestCorner at: CssConstants center fading: { CssSVGColors yellow. CssSVGColors green }) ];
+  declareRuleSetFor: [:selector | selector div ]
+  with: [:style | style background: (CssRadialGradient elliptical: CssConstants farthestSide at: { CssConstants left. CssConstants bottom} fading: { CssSVGColors red. (CssColorStop for: CssSVGColors yellow at: 50 px). CssSVGColors green }) ];
+  declareRuleSetFor: [:selector | selector div ]
+  with: [:style | style background: (CssRadialGradient elliptical: {20 px. 30 px} at: { 20 px. 30 px} fading: { CssSVGColors red. CssSVGColors yellow. CssSVGColors green }) ];
+  build
+```
+evaluates to:
+```css
+div
+{
+	background: radial-gradient(yellow, green);
+}
+
+div
+{
+	background: radial-gradient(farthest-corner ellipse at center, yellow, green);
+}
+
+div
+{
+	background: radial-gradient(farthest-side ellipse at left bottom, red, yellow 50px, green);
+}
+
+div
+{
+	background: radial-gradient(20px 30px ellipse at 20px 30px, red, yellow, green);
+}
+```
+
+To make the gradient repeatable, just send to it the message `beRepeating`. For Example:
+```smalltalk
+(CssRadialGradient fading: { CssSVGColors yellow. CssSVGColors green }) beRepeating
+```
+renders as:
+```css
+repeating-radial-gradient(yellow, green);
+```

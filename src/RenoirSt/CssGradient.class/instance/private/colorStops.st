@@ -1,0 +1,1 @@
+colorStops	self subclassResponsibility 

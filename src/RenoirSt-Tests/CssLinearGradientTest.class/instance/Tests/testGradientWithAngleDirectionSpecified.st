@@ -1,0 +1,1 @@
+testGradientWithAngleDirectionSpecified	| gradient |		gradient := CssLinearGradient rotated: 45 deg fading: { CssSVGColors white. CssSVGColors red. CssSVGColors white }.	self assert: gradient printString equals: 'linear-gradient(45deg, white, red, white)'

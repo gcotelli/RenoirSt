@@ -1,0 +1,1 @@
+elliptical: aCssValue fading: colorStops		^self shape: (CssGradientComponent on: {aCssValue. 'ellipse'}) fading: colorStops 

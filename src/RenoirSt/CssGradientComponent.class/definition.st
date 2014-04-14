@@ -1,0 +1,1 @@
+CssObject subclass: #CssGradientComponent	instanceVariableNames: 'direction'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Colors'
