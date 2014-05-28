@@ -17,13 +17,14 @@ The documentation is licensed under a [Creative Commons Attribution-ShareAlike 4
 - Use your favorite browsing and refactoring tools inside the same Pharo image to handle CSS  
 
 ###Highlights:
-- **Supported Platforms**: [Pharo 3](http://www.pharo-project.org/)
+- **Supported Platforms**: [Pharo 3 / Pharo 4](http://www.pharo.org/)
 - **Source Code Repository**: **RenoirSt** project in [Smalltalk Hub](http://www.smalltalkhub.com)
 - **Issue Tracking**: In this GitHub repository.
 
 ###Get started!
 
 - Download a ready to use [Pharo 3 image] (https://ci.inria.fr/pharo-contribution/job/RenoirSt/PHARO=30,VERSION=stable,VM=vm/lastSuccessfulBuild/artifact/)
+- Download a ready to use [Pharo 4 image] (https://ci.inria.fr/pharo-contribution/job/RenoirSt/PHARO=40,VERSION=stable,VM=vm/lastSuccessfulBuild/artifact/)
 
 or
 
