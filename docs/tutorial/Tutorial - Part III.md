@@ -131,14 +131,14 @@ Evaluates to:
 
 ## Vendor specific extensions
 
-The library does'nt provide out of the box support for non standard properties. However since version 1.4.0 the message `vendorPropertyAt:put:` is available to ease the creation of this kind of properties by the library user. 
+The library doesn't provide out of the box support for non standard properties. However since version `1.4.0` the message `vendorPropertyAt:put:` is available to ease the creation of this kind of properties by the end user. 
 
 For example:
 
 ```smalltalk
 CascadingStyleSheetBuilder new
   declareRuleSetFor: [:selector | selector div ]
-  with: [:style | style vendorPropertyAt: 'crazy-margin' put:1 px ];
+  with: [:style | style vendorPropertyAt: 'crazy-margin' put: 1 px ];
   build
 ```
 Evaluates to:
