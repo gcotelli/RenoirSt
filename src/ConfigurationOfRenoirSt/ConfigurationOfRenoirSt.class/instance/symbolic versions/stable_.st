@@ -1,1 +1,1 @@
-stable: spec	<symbolicVersion: #'stable'>	spec for: #'pharo3.x' version: '1.3.0'.
+stable: spec	<symbolicVersion: #'stable'>	spec for: #'pharo3.x' version: '1.3.0'.	spec for: #'phato4.x' version: '1.3.0'.
