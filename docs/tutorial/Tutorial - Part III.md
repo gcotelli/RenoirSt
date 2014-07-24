@@ -190,4 +190,7 @@ Gofer it
     loadStable
 ```
 
-There's an integration job in the CI server, testing this specific configuration: [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-SeasideIntegration)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-SeasideIntegration/)
+There's an integration job in the CI server, testing this specific configuration: [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-SeasideIntegration)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-SeasideIntegration/).
+
+For Pharo 4 there's no stable Seaside version yet so the integration job in the CI server loads the development version: [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-SeasideIntegration-Pharo4)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-SeasideIntegration-Pharo4/)
+
