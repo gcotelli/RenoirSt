@@ -1,1 +1,0 @@
-after	^CssPseudoElementSelector after: self

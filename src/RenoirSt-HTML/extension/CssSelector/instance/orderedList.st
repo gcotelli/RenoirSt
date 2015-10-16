@@ -1,1 +1,0 @@
-orderedList	 ^self descendantOfType: 'ol'

@@ -1,0 +1,4 @@
+private
+value
+
+	^declaration value

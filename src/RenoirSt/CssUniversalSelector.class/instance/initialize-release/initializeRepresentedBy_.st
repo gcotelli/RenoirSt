@@ -1,1 +1,0 @@
-initializeRepresentedBy: aString 		representation := aString

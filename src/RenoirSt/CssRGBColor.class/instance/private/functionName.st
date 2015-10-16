@@ -1,1 +1,0 @@
-functionName	^ alphaChannel functionNameFor: 'rgb'

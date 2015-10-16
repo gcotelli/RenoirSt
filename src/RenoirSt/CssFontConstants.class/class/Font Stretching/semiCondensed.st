@@ -1,1 +1,0 @@
-semiCondensed		^ 'semi-condensed'

@@ -1,0 +1,4 @@
+Accessing - Text
+capitalize
+
+	^'capitalize'

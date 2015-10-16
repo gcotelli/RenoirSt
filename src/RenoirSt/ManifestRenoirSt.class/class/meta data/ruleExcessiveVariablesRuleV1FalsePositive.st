@@ -1,1 +1,0 @@
-ruleExcessiveVariablesRuleV1FalsePositive^ #(#(#(#RGClassDefinition #(#CssMediaQueryConstants)) #'2014-04-12T16:11:22.034412-03:00') #(#(#RGClassDefinition #(#CssLengthUnits)) #'2014-04-12T16:11:22.037412-03:00') #(#(#RGClassDefinition #(#CssSVGColors)) #'2014-04-12T16:11:22.036412-03:00') )

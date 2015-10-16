@@ -129,6 +129,32 @@ Evaluates to:
 - http://www.w3.org/TR/CSS2/media.html
 - http://www.w3.org/TR/css3-mediaqueries/
 
+## Vendor specific extensions
+
+The library doesn't provide out of the box support for non standard properties. However since version `1.4.0` the message `vendorPropertyAt:put:` is available to ease the creation of this kind of properties by the end user. 
+
+For example:
+
+```smalltalk
+CascadingStyleSheetBuilder new
+  declareRuleSetFor: [:selector | selector div ]
+  with: [:style | style vendorPropertyAt: 'crazy-margin' put: 1 px ];
+  build
+```
+Evaluates to:
+```css
+div
+{
+	crazy-margin: 1px;
+	-moz-crazy-margin: 1px;
+	-webkit-crazy-margin: 1px;
+	-o-crazy-margin: 1px;
+	-ms-crazy-margin: 1px;
+}
+```
+
+> **Hint:** If you really want to use a vendor specific extension, It's better to create an extension method sending the vendorPropertyAt:put: message.
+
 ## Interaction with other frameworks and libraries
 
 ### Units
@@ -164,4 +190,7 @@ Gofer it
     loadStable
 ```
 
-There's an integration job in the CI server, testing this specific configuration: [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-SeasideIntegration)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-SeasideIntegration/)
+There's an integration job in the CI server, testing this specific configuration: [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-SeasideIntegration)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-SeasideIntegration/).
+
+For Pharo 4 there's no stable Seaside version yet so the integration job in the CI server loads the development version: [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-SeasideIntegration-Pharo4)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-SeasideIntegration-Pharo4/)
+

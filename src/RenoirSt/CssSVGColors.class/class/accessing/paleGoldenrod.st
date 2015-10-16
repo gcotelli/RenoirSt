@@ -1,1 +1,0 @@
-paleGoldenrod	^ PaleGoldenrod

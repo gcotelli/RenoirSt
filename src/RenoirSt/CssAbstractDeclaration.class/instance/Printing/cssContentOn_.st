@@ -1,1 +1,0 @@
-cssContentOn: aStream	self property cssContentOn: aStream.	aStream		nextPut: $:;		space.	self value cssContentOn: aStream.	self cssContentEndingOn: aStream

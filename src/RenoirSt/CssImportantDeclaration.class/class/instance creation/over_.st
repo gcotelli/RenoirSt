@@ -1,1 +1,0 @@
-over: aCssDeclaration 		^self new initializeOver: aCssDeclaration 

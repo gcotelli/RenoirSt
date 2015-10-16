@@ -1,1 +1,0 @@
-applyTo: aCssDeclaration	self subclassResponsibility 

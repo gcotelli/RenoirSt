@@ -1,0 +1,17 @@
+{
+	"category" : "RenoirSt-Units",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Degree",
+		"Gradian",
+		"Radian",
+		"Turn" ],
+	"commentStamp" : "GabrielOmarCotelli 3/18/2014 19:29",
+	"instvars" : [
+		 ],
+	"name" : "CssAngleUnits",
+	"pools" : [
+		 ],
+	"super" : "SharedPool",
+	"type" : "normal" }

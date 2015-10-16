@@ -1,1 +1,0 @@
-checkedOn: aSelector		^self named: 'checked' over: aSelector 

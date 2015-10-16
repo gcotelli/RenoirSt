@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"rejectClasses" : "GabrielOmarCotelli 4/12/2014 16:11",
+		"rejectRules" : "GabrielOmarCotelli 4/12/2014 16:11",
+		"ruleExcessiveMethodsRuleV1FalsePositive" : "GabrielOmarCotelli 4/12/2014 16:11",
+		"ruleExcessiveVariablesRuleV1FalsePositive" : "GabrielOmarCotelli 4/12/2014 16:11",
+		"ruleInconsistentMethodClassificationRuleV1FalsePositive" : "GabrielOmarCotelli 4/12/2014 16:11",
+		"ruleInstVarInSubclassesRuleV1FalsePositive" : "GabrielOmarCotelli 4/12/2014 16:11",
+		"ruleLongMethodsRuleV1FalsePositive" : "GabrielOmarCotelli 4/12/2014 16:11",
+		"ruleMissingSubclassResponsibilityRuleV1FalsePositive" : "GabrielOmarCotelli 4/12/2014 16:11" },
+	"instance" : {
+		 } }

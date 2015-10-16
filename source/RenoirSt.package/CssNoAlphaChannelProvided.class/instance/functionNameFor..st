@@ -1,0 +1,4 @@
+Accessing
+functionNameFor: aString 
+	
+	^aString 

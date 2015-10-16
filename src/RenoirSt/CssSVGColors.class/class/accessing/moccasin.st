@@ -1,1 +1,0 @@
-moccasin	^ Moccasin

@@ -1,1 +1,0 @@
-grid: anInteger 		self addExpressionForFeatureNamed: 'grid' withValue: anInteger 

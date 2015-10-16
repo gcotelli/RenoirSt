@@ -1,1 +1,0 @@
-ruleLongMethodsRuleV1FalsePositive^ #(#(#(#RGMethodDefinition #(#'CssSVGColors class' #initializeAtoF #true)) #'2014-04-12T16:11:21.986412-03:00') #(#(#RGMethodDefinition #(#'CssSVGColors class' #initializeMtoZ #true)) #'2014-04-12T16:11:21.985412-03:00') #(#(#RGMethodDefinition #(#'CssSVGColors class' #initializeGtoL #true)) #'2014-04-12T16:11:21.985412-03:00') )

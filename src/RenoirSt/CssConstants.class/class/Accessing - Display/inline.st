@@ -1,1 +1,0 @@
-inline	"This value causes an element to generate one or more inline boxes."	^ 'inline'

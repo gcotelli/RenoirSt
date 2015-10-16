@@ -1,1 +1,0 @@
-commonLigatures		^'common-ligatures'

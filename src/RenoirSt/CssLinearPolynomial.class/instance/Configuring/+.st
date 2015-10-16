@@ -1,1 +1,0 @@
-+ aPositiveInteger	independentCoefficient := aPositiveInteger 

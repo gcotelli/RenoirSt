@@ -1,1 +1,0 @@
-onlyChild	^ CssPseudoClassSelector onlyChildOn: self

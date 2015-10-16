@@ -1,1 +1,0 @@
-CssAbstractDeclaration subclass: #CssDeclaration	instanceVariableNames: 'property value'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt'

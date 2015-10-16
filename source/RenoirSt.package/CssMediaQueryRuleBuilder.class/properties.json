@@ -1,0 +1,16 @@
+{
+	"category" : "RenoirSt-MediaQueries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 2/26/2014 12:06",
+	"instvars" : [
+		"styleSheet",
+		"mediaType",
+		"expressions" ],
+	"name" : "CssMediaQueryRuleBuilder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

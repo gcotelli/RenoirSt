@@ -15,4 +15,5 @@ Tutorial
 - [Part III](Tutorial - Part III.md )
   - Important Rules
   - Media Queries
+  - Vendor specific extensions
   - Interaction with other frameworks and libraries

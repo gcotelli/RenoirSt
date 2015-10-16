@@ -1,1 +1,0 @@
-checked	^ CssPseudoClassSelector checkedOn: self

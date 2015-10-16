@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAttributeReferenceWithType" : "GabrielOmarCotelli 3/25/2014 11:32",
+		"testAttributeReferenceWithTypeAndFallback" : "GabrielOmarCotelli 3/25/2014 11:33",
+		"testSimplestAttributeReference" : "GabrielOmarCotelli 3/25/2014 11:42" } }

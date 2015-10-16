@@ -1,1 +1,0 @@
-option	 ^self descendantOfType: 'option'

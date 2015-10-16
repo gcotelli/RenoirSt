@@ -1,1 +1,0 @@
-CssObject subclass: #CssComment	instanceVariableNames: 'comment'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt'

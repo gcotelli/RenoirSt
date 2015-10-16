@@ -1,0 +1,4 @@
+private
+colorStops
+
+	self subclassResponsibility 

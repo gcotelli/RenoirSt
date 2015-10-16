@@ -1,1 +1,0 @@
-of: aNumber	^ self new initializeOf: aNumber

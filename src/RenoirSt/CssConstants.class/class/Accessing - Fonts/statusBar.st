@@ -1,1 +1,0 @@
-statusBar	^'status-bar'

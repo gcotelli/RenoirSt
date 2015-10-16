@@ -1,1 +1,0 @@
-for: aCommentText	^self new initializeFor: aCommentText 

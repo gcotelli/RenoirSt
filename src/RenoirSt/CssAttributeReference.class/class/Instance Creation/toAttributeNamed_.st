@@ -1,1 +1,0 @@
-toAttributeNamed: aString 	^self toAttributeNamed: aString ofType: 'string'

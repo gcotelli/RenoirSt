@@ -1,1 +1,0 @@
-lightGoldenrodYellow	^ LightGoldenrodYellow

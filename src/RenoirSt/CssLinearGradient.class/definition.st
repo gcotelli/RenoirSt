@@ -1,1 +1,0 @@
-CssGradient subclass: #CssLinearGradient	instanceVariableNames: 'direction colorStops functionName'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Colors'

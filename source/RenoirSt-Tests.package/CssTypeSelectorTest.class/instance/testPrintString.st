@@ -1,0 +1,4 @@
+Tests
+testPrintString
+
+	self assert: (CssTypeSelector ofType: 'h1') printString = 'h1'

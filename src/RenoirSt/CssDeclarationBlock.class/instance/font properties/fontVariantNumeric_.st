@@ -1,1 +1,0 @@
-fontVariantNumeric: aCssValue	self propertyAt: 'font-variant-numeric' put: aCssValue 

@@ -1,1 +1,0 @@
-ultraExpanded		^ 'ultra-expanded'

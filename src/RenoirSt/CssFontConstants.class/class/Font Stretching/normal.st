@@ -1,1 +1,0 @@
-normal		^CssConstants normal

@@ -1,0 +1,15 @@
+{
+	"category" : "RenoirSt-Colors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 4/14/2014 09:19",
+	"instvars" : [
+		"color",
+		"stop" ],
+	"name" : "CssColorStop",
+	"pools" : [
+		 ],
+	"super" : "CssObject",
+	"type" : "normal" }

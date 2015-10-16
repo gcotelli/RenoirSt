@@ -1,1 +1,0 @@
-The universal selector represents the qualified name of any element type. It represents any single element in the document tree in any namespace (including those without a namespace) if no default namespace has been specified for selectors.

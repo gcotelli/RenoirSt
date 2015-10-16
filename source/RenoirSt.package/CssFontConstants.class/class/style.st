@@ -1,0 +1,4 @@
+Font Synthesis
+style
+	
+	^'style'

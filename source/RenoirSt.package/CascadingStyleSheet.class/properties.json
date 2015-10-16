@@ -1,0 +1,14 @@
+{
+	"category" : "RenoirSt",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 2/25/2014 17:24",
+	"instvars" : [
+		"statements" ],
+	"name" : "CascadingStyleSheet",
+	"pools" : [
+		 ],
+	"super" : "CssObject",
+	"type" : "normal" }

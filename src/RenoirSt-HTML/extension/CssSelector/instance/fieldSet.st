@@ -1,1 +1,0 @@
-fieldSet	 ^self descendantOfType: 'fieldset'

@@ -1,1 +1,0 @@
-deepSkyBlue	^ DeepSkyBlue

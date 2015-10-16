@@ -1,1 +1,0 @@
-TestCase subclass: #CssAlphaChannelProvidedTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests-Colors'

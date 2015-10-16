@@ -1,1 +1,0 @@
-initialize		self		initializeAtoF;		initializeGtoL;		initializeMtoZ

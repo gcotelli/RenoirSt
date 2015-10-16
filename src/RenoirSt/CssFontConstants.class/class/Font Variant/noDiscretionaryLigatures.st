@@ -1,1 +1,0 @@
-noDiscretionaryLigatures		^ 'no-discretionary-ligatures'

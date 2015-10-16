@@ -1,1 +1,0 @@
-noRepeat	^'no-repeat'

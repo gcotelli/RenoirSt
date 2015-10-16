@@ -1,1 +1,0 @@
-CssAbstractDeclaration subclass: #CssImportantDeclaration	instanceVariableNames: 'declaration'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt'

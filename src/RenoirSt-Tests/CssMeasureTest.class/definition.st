@@ -1,1 +1,0 @@
-TestCase subclass: #CssMeasureTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests-Units'

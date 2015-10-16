@@ -1,0 +1,4 @@
+Instance Creation
+selector: aSelector declarations: aDeclarationBlock comment: aComment
+	
+	^self new initializeSelector: aSelector declarations: aDeclarationBlock comment: aComment

@@ -1,1 +1,0 @@
-unicodeBidi: aCssValue	self propertyAt: 'unicode-bidi' put: aCssValue 

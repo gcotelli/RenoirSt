@@ -1,0 +1,17 @@
+{
+	"category" : "RenoirSt-Colors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 3/5/2014 23:56",
+	"instvars" : [
+		"hue",
+		"saturation",
+		"lightness",
+		"alphaChannel" ],
+	"name" : "CssHSLColor",
+	"pools" : [
+		 ],
+	"super" : "CssColor",
+	"type" : "normal" }

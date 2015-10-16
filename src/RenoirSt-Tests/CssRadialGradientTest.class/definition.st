@@ -1,1 +1,0 @@
-TestCase subclass: #CssRadialGradientTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests-Colors'

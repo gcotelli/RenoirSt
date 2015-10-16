@@ -1,1 +1,0 @@
-body	 ^self descendantOfType: 'body'

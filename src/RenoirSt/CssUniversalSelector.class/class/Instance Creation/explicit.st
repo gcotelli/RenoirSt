@@ -1,1 +1,0 @@
-explicit		^self representedBy: '*'

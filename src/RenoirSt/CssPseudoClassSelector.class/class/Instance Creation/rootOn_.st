@@ -1,1 +1,0 @@
-rootOn: aSelector 		^self named: 'root' over: aSelector 

@@ -1,1 +1,0 @@
-lowerGreek 	^'lower-greek'

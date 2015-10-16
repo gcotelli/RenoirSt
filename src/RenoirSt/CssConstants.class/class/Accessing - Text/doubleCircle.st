@@ -1,1 +1,0 @@
-doubleCircle		^'double-circle'

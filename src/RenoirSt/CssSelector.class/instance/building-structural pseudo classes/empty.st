@@ -1,1 +1,0 @@
-empty	^ CssPseudoClassSelector emptyOn: self

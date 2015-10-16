@@ -1,1 +1,0 @@
-CssSelector subclass: #CssDescendantCombinator	instanceVariableNames: 'ancestor descendant'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Selectors'

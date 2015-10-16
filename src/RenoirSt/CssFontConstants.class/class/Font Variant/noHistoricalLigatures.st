@@ -1,1 +1,0 @@
-noHistoricalLigatures		^ 'no-historical-ligatures'

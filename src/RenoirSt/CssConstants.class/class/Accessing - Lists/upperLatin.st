@@ -1,1 +1,0 @@
-upperLatin 	^'upper-latin'

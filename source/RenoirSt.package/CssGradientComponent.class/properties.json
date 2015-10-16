@@ -1,0 +1,14 @@
+{
+	"category" : "RenoirSt-Colors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 4/14/2014 10:56",
+	"instvars" : [
+		"direction" ],
+	"name" : "CssGradientComponent",
+	"pools" : [
+		 ],
+	"super" : "CssObject",
+	"type" : "normal" }

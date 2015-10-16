@@ -1,1 +1,0 @@
-initializeWithValue: aNumber 		value := aNumber 

@@ -1,1 +1,0 @@
-initializeNamed: aString of: aSelector 		selector := aSelector.	pseudoElementName := aString

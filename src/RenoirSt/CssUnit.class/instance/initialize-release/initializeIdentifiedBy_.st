@@ -1,1 +1,0 @@
-initializeIdentifiedBy: anIdentifier	identifier := anIdentifier 

@@ -1,0 +1,4 @@
+Accessing - Size
+contain
+
+	^'contain'

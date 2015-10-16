@@ -1,1 +1,0 @@
-lastOfTypeOn: aSelector 		^self named: 'last-of-type' over: aSelector 

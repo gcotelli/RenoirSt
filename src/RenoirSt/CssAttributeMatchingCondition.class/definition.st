@@ -1,1 +1,0 @@
-CssObject subclass: #CssAttributeMatchingCondition	instanceVariableNames: 'attributeValue condition'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Selectors'

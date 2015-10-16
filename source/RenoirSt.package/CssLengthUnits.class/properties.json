@@ -1,0 +1,27 @@
+{
+	"category" : "RenoirSt-Units",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Centimeter",
+		"FontSize",
+		"FontSizeOfRootElement",
+		"Inch",
+		"Millimeter",
+		"OnePercentOfViewportHeight",
+		"OnePercentOfViewportLargerDimension",
+		"OnePercentOfViewportSmallerDimension",
+		"OnePercentOfViewportWidth",
+		"Pica",
+		"Pixel",
+		"Point",
+		"XHeight",
+		"ZeroWidth" ],
+	"commentStamp" : "GabrielOmarCotelli 3/12/2014 11:22",
+	"instvars" : [
+		 ],
+	"name" : "CssLengthUnits",
+	"pools" : [
+		 ],
+	"super" : "SharedPool",
+	"type" : "normal" }

@@ -1,1 +1,0 @@
-space		stream space

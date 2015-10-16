@@ -1,1 +1,0 @@
-legend	 ^self descendantOfType: 'legend'

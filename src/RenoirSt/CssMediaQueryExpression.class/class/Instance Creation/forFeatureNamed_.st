@@ -1,1 +1,0 @@
-forFeatureNamed: aFeatureName	^self forFeatureNamed: aFeatureName withValues: #()

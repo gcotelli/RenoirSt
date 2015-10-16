@@ -1,1 +1,0 @@
-cssDependentCoefficientContentOn: aWriteStream	dependentCoefficient abs = 1		ifTrue: [ 			dependentCoefficient negative				ifTrue: [ aWriteStream nextPut: $- ] ]		ifFalse: [ dependentCoefficient cssContentOn: aWriteStream ]

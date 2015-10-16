@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"DevelopmentSupport" : "GabrielOmarCotelli 3/17/2014 17:58",
+		"baseConfigurationClassIfAbsent:" : "GabrielOmarCotelli 3/17/2014 17:58",
+		"catalogChangeLog" : "GabrielOmarCotelli 4/14/2014 15:01",
+		"catalogContactInfo" : "GabrielOmarCotelli 3/17/2014 18:13",
+		"catalogDescription" : "GabrielOmarCotelli 3/17/2014 18:13",
+		"catalogKeyClassesAndExample" : "GabrielOmarCotelli 3/17/2014 18:14",
+		"catalogKeywords" : "GabrielOmarCotelli 3/17/2014 18:14",
+		"ensureMetacello" : "GabrielOmarCotelli 3/17/2014 17:58",
+		"ensureMetacelloBaseConfiguration" : "GabrielOmarCotelli 3/17/2014 17:58",
+		"isMetacelloConfig" : "GabrielOmarCotelli 3/17/2014 17:58",
+		"load" : "GabrielOmarCotelli 3/17/2014 17:58",
+		"loadBleedingEdge" : "GabrielOmarCotelli 3/17/2014 17:58",
+		"loadDevelopment" : "GabrielOmarCotelli 3/17/2014 17:58",
+		"project" : "GabrielOmarCotelli 3/17/2014 17:58",
+		"validate" : "GabrielOmarCotelli 3/17/2014 17:58" },
+	"instance" : {
+		"baseline110:" : "GabrielOmarCotelli 3/17/2014 19:56",
+		"baseline140:" : "GabrielOmarCotelli 10/16/2015 16:12",
+		"customProjectAttributes" : "GabrielOmarCotelli 3/17/2014 17:58",
+		"development:" : "GabrielOmarCotelli 3/17/2014 18:08",
+		"project" : "GabrielOmarCotelli 3/17/2014 17:58",
+		"stable:" : "GabrielOmarCotelli 10/16/2015 16:03",
+		"version110:" : "GabrielOmarCotelli 3/17/2014 18:24",
+		"version120:" : "GabrielOmarCotelli 4/4/2014 00:04",
+		"version130:" : "GabrielOmarCotelli 4/14/2014 14:59",
+		"version140:" : "GabrielOmarCotelli 10/16/2015 16:13" } }

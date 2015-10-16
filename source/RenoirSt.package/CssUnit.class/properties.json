@@ -1,0 +1,14 @@
+{
+	"category" : "RenoirSt-Units",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"identifier" ],
+	"name" : "CssUnit",
+	"pools" : [
+		 ],
+	"super" : "CssObject",
+	"type" : "normal" }

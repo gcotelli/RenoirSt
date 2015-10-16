@@ -1,1 +1,0 @@
-tableColumn		^ 'table-column'

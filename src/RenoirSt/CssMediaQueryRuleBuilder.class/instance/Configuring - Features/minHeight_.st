@@ -1,1 +1,0 @@
-minHeight: aCssLenght 		self addExpressionForFeatureNamed: 'min-height' withValue: aCssLenght 

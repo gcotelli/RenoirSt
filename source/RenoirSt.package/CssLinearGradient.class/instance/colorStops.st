@@ -1,0 +1,3 @@
+private
+colorStops
+	^ colorStops

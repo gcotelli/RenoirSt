@@ -1,0 +1,4 @@
+Accessing - Borders
+thick
+
+	^'thick'

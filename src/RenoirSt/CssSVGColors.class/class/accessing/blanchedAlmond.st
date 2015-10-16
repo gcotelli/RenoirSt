@@ -1,1 +1,0 @@
-blanchedAlmond	^ BlanchedAlmond

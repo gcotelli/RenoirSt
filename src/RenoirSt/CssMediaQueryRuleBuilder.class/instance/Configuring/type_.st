@@ -1,1 +1,0 @@
-type: aMediaType	mediaType := aMediaType

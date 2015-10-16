@@ -1,1 +1,0 @@
-smallCaption	^'small-caption'

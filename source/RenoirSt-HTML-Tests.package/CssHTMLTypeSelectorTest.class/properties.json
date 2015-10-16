@@ -1,0 +1,14 @@
+{
+	"category" : "RenoirSt-HTML-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 3/8/2014 20:41",
+	"instvars" : [
+		 ],
+	"name" : "CssHTMLTypeSelectorTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

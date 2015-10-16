@@ -1,1 +1,0 @@
-initializeOver: aCssDeclaration 		declaration := aCssDeclaration 

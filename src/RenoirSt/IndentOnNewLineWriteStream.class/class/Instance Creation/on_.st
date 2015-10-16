@@ -1,1 +1,0 @@
-on: aWriteStream 		^self new initializeOn: aWriteStream 

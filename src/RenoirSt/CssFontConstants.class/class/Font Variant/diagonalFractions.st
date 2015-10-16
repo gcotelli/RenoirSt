@@ -1,1 +1,0 @@
-diagonalFractions	^'diagonal-fractions'

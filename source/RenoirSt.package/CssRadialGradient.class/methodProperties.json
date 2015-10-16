@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"circular:at:fading:" : "GabrielOmarCotelli 4/14/2014 10:57",
+		"circular:fading:" : "GabrielOmarCotelli 4/14/2014 10:57",
+		"elliptical:at:fading:" : "GabrielOmarCotelli 4/14/2014 10:57",
+		"elliptical:fading:" : "GabrielOmarCotelli 4/14/2014 10:57",
+		"fading:" : "GabrielOmarCotelli 4/14/2014 10:31",
+		"shape:fading:" : "GabrielOmarCotelli 4/14/2014 10:33" },
+	"instance" : {
+		"beRepeating" : "GabrielOmarCotelli 4/14/2014 10:54",
+		"colorStops" : "GabrielOmarCotelli 4/14/2014 10:34",
+		"functionName" : "GabrielOmarCotelli 4/14/2014 10:33",
+		"initializeShape:fading:" : "GabrielOmarCotelli 4/14/2014 10:33",
+		"shape" : "GabrielOmarCotelli 4/14/2014 10:33" } }

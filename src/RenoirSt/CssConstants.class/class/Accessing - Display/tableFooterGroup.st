@@ -1,1 +1,0 @@
-tableFooterGroup		^ 'table-footer-group'

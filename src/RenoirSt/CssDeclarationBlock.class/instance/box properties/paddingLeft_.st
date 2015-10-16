@@ -1,1 +1,0 @@
-paddingLeft: aPaddingWidth	self propertyAt: 'padding-left' put: aPaddingWidth 

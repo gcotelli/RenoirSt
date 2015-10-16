@@ -1,1 +1,0 @@
-textArea	 ^self descendantOfType: 'textarea'

@@ -1,1 +1,0 @@
-float: aCssValue	self propertyAt: 'float' put: aCssValue 

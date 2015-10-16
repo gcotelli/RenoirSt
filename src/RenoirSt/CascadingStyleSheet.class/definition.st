@@ -1,1 +1,0 @@
-CssObject subclass: #CascadingStyleSheet	instanceVariableNames: 'statements'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt'

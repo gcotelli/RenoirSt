@@ -1,1 +1,0 @@
-button	 ^self descendantOfType: 'button'

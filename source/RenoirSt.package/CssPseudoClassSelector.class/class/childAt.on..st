@@ -1,0 +1,4 @@
+Instance Creation
+childAt: anInteger on: aSelector 
+	
+	^self named: 'nth-child' withArguments: { anInteger } over: aSelector 
