@@ -1,1 +1,0 @@
-lightSteelBlue	^ LightSteelBlue

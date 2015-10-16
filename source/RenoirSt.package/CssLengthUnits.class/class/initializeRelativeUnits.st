@@ -1,0 +1,10 @@
+initialize-release
+initializeRelativeUnits
+	FontSize := CssUnit identifiedBy: 'em'.
+	XHeight := CssUnit identifiedBy: 'ex'.
+	ZeroWidth := CssUnit identifiedBy: 'ch'.
+	FontSizeOfRootElement := CssUnit identifiedBy: 'rem'.
+	OnePercentOfViewportHeight := CssUnit identifiedBy: 'vh'.
+	OnePercentOfViewportWidth := CssUnit identifiedBy: 'vw'.
+	OnePercentOfViewportSmallerDimension := CssUnit identifiedBy: 'vmin'.
+	OnePercentOfViewportLargerDimension := CssUnit identifiedBy: 'vmax'

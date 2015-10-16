@@ -1,1 +1,0 @@
-CssObject subclass: #CssMediaQueryRule	instanceVariableNames: 'mediaType expressions styleSheet'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-MediaQueries'

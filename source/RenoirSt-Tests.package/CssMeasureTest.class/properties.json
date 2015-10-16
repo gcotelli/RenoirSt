@@ -1,0 +1,14 @@
+{
+	"category" : "RenoirSt-Tests-Units",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 3/12/2014 11:23",
+	"instvars" : [
+		 ],
+	"name" : "CssMeasureTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

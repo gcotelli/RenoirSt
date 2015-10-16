@@ -1,0 +1,12 @@
+Tests
+testPrintString
+
+	| baseSelector |
+
+	baseSelector := CssUniversalSelector explicit.
+
+	self
+		assert: (CssPseudoElementSelector firstLineOf: baseSelector) printString equals: '*::first-line';
+		assert: (CssPseudoElementSelector firstLetterOf: baseSelector) printString equals: '*::first-letter';
+		assert: (CssPseudoElementSelector before: baseSelector) printString equals: '*::before';
+		assert: (CssPseudoElementSelector after: baseSelector) printString equals: '*::after'

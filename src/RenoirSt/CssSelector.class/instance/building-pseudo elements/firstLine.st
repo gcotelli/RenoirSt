@@ -1,1 +1,0 @@
-firstLine	^CssPseudoElementSelector firstLineOf: self

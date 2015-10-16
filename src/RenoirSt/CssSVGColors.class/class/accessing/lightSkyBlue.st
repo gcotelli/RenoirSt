@@ -1,1 +1,0 @@
-lightSkyBlue	^ LightSkyBlue

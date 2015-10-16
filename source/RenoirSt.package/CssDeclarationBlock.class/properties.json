@@ -1,0 +1,15 @@
+{
+	"category" : "RenoirSt",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 2/25/2014 15:26",
+	"instvars" : [
+		"declarations",
+		"rulePrecedencePolicy" ],
+	"name" : "CssDeclarationBlock",
+	"pools" : [
+		 ],
+	"super" : "CssObject",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+Instance Creation
+between: aParentSelector and: aChildSelector 
+	
+	^self new initializeBetween: aParentSelector and: aChildSelector 

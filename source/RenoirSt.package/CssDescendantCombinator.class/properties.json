@@ -1,0 +1,15 @@
+{
+	"category" : "RenoirSt-Selectors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 2/24/2014 17:03",
+	"instvars" : [
+		"ancestor",
+		"descendant" ],
+	"name" : "CssDescendantCombinator",
+	"pools" : [
+		 ],
+	"super" : "CssSelector",
+	"type" : "normal" }

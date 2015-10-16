@@ -1,0 +1,4 @@
+Applying
+applyTo: aCssDeclaration 
+	
+	^aCssDeclaration 

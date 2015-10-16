@@ -1,1 +1,0 @@
-paragraph	 ^self descendantOfType: 'p'

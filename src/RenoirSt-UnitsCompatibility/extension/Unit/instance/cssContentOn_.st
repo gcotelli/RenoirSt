@@ -1,1 +1,0 @@
-cssContentOn: aStream	self abbreviation cssContentOn: aStream

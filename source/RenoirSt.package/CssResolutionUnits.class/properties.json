@@ -1,0 +1,16 @@
+{
+	"category" : "RenoirSt-Units",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"DotsPerCentimeter",
+		"DotsPerInch",
+		"DotsPerPixelUnit" ],
+	"commentStamp" : "GabrielOmarCotelli 3/18/2014 23:05",
+	"instvars" : [
+		 ],
+	"name" : "CssResolutionUnits",
+	"pools" : [
+		 ],
+	"super" : "SharedPool",
+	"type" : "normal" }

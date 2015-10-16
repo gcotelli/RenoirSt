@@ -1,0 +1,4 @@
+text properties
+textDecorationLine: aCssValue
+
+	self propertyAt: 'text-decoration-line' put: aCssValue 

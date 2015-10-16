@@ -1,1 +1,0 @@
-tableCaption		^ 'table-caption'

@@ -1,1 +1,0 @@
-Metacello configuration for RenoirSt

@@ -1,1 +1,0 @@
-forIdentity		^self with: 1

@@ -1,0 +1,14 @@
+{
+	"category" : "RenoirSt-Tests-Colors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "CssAlphaChannelProvidedTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

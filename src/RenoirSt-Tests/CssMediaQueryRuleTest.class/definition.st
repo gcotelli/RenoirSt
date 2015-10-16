@@ -1,1 +1,0 @@
-TestCase subclass: #CssMediaQueryRuleTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests-MediaQueries'

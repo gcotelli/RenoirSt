@@ -1,1 +1,0 @@
-lightSlateGrey	^ LightSlateGrey

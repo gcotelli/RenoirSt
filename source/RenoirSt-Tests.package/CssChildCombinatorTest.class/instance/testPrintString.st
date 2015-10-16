@@ -1,0 +1,9 @@
+Tests
+testPrintString
+
+	| parent child |
+	
+	parent := CssUniversalSelector implicit class: 'custom'.
+	child := CssTypeSelector ofType: 'div'.
+	
+	self assert: (CssChildCombinator between: parent and: child) printString equals: '.custom > div'

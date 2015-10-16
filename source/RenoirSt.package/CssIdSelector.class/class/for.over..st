@@ -1,0 +1,5 @@
+instance creation
+for: anId over: aSelector
+	
+	self assertIsASymbol: anId.
+	^ self new initializeFor: anId over: aSelector

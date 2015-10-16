@@ -1,0 +1,4 @@
+Accessing - Relative
+onePercentOfViewportSmallerDimension 
+
+	^OnePercentOfViewportSmallerDimension 

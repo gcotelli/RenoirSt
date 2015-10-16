@@ -1,1 +1,0 @@
-cssContentOn: aStream		selector cssContentOn: aStream.	aStream nextPut: $[.	attributeName cssContentOn: aStream.	matchingCondition cssContentOn: aStream.	aStream nextPut: $]

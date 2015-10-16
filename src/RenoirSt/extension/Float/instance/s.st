@@ -1,1 +1,0 @@
-s	 ^self newMeasureWith: CssTimeUnits second

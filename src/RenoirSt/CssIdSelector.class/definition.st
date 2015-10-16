@@ -1,1 +1,0 @@
-CssSelector subclass: #CssIdSelector	instanceVariableNames: 'id selector'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Selectors'

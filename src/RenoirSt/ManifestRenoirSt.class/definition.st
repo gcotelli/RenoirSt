@@ -1,1 +1,0 @@
-Object subclass: #ManifestRenoirSt	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt'

@@ -1,0 +1,6 @@
+Tests
+testCreationShortcutsForFrequencies
+
+	self
+		assert: 4 Hz asCssStringEquals: '4Hz';
+		assert: 1 kHz asCssStringEquals: '1kHz'

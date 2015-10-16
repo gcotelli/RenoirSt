@@ -1,0 +1,4 @@
+testing
+isImplicitUniversal
+
+	^ representation isEmpty

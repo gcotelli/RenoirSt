@@ -1,1 +1,0 @@
-farthestCorner		^'farthest-corner'

@@ -1,1 +1,0 @@
-attribute: aString includesSubstring: aValue	^ CssAttributeSelector attribute: aString of: self includesSubstring: aValue

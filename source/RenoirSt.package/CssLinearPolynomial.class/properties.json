@@ -1,0 +1,15 @@
+{
+	"category" : "RenoirSt-Selectors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 3/12/2014 16:11",
+	"instvars" : [
+		"dependentCoefficient",
+		"independentCoefficient" ],
+	"name" : "CssLinearPolynomial",
+	"pools" : [
+		 ],
+	"super" : "CssObject",
+	"type" : "normal" }

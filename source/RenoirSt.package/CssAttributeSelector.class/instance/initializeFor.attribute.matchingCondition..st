@@ -1,0 +1,6 @@
+initialize-release
+initializeFor: aSelector attribute: anAttributeName matchingCondition: aMatchingCondition
+
+	selector := aSelector.
+	attributeName := anAttributeName.
+	matchingCondition := aMatchingCondition 

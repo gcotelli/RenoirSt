@@ -1,0 +1,4 @@
+Accessing - Lists
+outside
+
+	^'outside'

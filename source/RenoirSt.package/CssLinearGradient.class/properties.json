@@ -1,0 +1,16 @@
+{
+	"category" : "RenoirSt-Colors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 4/14/2014 08:38",
+	"instvars" : [
+		"direction",
+		"colorStops",
+		"functionName" ],
+	"name" : "CssLinearGradient",
+	"pools" : [
+		 ],
+	"super" : "CssGradient",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+private
+assert: aCssLength asCssStringEquals: aString
+
+	self assert: (String streamContents: [ :stream | aCssLength cssContentOn: stream ]) equals: aString

@@ -1,1 +1,0 @@
-outline: aCssValue	self propertyAt: 'outline' put:  aCssValue 

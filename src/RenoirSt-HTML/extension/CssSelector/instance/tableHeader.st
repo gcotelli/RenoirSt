@@ -1,1 +1,0 @@
-tableHeader	 ^self descendantOfType: 'thead'

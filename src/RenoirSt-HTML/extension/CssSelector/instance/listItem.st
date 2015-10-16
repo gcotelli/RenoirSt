@@ -1,1 +1,0 @@
-listItem	 ^self descendantOfType: 'li'

@@ -1,1 +1,0 @@
-CssGradient subclass: #CssRadialGradient	instanceVariableNames: 'shape colorStops functionName'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Colors'

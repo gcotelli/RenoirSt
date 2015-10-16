@@ -1,1 +1,0 @@
-tableBody	 ^self descendantOfType: 'tbody'

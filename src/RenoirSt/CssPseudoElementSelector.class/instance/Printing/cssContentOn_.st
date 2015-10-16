@@ -1,1 +1,0 @@
-cssContentOn: aStream 		selector cssContentOn: aStream.	aStream nextPutAll: '::'.	pseudoElementName cssContentOn: aStream

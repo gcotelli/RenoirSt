@@ -1,1 +1,0 @@
-tableColumnGroup		^ 'table-column-group'

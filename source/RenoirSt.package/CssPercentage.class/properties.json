@@ -1,0 +1,14 @@
+{
+	"category" : "RenoirSt-Units",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"number" ],
+	"name" : "CssPercentage",
+	"pools" : [
+		 ],
+	"super" : "CssObject",
+	"type" : "normal" }

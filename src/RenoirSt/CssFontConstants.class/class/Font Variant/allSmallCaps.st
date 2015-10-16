@@ -1,1 +1,0 @@
-allSmallCaps		^'all-small-caps'

@@ -1,1 +1,0 @@
-TestCase subclass: #CssAdjacentSiblingCombinatorTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests-Selectors'

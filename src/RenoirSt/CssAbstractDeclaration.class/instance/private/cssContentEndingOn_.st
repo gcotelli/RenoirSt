@@ -1,1 +1,0 @@
-cssContentEndingOn: aStream	aStream nextPut: $;

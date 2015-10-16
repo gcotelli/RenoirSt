@@ -1,1 +1,0 @@
-textEmphasis: aCssValue	self propertyAt: 'text-emphasis' put: aCssValue 

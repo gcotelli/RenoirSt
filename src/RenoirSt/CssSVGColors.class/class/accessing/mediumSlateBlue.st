@@ -1,1 +1,0 @@
-mediumSlateBlue	^ MediumSlateBlue

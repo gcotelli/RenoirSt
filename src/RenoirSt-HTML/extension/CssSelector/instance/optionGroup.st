@@ -1,1 +1,0 @@
-optionGroup	 ^self descendantOfType: 'optgroup'

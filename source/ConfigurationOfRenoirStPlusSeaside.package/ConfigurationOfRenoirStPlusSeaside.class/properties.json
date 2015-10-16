@@ -1,0 +1,14 @@
+{
+	"category" : "ConfigurationOfRenoirStPlusSeaside",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"LastVersionLoad" ],
+	"commentStamp" : "GabrielOmarCotelli 4/4/2014 00:04",
+	"instvars" : [
+		"project" ],
+	"name" : "ConfigurationOfRenoirStPlusSeaside",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,1 +1,0 @@
-onlyOfType	^ CssPseudoClassSelector onlyOfTypeOn: self

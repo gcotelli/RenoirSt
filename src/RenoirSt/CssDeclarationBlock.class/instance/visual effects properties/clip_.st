@@ -1,1 +1,0 @@
-clip: aCssValue	self propertyAt: 'clip' put: aCssValue 

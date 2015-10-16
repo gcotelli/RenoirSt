@@ -1,1 +1,0 @@
-fading: aColorStopCollection	^self in: '' fading: aColorStopCollection 

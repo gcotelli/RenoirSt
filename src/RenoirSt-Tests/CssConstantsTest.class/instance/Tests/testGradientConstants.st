@@ -1,1 +1,0 @@
-testGradientConstants		self		assert: CssConstants closestSide equals: 'closest-side';		assert: CssConstants farthestSide equals: 'farthest-side';		assert: CssConstants closestCorner equals: 'closest-corner';		assert: CssConstants farthestCorner equals: 'farthest-corner'

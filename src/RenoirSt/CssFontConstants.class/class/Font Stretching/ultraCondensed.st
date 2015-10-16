@@ -1,1 +1,0 @@
-ultraCondensed		^ 'ultra-condensed'

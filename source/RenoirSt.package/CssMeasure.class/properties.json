@@ -1,0 +1,15 @@
+{
+	"category" : "RenoirSt-Units",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 3/18/2014 23:04",
+	"instvars" : [
+		"quantity",
+		"unit" ],
+	"name" : "CssMeasure",
+	"pools" : [
+		 ],
+	"super" : "CssObject",
+	"type" : "normal" }

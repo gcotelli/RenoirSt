@@ -1,1 +1,0 @@
-implicit		^self representedBy: ''

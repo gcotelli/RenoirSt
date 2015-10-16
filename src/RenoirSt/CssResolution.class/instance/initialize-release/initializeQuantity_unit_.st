@@ -1,1 +1,0 @@
-initializeQuantity: aNumber unit: aCssLenghtUnit		quantity := aNumber.	unit := aCssLenghtUnit

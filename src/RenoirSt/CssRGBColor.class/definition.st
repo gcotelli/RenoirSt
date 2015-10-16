@@ -1,1 +1,0 @@
-CssColor subclass: #CssRGBColor	instanceVariableNames: 'redComponent greenComponent blueComponent alphaChannel'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Colors'

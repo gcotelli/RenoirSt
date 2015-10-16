@@ -1,0 +1,8 @@
+Tests
+testPrintStringUsingPercentageNotation
+	
+	| color |
+	
+	color := CssRGBColor red: 100 percent green: 0 percent blue: 0 percent.
+	
+	self assert: color printString equals: 'rgb(100%,0%,0%)'.

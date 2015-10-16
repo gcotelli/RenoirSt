@@ -1,1 +1,0 @@
-childAt: anIndex	^ CssPseudoClassSelector childAt: anIndex on: self

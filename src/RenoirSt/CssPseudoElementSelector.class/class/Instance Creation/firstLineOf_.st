@@ -1,1 +1,0 @@
-firstLineOf: aSelector 		 ^self named: 'first-line' of: aSelector 

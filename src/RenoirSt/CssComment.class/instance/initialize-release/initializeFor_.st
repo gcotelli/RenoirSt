@@ -1,1 +1,0 @@
-initializeFor: aCommentText	comment  := aCommentText 

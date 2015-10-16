@@ -1,1 +1,0 @@
-initializeOn: aCssValue	direction := aCssValue 

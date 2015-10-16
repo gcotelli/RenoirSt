@@ -1,1 +1,0 @@
-firstChild	^ CssPseudoClassSelector firstChildOn: self

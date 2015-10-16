@@ -1,0 +1,14 @@
+{
+	"category" : "RenoirSt",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 3/4/2014 00:01",
+	"instvars" : [
+		 ],
+	"name" : "CssNormalRulePrecedencePolicy",
+	"pools" : [
+		 ],
+	"super" : "CssRulePrecedencePolicy",
+	"type" : "normal" }

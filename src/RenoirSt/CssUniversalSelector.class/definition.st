@@ -1,1 +1,0 @@
-CssSelector subclass: #CssUniversalSelector	instanceVariableNames: 'representation'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Selectors'

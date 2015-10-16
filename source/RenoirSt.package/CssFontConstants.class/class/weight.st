@@ -1,0 +1,4 @@
+Font Synthesis
+weight
+	
+	^'weight'

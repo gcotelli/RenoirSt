@@ -1,0 +1,14 @@
+{
+	"category" : "ConfigurationOfRenoirSt",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"LastVersionLoad" ],
+	"commentStamp" : "GabrielOmarCotelli 4/4/2014 00:02",
+	"instvars" : [
+		"project" ],
+	"name" : "ConfigurationOfRenoirSt",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

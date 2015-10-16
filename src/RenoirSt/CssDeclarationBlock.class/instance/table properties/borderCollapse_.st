@@ -1,1 +1,0 @@
-borderCollapse: aCssValue	self propertyAt: 'border-collapse' put: aCssValue 

@@ -1,1 +1,0 @@
-rotated: aCssAngle fading: aColorStopCollection 		^self in: (CssGradientComponent on: aCssAngle) fading: aColorStopCollection 

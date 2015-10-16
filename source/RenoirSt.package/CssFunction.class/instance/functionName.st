@@ -1,0 +1,4 @@
+private
+functionName
+	
+	self subclassResponsibility 

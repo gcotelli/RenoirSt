@@ -1,1 +1,0 @@
-CssColorUnit subclass: #CssIdentifiedColor	instanceVariableNames: 'color identification'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Colors'

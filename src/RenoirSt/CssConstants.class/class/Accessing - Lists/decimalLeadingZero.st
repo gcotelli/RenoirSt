@@ -1,1 +1,0 @@
-decimalLeadingZero	^'decimal-leading-zero'

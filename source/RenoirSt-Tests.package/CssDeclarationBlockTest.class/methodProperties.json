@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"assert:rendersProperty:withValue:" : "GabrielOmarCotelli 3/6/2014 19:27",
+		"testPrintStringOfBackgroundProperties" : "GabrielOmarCotelli 4/8/2014 23:11",
+		"testPrintStringOfBorderImageProperties" : "GabrielOmarCotelli 4/8/2014 23:23",
+		"testPrintStringOfBorderProperties" : "GabrielOmarCotelli 4/8/2014 23:12",
+		"testPrintStringOfBoxProperties" : "MaximilianoTabacman 4/2/2014 11:15",
+		"testPrintStringOfEmptyDeclarationBlock" : "GabrielOmarCotelli 2/25/2014 15:30",
+		"testPrintStringOfFontProperties" : "GabrielOmarCotelli 3/26/2014 22:31",
+		"testPrintStringOfGeneratedContentProperties" : "GabrielOmarCotelli 3/8/2014 16:52",
+		"testPrintStringOfMarginProperties" : "GabrielOmarCotelli 3/8/2014 16:34",
+		"testPrintStringOfMoreFontProperties" : "GabrielOmarCotelli 4/1/2014 20:46",
+		"testPrintStringOfNotEmptyDeclarationBlock" : "GabrielOmarCotelli 2/25/2014 16:33",
+		"testPrintStringOfNotEmptyDeclarationBlockWithImportantRules" : "GabrielOmarCotelli 3/3/2014 22:26",
+		"testPrintStringOfPaddingProperties" : "GabrielOmarCotelli 3/8/2014 16:35",
+		"testPrintStringOfTableProperties" : "GabrielOmarCotelli 3/8/2014 16:58",
+		"testPrintStringOfTextDecorationProperties" : "GabrielOmarCotelli 4/12/2014 15:47",
+		"testPrintStringOfTextProperties" : "GabrielOmarCotelli 3/8/2014 17:03",
+		"testPrintStringOfUIProperties" : "GabrielOmarCotelli 3/8/2014 18:20",
+		"testPrintStringOfVisualEffectProperties" : "GabrielOmarCotelli 3/8/2014 19:16",
+		"testPrintStringOfVisualFormattingProperties" : "GabrielOmarCotelli 3/8/2014 19:35",
+		"testPrintStringWithSeveralDeclarations" : "GabrielOmarCotelli 2/25/2014 17:06" } }

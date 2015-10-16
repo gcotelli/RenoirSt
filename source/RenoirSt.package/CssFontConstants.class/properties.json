@@ -1,0 +1,14 @@
+{
+	"category" : "RenoirSt-Fonts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 3/26/2014 17:38",
+	"instvars" : [
+		 ],
+	"name" : "CssFontConstants",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,1 +1,0 @@
-input	 ^self descendantOfType: 'input'

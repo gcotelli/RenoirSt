@@ -1,1 +1,0 @@
-repeatX	^'repeat-x'

@@ -1,1 +1,0 @@
-initializeOf: aNumber	number := aNumber 

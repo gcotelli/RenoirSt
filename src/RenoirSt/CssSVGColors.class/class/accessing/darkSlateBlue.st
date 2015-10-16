@@ -1,1 +1,0 @@
-darkSlateBlue	^ DarkSlateBlue

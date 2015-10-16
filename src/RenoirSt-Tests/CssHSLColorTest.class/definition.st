@@ -1,1 +1,0 @@
-TestCase subclass: #CssHSLColorTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests-Colors'

@@ -1,0 +1,4 @@
+Accessing
+kiloHertz
+
+	^KiloHertz 

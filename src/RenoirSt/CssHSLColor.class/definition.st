@@ -1,1 +1,0 @@
-CssColor subclass: #CssHSLColor	instanceVariableNames: 'hue saturation lightness alphaChannel'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Colors'

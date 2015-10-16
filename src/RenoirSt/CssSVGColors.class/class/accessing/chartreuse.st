@@ -1,1 +1,0 @@
-chartreuse	^ Chartreuse

@@ -1,1 +1,0 @@
-enabledOn: aSelector 		^self named: 'enabled' over: aSelector 

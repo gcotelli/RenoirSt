@@ -1,1 +1,0 @@
-right: aCssValue	self propertyAt: 'right' put: aCssValue 

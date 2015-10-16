@@ -1,0 +1,4 @@
+Instance Creation
+siblingOfTypeAt: anInteger on: aSelector 
+
+	^self named: 'nth-of-type' withArguments: { anInteger } over: aSelector

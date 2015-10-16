@@ -1,0 +1,6 @@
+private
+cssStatementsContentOn: aStream
+	| tabStream |
+	tabStream := IndentOnNewLineWriteStream on: aStream.
+	tabStream newLine.
+	styleSheet cssContentOn: tabStream

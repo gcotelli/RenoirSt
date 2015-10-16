@@ -1,1 +1,0 @@
-slateGray	^ SlateGray

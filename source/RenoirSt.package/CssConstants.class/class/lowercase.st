@@ -1,0 +1,4 @@
+Accessing - Text
+lowercase
+
+	^'lowercase'

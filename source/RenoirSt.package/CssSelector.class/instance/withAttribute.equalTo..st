@@ -1,0 +1,4 @@
+building
+withAttribute: aString equalTo: aValue
+
+	^ CssAttributeSelector isAttribute: aString of: self equalTo: aValue

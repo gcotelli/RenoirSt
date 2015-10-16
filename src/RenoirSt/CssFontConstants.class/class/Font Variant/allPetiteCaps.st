@@ -1,1 +1,0 @@
-allPetiteCaps		^'all-petite-caps'

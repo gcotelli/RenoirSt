@@ -1,1 +1,0 @@
-Object subclass: #IndentOnNewLineWriteStream	instanceVariableNames: 'stream'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Common'

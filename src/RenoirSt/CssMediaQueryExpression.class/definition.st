@@ -1,1 +1,0 @@
-CssObject subclass: #CssMediaQueryExpression	instanceVariableNames: 'mediaFeature values'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-MediaQueries'

@@ -1,1 +1,0 @@
-borderBottomWidth: aBorderWidth		self propertyAt: 'border-bottom-width' put: aBorderWidth 

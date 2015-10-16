@@ -1,1 +1,0 @@
-deviceWidth: aCssLenght 		self addExpressionForFeatureNamed: 'device-width' withValue: aCssLenght 

@@ -1,1 +1,0 @@
-lineThrough	^'line-through'

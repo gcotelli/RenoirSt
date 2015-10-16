@@ -1,1 +1,0 @@
-tableRow	 ^self descendantOfType: 'tr'

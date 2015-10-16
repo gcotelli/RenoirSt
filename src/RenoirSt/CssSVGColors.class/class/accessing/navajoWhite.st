@@ -1,1 +1,0 @@
-navajoWhite	^ NavajoWhite

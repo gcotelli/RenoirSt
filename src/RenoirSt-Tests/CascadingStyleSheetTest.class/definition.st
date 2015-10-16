@@ -1,1 +1,0 @@
-TestCase subclass: #CascadingStyleSheetTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Tests'

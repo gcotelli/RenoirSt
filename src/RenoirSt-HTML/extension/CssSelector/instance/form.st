@@ -1,1 +1,0 @@
-form	 ^self descendantOfType: 'form'

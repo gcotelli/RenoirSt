@@ -1,1 +1,0 @@
-tableData	 ^self descendantOfType: 'td'

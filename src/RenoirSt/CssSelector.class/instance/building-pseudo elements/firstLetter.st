@@ -1,1 +1,0 @@
-firstLetter	^CssPseudoElementSelector firstLetterOf: self

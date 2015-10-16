@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testFontSizeConstants" : "GabrielOmarCotelli 3/26/2014 22:15",
+		"testFontStretchConstants" : "GabrielOmarCotelli 3/26/2014 18:41",
+		"testFontVariantCapsConstants" : "GabrielOmarCotelli 4/1/2014 20:40",
+		"testFontVariantLigaturesConstants" : "GabrielOmarCotelli 4/1/2014 20:27",
+		"testFontVariantNumericConstants" : "GabrielOmarCotelli 4/1/2014 20:49",
+		"testFontVariantPositionConstants" : "GabrielOmarCotelli 4/1/2014 20:35",
+		"testGenericFontFamiliesAccessors" : "GabrielOmarCotelli 3/26/2014 17:40" } }

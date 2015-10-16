@@ -1,0 +1,17 @@
+{
+	"category" : "RenoirSt-Colors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 3/5/2014 17:54",
+	"instvars" : [
+		"redComponent",
+		"greenComponent",
+		"blueComponent",
+		"alphaChannel" ],
+	"name" : "CssRGBColor",
+	"pools" : [
+		 ],
+	"super" : "CssColor",
+	"type" : "normal" }

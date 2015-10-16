@@ -1,1 +1,0 @@
-onePercentOfViewportWidth	^OnePercentOfViewportWidth 

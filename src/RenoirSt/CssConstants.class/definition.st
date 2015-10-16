@@ -1,1 +1,0 @@
-Object subclass: #CssConstants	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Common'

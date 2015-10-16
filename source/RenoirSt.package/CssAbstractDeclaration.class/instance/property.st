@@ -1,0 +1,4 @@
+private
+property
+
+	self subclassResponsibility 

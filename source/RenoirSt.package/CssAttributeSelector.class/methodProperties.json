@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"attribute:of:beginsWith:" : "GabrielOmarCotelli 2/25/2014 08:13",
+		"attribute:of:endsWith:" : "GabrielOmarCotelli 2/25/2014 08:13",
+		"attribute:of:includes:" : "GabrielOmarCotelli 2/25/2014 08:13",
+		"attribute:of:includesSubstring:" : "GabrielOmarCotelli 2/25/2014 08:13",
+		"firstValueOfAttribute:of:beginsWith:" : "GabrielOmarCotelli 2/25/2014 08:13",
+		"for:attribute:matchingCondition:" : "GabrielOmarCotelli 2/25/2014 08:14",
+		"having:theAttribute:" : "GabrielOmarCotelli 2/25/2014 08:13",
+		"isAttribute:of:equalTo:" : "GabrielOmarCotelli 2/25/2014 08:13" },
+	"instance" : {
+		"cssContentOn:" : "GabrielOmarCotelli 2/25/2014 08:13",
+		"initializeFor:attribute:matchingCondition:" : "GabrielOmarCotelli 2/25/2014 08:13" } }

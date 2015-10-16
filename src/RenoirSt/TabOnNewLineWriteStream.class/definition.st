@@ -1,1 +1,0 @@
-Object subclass: #TabOnNewLineWriteStream	instanceVariableNames: 'stream'	classVariableNames: ''	poolDictionaries: ''	category: 'RenoirSt-Common'

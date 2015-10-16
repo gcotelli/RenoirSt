@@ -1,1 +1,0 @@
-mediumAquamarine	^ MediumAquamarine

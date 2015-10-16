@@ -1,1 +1,0 @@
-unorderedList	 ^self descendantOfType: 'ul'

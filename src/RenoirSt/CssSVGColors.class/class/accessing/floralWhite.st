@@ -1,1 +1,0 @@
-floralWhite	^ FloralWhite

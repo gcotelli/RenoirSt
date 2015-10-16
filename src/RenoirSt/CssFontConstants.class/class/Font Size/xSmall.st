@@ -1,1 +1,0 @@
-xSmall		^'x-small'

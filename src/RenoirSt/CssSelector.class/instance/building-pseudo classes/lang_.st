@@ -1,1 +1,0 @@
-lang: aLanguageId	^ CssPseudoClassSelector language: aLanguageId on: self

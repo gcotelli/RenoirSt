@@ -1,1 +1,0 @@
-xxLarge		^'xx-large'
