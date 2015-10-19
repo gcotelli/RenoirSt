@@ -8,4 +8,4 @@ version140: spec
 			spec author: 'GabrielOmarCotelli'.
 			spec
 				baseline: 'RenoirSt'
-				with: [ spec repository: 'github://gcotelli/RenoirSt:v1.4.0' ] ]
+				with: [ spec repository: 'github://gcotelli/RenoirSt:v1.4.0/source' ] ]
