@@ -13,15 +13,15 @@ Some initial highlights:
 
 - This project is MIT licensed, so any code contribution must be under the same license.
 - This project uses [semantic versioning](http://semver.org/), so keep it in mind when you make backwards-incompatible changes. If some backwards incompatible change is made the major version MUST be increased.
-- The source code is hosted in [SmalltalkHub](http://www.smalltalkhub.com). Create an account and ask to be added as a collaborator to the project, or upload the changes to your own repository and provide a link in the issue requiring the merge. 
+- The source code is hosted in this GitHub repository using the filetree format in the `source` folder. The master branch contains the latest changes, feel free to send pull requests or fork the project. 
 - Code contributions without test cases have a lower probability of being merged into the main branch.
 
-The development version can be loaded in a Pharo 3 image evaluating the following code snippet:
+The development version can be loaded in a Pharo 5 image evaluating the following code snippet:
 ```smalltalk
-Gofer it    
-    url: 'http://smalltalkhub.com/mc/gcotelli/RenoirSt/main';
-    configurationOf: 'RenoirSt';
-    loadDevelopment
+Metacello new
+  baseline: 'RenoirSt';
+  repository: 'github://gcotelli/RenoirSt:master/source';
+  load.
 ```
 or taking the latests development image from the [Continous Integration Server](https://ci.inria.fr/pharo-contribution/job/RenoirSt/).
 
