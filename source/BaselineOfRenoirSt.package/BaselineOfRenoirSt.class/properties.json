@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfRenoirSt",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfRenoirSt",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

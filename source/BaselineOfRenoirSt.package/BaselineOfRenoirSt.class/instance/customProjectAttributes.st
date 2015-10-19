@@ -1,4 +1,4 @@
-accessing
+private
 customProjectAttributes
 	^ Array
 		with:

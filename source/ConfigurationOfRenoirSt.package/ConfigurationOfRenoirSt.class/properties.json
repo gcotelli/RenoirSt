@@ -6,9 +6,9 @@
 		"LastVersionLoad" ],
 	"commentStamp" : "GabrielOmarCotelli 4/4/2014 00:02",
 	"instvars" : [
-		"project" ],
+		 ],
 	"name" : "ConfigurationOfRenoirSt",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ConfigurationOf",
 	"type" : "normal" }
