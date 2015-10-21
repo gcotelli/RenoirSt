@@ -8,5 +8,5 @@ stableVersion: spec
 		do:
 			[ spec
 				baseline: 'RenoirSt'
-					with: [ spec repository: 'github://gcotelli/RenoirSt:v1.?/source' ];
+					with: [ spec repository: 'github://gcotelli/RenoirSt:v1.5.0/source' ];
 				import: 'RenoirSt' ]
