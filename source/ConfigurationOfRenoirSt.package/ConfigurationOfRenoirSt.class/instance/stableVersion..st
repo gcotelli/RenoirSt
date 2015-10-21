@@ -2,7 +2,7 @@ symbolic versions
 stableVersion: spec
 
 	"This is just a hack trying to define an #stable version using just the baseline"
-	<version: '1'>
+	<version: '0.0.0'>
 	spec
 		for: #common
 		do:
