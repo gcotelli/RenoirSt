@@ -23,7 +23,6 @@ Metacello new
   repository: 'github://gcotelli/RenoirSt:master/source';
   load.
 ```
-or taking the latests development image from the [Continous Integration Server](https://ci.inria.fr/pharo-contribution/job/RenoirSt/).
 
 ## How to contribute documentation
 

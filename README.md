@@ -23,21 +23,23 @@ The documentation is licensed under a [Creative Commons Attribution-ShareAlike 4
 
 ### Get started!
 
-#### Pharo 5
+#### Pharo 5 or 4
 
-- Open a Playground and evaluate:
+- Open a Playground/Workspace and evaluate:
 
 ```smalltalk
 Metacello new
   configuration: 'RenoirSt';
   repository: 'github://gcotelli/RenoirSt:master/source';
-  version: '1.5.0';
-  load.
+  load: #stable.
 ```
 
-#### Pharo 3 or 4
+or
+
+- Load it using the Catalog/Configuration Browser
+
+#### Pharo 3 
 - Download a ready to use [Pharo 3 image] (https://ci.inria.fr/pharo-contribution/job/RenoirSt/PHARO=30,VERSION=stable,VM=vm/lastSuccessfulBuild/artifact/)
-- Download a ready to use [Pharo 4 image] (https://ci.inria.fr/pharo-contribution/job/RenoirSt/PHARO=40,VERSION=stable,VM=vm/lastSuccessfulBuild/artifact/)
 
 or
 
