@@ -14,15 +14,15 @@ baseline: spec
 				for: #UnitsIsPresent
 				do:
 					[ spec
-						group: 'Minimal' with: #('RenoirSt' 'RenoirSt-HTML' 'RenoirSt-UnitsCompatibility');
-						group: 'default' with: #('Minimal' 'RenoirSt-Tests' 'RenoirSt-HTML-Tests');
+						group: 'Deployment' with: #('RenoirSt' 'RenoirSt-HTML' 'RenoirSt-UnitsCompatibility');
+						group: 'Development' with: #('Deployment' 'RenoirSt-Tests' 'RenoirSt-HTML-Tests');
 						yourself ].
 			spec
 				for: #UnitsIsAbsent
 				do:
 					[ spec
 						group: 'Deployment' with: #('RenoirSt' 'RenoirSt-HTML');
-						group: 'Development' with: #('Minimal' 'RenoirSt-Tests' 'RenoirSt-HTML-Tests');
+						group: 'Development' with: #('Deployment' 'RenoirSt-Tests' 'RenoirSt-HTML-Tests');
 						yourself ].
 			spec
 				package: 'RenoirSt-Seaside' with: [ spec requires: 'Deployment' ];
