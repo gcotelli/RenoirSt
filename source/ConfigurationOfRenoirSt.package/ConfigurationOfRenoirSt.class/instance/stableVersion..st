@@ -1,4 +1,11 @@
 symbolic versions
 stableVersion: spec
 	<version: '0.0.0'>
-	spec for: #common do: [ spec postLoadDoIt: #installBaselineForPharo50 ]
+	spec
+		for: #common
+		do: [ 
+			spec
+				blessing: #baseline;
+				repository: 'github://gcotelli/RenoirSt:master/source';
+				package: 'BaselineOfRenoirSt';
+				postLoadDoIt: #installBaselineForPharo50 ]
