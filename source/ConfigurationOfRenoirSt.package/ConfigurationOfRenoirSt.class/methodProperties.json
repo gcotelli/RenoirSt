@@ -7,6 +7,7 @@
 		"catalogKeywords" : "GabrielOmarCotelli 2/26/2014 18:50",
 		"load" : "GabrielOmarCotelli 2/26/2014 18:45" },
 	"instance" : {
+		"installBaselineForPharo40" : "GabrielOmarCotelli 10/23/2015 18:28",
 		"installBaselineForPharo50" : "GabrielOmarCotelli 10/23/2015 17:58",
-		"stable:" : "GabrielOmarCotelli 10/20/2015 22:31",
-		"stableVersion:" : "GabrielOmarCotelli 10/23/2015 18:18" } }
+		"stable:" : "GabrielOmarCotelli 10/23/2015 18:28",
+		"stableVersion:" : "GabrielOmarCotelli 10/23/2015 18:43" } }

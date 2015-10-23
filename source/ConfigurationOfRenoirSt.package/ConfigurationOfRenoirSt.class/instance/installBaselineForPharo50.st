@@ -1,4 +1,4 @@
-symbolic versions
+actions
 installBaselineForPharo50
 
 	Metacello new
