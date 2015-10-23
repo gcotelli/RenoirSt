@@ -6,7 +6,7 @@ stableVersion: spec
 		for: #common
 		do:
 			[ spec
-				blessing: #baseline;
+				blessing: #development;
 				repository: 'github://gcotelli/RenoirSt:master/source';
 				package: 'BaselineOfRenoirSt';
 				postLoadDoIt: #installBaselineForPharo50 ]
