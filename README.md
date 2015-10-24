@@ -1,7 +1,7 @@
 Renoir.St 
+=========
 
 [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt)](https://ci.inria.fr/pharo-contribution/job/RenoirSt/)
-=========
 
 *A DSL enabling programmatic cascading style sheet generation for Pharo Smalltalk*
 
