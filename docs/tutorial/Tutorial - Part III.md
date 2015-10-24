@@ -164,7 +164,7 @@ The `Units` package (available using the ConfigurationBrowser in Pharo) includes
 
 ### Seaside
 
-The library includes an optional configuration called `ConfigurationOfRenoirtStPlusSeaside` including some useful extensions. The [Seaside](www.seaside.st) framework includes your own class modeling URLs, when this configuration is loaded the instances of `WAUrl` can be used in the properties requiring an URI:
+The library includes an optional group including some useful extensions. The [Seaside](www.seaside.st) framework includes your own class modeling URLs, when this configuration is loaded the instances of `WAUrl` can be used in the properties requiring an URI:
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
@@ -182,15 +182,22 @@ div.logo
 
 This optional configuration also loads extensions to `CssDeclarationBlock` so it can be used as a `JSObject` in plugins requiring some style parameter.
 
-To load this extensions use the Configuration Browser or try something like:
+To load this extensions you need to load in an image with Seaside already loaded the group `Deployment-Seaside-Extensions` or `Development-Seaside-Extensions` (if you want the test cases):
+
 ```smalltalk
-Gofer it    
-    url: 'http://smalltalkhub.com/mc/gcotelli/RenoirSt/main';
-    configurationOf: 'RenoirStPlusSeaside';
-    loadStable
+Metacello new
+  baseline: 'RenoirSt';
+  repository: 'github://gcotelli/RenoirSt:stable-pharo-50/source';
+  load: 'Deployment-Seaside-Extensions'
 ```
 
-There's an integration job in the CI server, testing this specific configuration: [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-SeasideIntegration)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-SeasideIntegration/).
+or 
 
-For Pharo 4 there's no stable Seaside version yet so the integration job in the CI server loads the development version: [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-SeasideIntegration-Pharo4)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-SeasideIntegration-Pharo4/)
+```smalltalk
+Metacello new
+  baseline: 'RenoirSt';
+  repository: 'github://gcotelli/RenoirSt:stable-pharo-40/source';
+  load: 'Deployment-Seaside-Extensions'
+```
 
+There's an integration job in the CI server, testing this specific configuration: [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-SeasideExtensions)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-SeasideExtensions/).
