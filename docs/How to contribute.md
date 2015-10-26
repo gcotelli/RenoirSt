@@ -16,15 +16,22 @@ Some initial highlights:
 - The source code is hosted in this GitHub repository using the filetree format in the `source` folder. The master branch contains the latest changes, feel free to send pull requests or fork the project. 
 - Code contributions without test cases have a lower probability of being merged into the main branch.
 
-The development version can be loaded in a Pharo 4/5 image evaluating the following code snippet:
+Step by step instructions
+- Clone this repository (or a fork if you want) using the usual Git tooling
+- Open a Pharo 4 or 5 image and evaluate in a Playground
+
 ```smalltalk
 Metacello new
   baseline: 'RenoirSt';
-  repository: 'github://gcotelli/RenoirSt:master/source';
+  repository: 'filetree://REPO_LOCATION/source';
   load: 'Development'.
-```
+ ```
+ 
+where `REPO_LOCATION` is the file system location for the cloned repository.
 
-If you want to contribute code, clone this repository, add a filetree repository in Pharo pointing to the source folder inside your cloned repor, do the changes, save it from Pharo and commit using the usual Git tooling.
+- Do the changes
+- Save it from Pharo
+- Commit using the usual Git tooling
 
 ## How to contribute documentation
 
