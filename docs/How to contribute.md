@@ -16,26 +16,32 @@ Some initial highlights:
 - The source code is hosted in this GitHub repository using the filetree format in the `source` folder. The master branch contains the latest changes, feel free to send pull requests or fork the project. 
 - Code contributions without test cases have a lower probability of being merged into the main branch.
 
-Step by step instructions
-- Clone this repository (or a fork if you want) using the usual Git tooling
-- Open a Pharo 4 or 5 image and evaluate in a Playground
-
+The development version can be loaded in a Pharo 4/5 image evaluating the following code snippet:
 ```smalltalk
 Metacello new
   baseline: 'RenoirSt';
-  repository: 'filetree://REPO_LOCATION/source';
+  repository: 'github://gcotelli/RenoirSt:master/source';
   load: 'Development'.
- ```
- 
-where `REPO_LOCATION` is the file system location for the cloned repository.
+```
 
-- Do the changes
-- Save it from Pharo
-- Commit using the usual Git tooling
+or 
+```smalltalk
+Metacello new
+  baseline: 'RenoirSt';
+  repository: 'github://gcotelli/RenoirSt:master/source';
+  load: 'Development-Seaside-Extensions'.
+```
+if you want the Seaside extensions.
+
+If you want to contribute code:
+- Clone this repository
+- Add a filetree repository in Pharo pointing to the `source` folder inside your cloned repor
+- Do the changes and save it from Pharo (don't forget to add some test cases)
+- Create a branch, commit using the usual Git tooling and open a Pull Request
 
 ## How to contribute documentation
 
-The project documentation is mantained in this GitHub repository in the `docs` folder. The `stable` branch contains the documentation of the latest stable version and `master` the documentation updated with the latest changes in the development branch. To contribute some documentation or improve the existing, feel free to fork this repository, make your changes and send a pull request.
+The project documentation is mantained in this GitHub repository in the `docs` folder. To contribute some documentation or improve the existing, feel free to create a branch or fork this repository, make your changes and send a pull request.
 
 Remember the docs are licensed under a CC Attribution-ShareAlike license. 
 

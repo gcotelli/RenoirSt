@@ -1,5 +1,7 @@
-Renoir.St [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt)](https://ci.inria.fr/pharo-contribution/job/RenoirSt/)
+Renoir.St 
 =========
+
+[![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt)](https://ci.inria.fr/pharo-contribution/job/RenoirSt/)
 
 *A DSL enabling programmatic cascading style sheet generation for Pharo Smalltalk*
 
@@ -17,9 +19,8 @@ The documentation is licensed under a [Creative Commons Attribution-ShareAlike 4
 - Use your favorite browsing and refactoring tools inside the same Pharo image to handle CSS  
 
 ### Highlights:
-- **Supported Platforms**: [Pharo 3 / Pharo 4](http://www.pharo.org/)
-- **Source Code Repository**: **RenoirSt** project in [Smalltalk Hub](http://www.smalltalkhub.com)
-- **Issue Tracking**: In this GitHub repository.
+- **Supported Platforms**: [Pharo 3 / Pharo 4 / Pharo 5](http://www.pharo.org/)
+- **Source Code Repository** and **Issue Tracking**: In this GitHub repository.
 
 ### Get started!
 
