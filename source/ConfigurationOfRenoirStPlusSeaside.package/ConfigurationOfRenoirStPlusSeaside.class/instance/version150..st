@@ -6,11 +6,15 @@ version150: spec
 		do:
 			[ spec blessing: #stable.
 			spec
-				project: 'Seaside' with: [ spec versionString: #release3 ];
-				baseline: 'RenoitSt'
+				project: 'Seaside'
 					with:
 						[ spec
-						requires: 'Seaside';
-						repository: 'github://gcotelli/RenoirSt:v1.?/source';
+						className: 'ConfigurationOfSeaside3';
+						repository: 'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo40/main';
+						versionString: #release3 ];
+				baseline: 'RenoirSt'
+					with: [ spec
+						repository: 'github://gcotelli/RenoirSt:v1.6.0/source';
 						loads: #('Development-Seaside-Extensions') ];
-				import: 'RenoirSt' ]
+				import: 'RenoirSt';
+				group: 'default' with: #('Seaside' 'RenoirSt') ]
