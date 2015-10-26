@@ -9,18 +9,20 @@ The issue tracker is this GitHub repository. Please use the labels to categorize
 
 ## How to contribute code
 
-Some initial highlights:
-
+Remember:
 - This project is MIT licensed, so any code contribution must be under the same license.
 - This project uses [semantic versioning](http://semver.org/), so keep it in mind when you make backwards-incompatible changes. If some backwards incompatible change is made the major version MUST be increased.
 - The source code is hosted in this GitHub repository using the filetree format in the `source` folder. The master branch contains the latest changes, feel free to send pull requests or fork the project. 
 - Code contributions without test cases have a lower probability of being merged into the main branch.
 
+
+- Clone this repository or fork it
+- Load the corresponding development version with:
 The development version can be loaded in a Pharo 4/5 image evaluating the following code snippet:
 ```smalltalk
 Metacello new
   baseline: 'RenoirSt';
-  repository: 'github://gcotelli/RenoirSt:master/source';
+  repository: 'filetree://REPO_LOCATION/source';
   load: 'Development'.
 ```
 
@@ -28,14 +30,10 @@ or
 ```smalltalk
 Metacello new
   baseline: 'RenoirSt';
-  repository: 'github://gcotelli/RenoirSt:master/source';
+  repository: 'filetree://REPO_LOCATION/source';
   load: 'Development-Seaside-Extensions'.
 ```
-if you want the Seaside extensions.
-
-If you want to contribute code:
-- Clone this repository
-- Add a filetree repository in Pharo pointing to the `source` folder inside your cloned repor
+if you want the Seaside extensions, where `REPO_LOCATION` is the location of the cloned repo in the local file system.
 - Do the changes and save it from Pharo (don't forget to add some test cases)
 - Create a branch, commit using the usual Git tooling and open a Pull Request
 
