@@ -201,3 +201,35 @@ Metacello new
 ```
 
 There's an integration job in the CI server, testing this specific configuration: [![Build Status](https://ci.inria.fr/pharo-contribution/buildStatus/icon?job=RenoirSt-SeasideExtensions)](https://ci.inria.fr/pharo-contribution/job/RenoirSt-SeasideExtensions/).
+
+## How to use the library from other project
+
+Using the new Metacello API it's easy to reference the library as a dependency from another project. For example to depende on an specific version you can do something like:
+
+```smalltalk
+...
+	spec 
+		baseline: 'RenoirSt'
+		with: [ spec repository: 'github://gcotelli/RenoirSt:v1.6.0/source'];
+		import: 'RenoirSt' 
+```
+
+you can also load specific groups, like the Seaside extensions or you pattern matching given this project uses Semantic Versioning:
+
+```smalltalk
+...
+	spec 
+		baseline: 'RenoirSt'
+		with: [ 
+			spec
+				repository: 'github://gcotelli/RenoirSt:v1.?/source';
+				loads: #('Deployment-Seaside-Extensions')];
+		import: 'RenoirSt' 
+```
+
+The available groups are:
+- Deployment: Base library  (the default group)
+- Development: Deployment + Test cases
+- Deployment-Seaside-Extensions: Deployment + Seaside specific extensions
+- Development-Seaside-Extensions: Deployment-Seaside-Extensions + Test cases
+			

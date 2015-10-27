@@ -17,3 +17,4 @@ Tutorial
   - Media Queries
   - Vendor specific extensions
   - Interaction with other frameworks and libraries
+  - How to use the library from other project
