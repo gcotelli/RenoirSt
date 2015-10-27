@@ -204,7 +204,7 @@ There's an integration job in the CI server, testing this specific configuration
 
 ## How to use the library from other project
 
-Using the new Metacello API it's easy to reference the library as a dependency from another project. For example to depende on an specific version you can do something like:
+Using the new Metacello API it's easy to reference the library as a dependency from another project. For example to depend on a specific version you can do something like:
 
 ```smalltalk
 ...
@@ -214,7 +214,7 @@ Using the new Metacello API it's easy to reference the library as a dependency f
 		import: 'RenoirSt' 
 ```
 
-you can also load specific groups, like the Seaside extensions or you pattern matching given this project uses Semantic Versioning:
+you can also load specific groups, like the Seaside extensions or do pattern matching on the versions given this project uses Semantic Versioning:
 
 ```smalltalk
 ...
