@@ -1,4 +1,4 @@
 private
 functionName
-	
-	^'hsl'
+
+	^ alphaChannel functionNameFor: 'hsl'

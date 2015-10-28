@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"testPNewWithAlpha" : "GabrielOmarCotelli 10/28/2015 15:35",
 		"testPrintString" : "GabrielOmarCotelli 3/5/2014 18:14",
 		"testPrintStringUsingPercentageNotation" : "GabrielOmarCotelli 3/5/2014 23:28",
 		"testPrintStringWithAlpha" : "GabrielOmarCotelli 3/5/2014 23:30" } }

@@ -5,5 +5,6 @@
 		"hue:saturation:lightness:alphaChannel:" : "GabrielOmarCotelli 3/6/2014 00:00" },
 	"instance" : {
 		"componentsDo:separatedBy:" : "GabrielOmarCotelli 3/6/2014 00:04",
-		"functionName" : "GabrielOmarCotelli 3/6/2014 00:03",
-		"initializeHue:saturation:lightness:alphaChannel:" : "GabrielOmarCotelli 3/6/2014 00:01" } }
+		"functionName" : "GabrielOmarCotelli 10/28/2015 15:38",
+		"initializeHue:saturation:lightness:alphaChannel:" : "GabrielOmarCotelli 3/6/2014 00:01",
+		"newWithAlpha:" : "GabrielOmarCotelli 10/28/2015 15:20" } }
