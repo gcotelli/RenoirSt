@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testBoxShadowSet" : "GabrielOmarCotelli 10/28/2015 14:40",
+		"testBoxShadowWithBlurRadiusAndSpreadDistancePrintString" : "GabrielOmarCotelli 10/28/2015 14:41",
+		"testBoxShadowWithBlurRadiusPrintString" : "GabrielOmarCotelli 10/28/2015 14:42",
+		"testBoxShadowWithColorPrintString" : "GabrielOmarCotelli 10/28/2015 14:44",
+		"testInsetBoxShadowPrintString" : "GabrielOmarCotelli 10/28/2015 14:46",
+		"testSimplestBoxShadowPrintString" : "GabrielOmarCotelli 10/28/2015 14:46" } }
