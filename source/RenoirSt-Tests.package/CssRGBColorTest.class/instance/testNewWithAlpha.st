@@ -1,5 +1,5 @@
 Tests
-testPNewWithAlpha
+testNewWithAlpha
 
 	| color colorWithAlpha |
 

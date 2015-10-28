@@ -4,12 +4,10 @@ testVendorPropertySupport
 	| style |
 	style := CssDeclarationBlock new.
 	style vendorPropertyAt: 'border-end-color' put: CssSVGColors black.
-	
+
 	self
 		assert: style printString
 		equals:
-			('{<1s><2s><3s>: <4s>;<1s><2s>-moz-<3s>: <4s>;<1s><2s>-webkit-<3s>: <4s>;<1s><2s>-o-<3s>: <4s>;<1s><2s>-ms-<3s>: <4s>;<1s>}'
-				expandMacrosWith: OSPlatform current lineEnding
-				with: Character tab asString
-				with: 'border-end-color'
+			('{<n><t><1s>: <2s>;<n><t>-moz-<1s>: <2s>;<n><t>-webkit-<1s>: <2s>;<n><t>-o-<1s>: <2s>;<n><t>-ms-<1s>: <2s>;<n>}'
+				expandMacrosWith: 'border-end-color'
 				with: 'black')

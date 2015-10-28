@@ -7,4 +7,4 @@ testBuildingOnlyWithComments
 	
 	self
 		assert: builder build printString
-		equals: ('/*Example CSS*/<1s>' expandMacrosWith: OSPlatform current lineEnding)
+		equals: '/*Example CSS*/<n>' expandMacros

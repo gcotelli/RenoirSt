@@ -2,7 +2,6 @@ Tests
 testPrintString
 
 	| ruleSet |
-
 	ruleSet := CssRuleSet
 		selector: CssUniversalSelector explicit link
 		declarations:
@@ -11,9 +10,4 @@ testPrintString
 				margin: 2 px;
 				yourself).
 
-	self
-		assert: ruleSet printString
-		equals:
-			('*:link<1s>{<1s><2s>color: black;<1s><2s>margin: 2px;<1s>}'
-				expandMacrosWith: OSPlatform current lineEnding
-				with: Character tab asString)
+	self assert: ruleSet printString equals: '*:link<n>{<n><t>color: black;<n><t>margin: 2px;<n>}' expandMacros

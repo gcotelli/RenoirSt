@@ -1,4 +1,4 @@
 *RenoirSt
 newLine
 
-	self nextPutAll: OSPlatform current lineEnding
+	self nextPutAll: '<n>' expandMacros

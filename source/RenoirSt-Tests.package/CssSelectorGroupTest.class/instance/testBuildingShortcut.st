@@ -8,7 +8,7 @@ testBuildingShortcut
 	
 	self
 		assert: (firstSelector , secondSelector) printString
-		equals: ('.custom ,<1s>div' expandMacrosWith: OSPlatform current lineEnding);
+		equals: '.custom ,<n>div' expandMacros;
 
 		assert: (firstSelector , secondSelector , secondSelector) printString
-		equals: ('.custom ,<1s>div ,<1s>div' expandMacrosWith: OSPlatform current lineEnding)
+		equals: '.custom ,<n>div ,<n>div' expandMacros

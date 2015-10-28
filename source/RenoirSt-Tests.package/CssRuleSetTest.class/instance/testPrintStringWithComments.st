@@ -2,7 +2,6 @@ Tests
 testPrintStringWithComments
 
 	| ruleSet |
-
 	ruleSet := CssRuleSet
 		selector: CssUniversalSelector explicit link
 		declarations:
@@ -14,7 +13,4 @@ testPrintStringWithComments
 
 	self
 		assert: ruleSet printString
-		equals:
-			('/*All links must be black and with a margin of 2 pixels*/<1s>*:link<1s>{<1s><2s>color: black;<1s><2s>margin: 2px;<1s>}'
-				expandMacrosWith: OSPlatform current lineEnding
-				with: Character tab asString)
+		equals: '/*All links must be black and with a margin of 2 pixels*/<n>*:link<n>{<n><t>color: black;<n><t>margin: 2px;<n>}' expandMacros

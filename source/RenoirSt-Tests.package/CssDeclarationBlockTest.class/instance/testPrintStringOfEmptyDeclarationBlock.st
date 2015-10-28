@@ -1,4 +1,4 @@
 Tests
 testPrintStringOfEmptyDeclarationBlock
 
-	self assert: CssDeclarationBlock new printString equals: ('{<1s>}' expandMacrosWith: OSPlatform current lineEnding)
+	self assert: CssDeclarationBlock new printString equals: '{<n>}' expandMacros

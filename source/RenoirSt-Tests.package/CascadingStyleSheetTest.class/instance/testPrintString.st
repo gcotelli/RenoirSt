@@ -2,7 +2,6 @@ Tests
 testPrintString
 
 	| ruleSet anotherRuleSet styleSheet |
-
 	ruleSet := CssRuleSet
 		selector: CssUniversalSelector explicit link
 		declarations:
@@ -12,12 +11,10 @@ testPrintString
 				yourself).
 
 	anotherRuleSet := CssRuleSet selector: CssUniversalSelector explicit declarations: CssDeclarationBlock new.
-	
-	styleSheet := CascadingStyleSheet withAll: { ruleSet. anotherRuleSet  }.
-	
-	self
-		assert: styleSheet printString
-		equals:
-			('*:link<1s>{<1s><2s>color: black;<1s><2s>margin: 2px;<1s>}<1s><1s>*<1s>{<1s>}'
-				expandMacrosWith: OSPlatform current lineEnding
-				with: Character tab asString)
+
+	styleSheet := CascadingStyleSheet
+		withAll:
+			{ruleSet.
+			anotherRuleSet}.
+
+	self assert: styleSheet printString equals: '*:link<n>{<n><t>color: black;<n><t>margin: 2px;<n>}<n><n>*<n>{<n>}' expandMacros

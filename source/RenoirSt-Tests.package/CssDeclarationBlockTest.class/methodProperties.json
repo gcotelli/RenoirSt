@@ -2,20 +2,20 @@
 	"class" : {
 		 },
 	"instance" : {
-		"assert:rendersProperty:withValue:" : "GabrielOmarCotelli 3/6/2014 19:27",
+		"assert:rendersProperty:withValue:" : "GabrielOmarCotelli 10/28/2015 18:57",
 		"testPrintInlined" : "GabrielOmarCotelli 10/28/2015 16:40",
 		"testPrintStringOfBackgroundProperties" : "GabrielOmarCotelli 4/8/2014 23:11",
 		"testPrintStringOfBorderImageProperties" : "GabrielOmarCotelli 10/28/2015 15:29",
 		"testPrintStringOfBorderProperties" : "GabrielOmarCotelli 4/8/2014 23:12",
 		"testPrintStringOfBoxProperties" : "MaximilianoTabacman 4/2/2014 11:15",
 		"testPrintStringOfColorProperties" : "GabrielOmarCotelli 10/28/2015 15:31",
-		"testPrintStringOfEmptyDeclarationBlock" : "GabrielOmarCotelli 2/25/2014 15:30",
+		"testPrintStringOfEmptyDeclarationBlock" : "GabrielOmarCotelli 10/28/2015 18:57",
 		"testPrintStringOfFontProperties" : "GabrielOmarCotelli 3/26/2014 22:31",
 		"testPrintStringOfGeneratedContentProperties" : "GabrielOmarCotelli 3/8/2014 16:52",
 		"testPrintStringOfMarginProperties" : "GabrielOmarCotelli 3/8/2014 16:34",
 		"testPrintStringOfMoreFontProperties" : "GabrielOmarCotelli 4/1/2014 20:46",
-		"testPrintStringOfNotEmptyDeclarationBlock" : "GabrielOmarCotelli 2/25/2014 16:33",
-		"testPrintStringOfNotEmptyDeclarationBlockWithImportantRules" : "GabrielOmarCotelli 3/3/2014 22:26",
+		"testPrintStringOfNotEmptyDeclarationBlock" : "GabrielOmarCotelli 10/28/2015 18:58",
+		"testPrintStringOfNotEmptyDeclarationBlockWithImportantRules" : "GabrielOmarCotelli 10/28/2015 18:59",
 		"testPrintStringOfPaddingProperties" : "GabrielOmarCotelli 3/8/2014 16:35",
 		"testPrintStringOfTableProperties" : "GabrielOmarCotelli 3/8/2014 16:58",
 		"testPrintStringOfTextDecorationProperties" : "GabrielOmarCotelli 4/12/2014 15:47",
@@ -23,4 +23,4 @@
 		"testPrintStringOfUIProperties" : "GabrielOmarCotelli 3/8/2014 18:20",
 		"testPrintStringOfVisualEffectProperties" : "GabrielOmarCotelli 10/28/2015 15:32",
 		"testPrintStringOfVisualFormattingProperties" : "GabrielOmarCotelli 3/8/2014 19:35",
-		"testPrintStringWithSeveralDeclarations" : "GabrielOmarCotelli 2/25/2014 17:06" } }
+		"testPrintStringWithSeveralDeclarations" : "GabrielOmarCotelli 10/28/2015 19:00" } }

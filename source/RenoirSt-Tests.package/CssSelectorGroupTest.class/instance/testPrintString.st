@@ -8,4 +8,4 @@ testPrintString
 	
 	self
 		assert: (CssSelectorGroup with: firstSelector with: secondSelector) printString
-		equals: ('.custom ,<1s>div' expandMacrosWith: OSPlatform current lineEnding)
+		equals: '.custom ,<n>div' expandMacros
