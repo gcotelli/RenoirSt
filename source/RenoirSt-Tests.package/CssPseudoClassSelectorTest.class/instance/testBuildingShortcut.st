@@ -15,4 +15,5 @@ testBuildingShortcut
 		assert: baseSelector checked printString equals: '*:checked';
 		assert: baseSelector active printString equals: '*:active';
 		assert: baseSelector hover printString equals: '*:hover';
-		assert: baseSelector focus printString equals: '*:focus'
+		assert: baseSelector focus printString equals: '*:focus';
+		assert: (baseSelector not: (baseSelector class: 'bad')) printString equals: '*:not(*.bad)'
