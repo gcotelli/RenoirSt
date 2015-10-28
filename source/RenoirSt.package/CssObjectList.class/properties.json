@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "GabrielOmarCotelli 10/28/2015 14:35",
+	"commentStamp" : "GabrielOmarCotelli 10/28/2015 18:02",
 	"instvars" : [
-		"shadows" ],
-	"name" : "CssBoxShadowList",
+		"components" ],
+	"name" : "CssObjectList",
 	"pools" : [
 		 ],
 	"super" : "CssObject",

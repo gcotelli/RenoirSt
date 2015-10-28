@@ -1,7 +1,7 @@
 Printing
 cssContentOn: aStream
 
-	shadows
+	components
 		do: [ :shadow | shadow cssContentOn: aStream ]
 		separatedBy: [ aStream
 				nextPut: $,;

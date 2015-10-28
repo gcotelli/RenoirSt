@@ -1,0 +1,1 @@
+I represent a list of css objects

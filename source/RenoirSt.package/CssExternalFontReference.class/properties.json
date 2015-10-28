@@ -1,0 +1,15 @@
+{
+	"category" : "RenoirSt-Fonts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 10/28/2015 18:26",
+	"instvars" : [
+		"url",
+		"format" ],
+	"name" : "CssExternalFontReference",
+	"pools" : [
+		 ],
+	"super" : "CssFontReference",
+	"type" : "normal" }

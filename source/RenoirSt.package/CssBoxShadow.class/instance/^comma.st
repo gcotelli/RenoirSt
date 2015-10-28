@@ -1,4 +1,4 @@
 Concatenating
 , aCssBoxShadow
 
-	^CssBoxShadowList with: self with: aCssBoxShadow 
+	^CssObjectList with: self with: aCssBoxShadow 

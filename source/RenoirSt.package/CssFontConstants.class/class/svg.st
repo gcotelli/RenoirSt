@@ -1,0 +1,4 @@
+Font Format
+svg
+
+	^ 'svg'
