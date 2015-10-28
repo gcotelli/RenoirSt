@@ -1,0 +1,1 @@
+I represent a URL that must be considered relative to the style sheet when used in a style sheet

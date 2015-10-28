@@ -1,0 +1,14 @@
+{
+	"category" : "RenoirSt-HTML",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GabrielOmarCotelli 10/28/2015 16:48",
+	"instvars" : [
+		"url" ],
+	"name" : "UrlRelativeToStyleSheet",
+	"pools" : [
+		 ],
+	"super" : "CssObject",
+	"type" : "normal" }
