@@ -158,7 +158,7 @@ div
 ```
 #### URLs
 
-`ZnUrl` instances can be used as the value for properties requiring an URI. Both relative and absolute URLs are accepted.
+`ZnUrl` instances can be used as the value for properties requiring an URI. Both relative and absolute URLs are accepted. A relative URL is by default considered relative to the site root.
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
@@ -172,12 +172,28 @@ Evaluates to:
 ```css
 div.logo
 {
-	background-image: url("images/logo.png");
+	background-image: url("/images/logo.png");
 }
 
 div.logo
 {
 	background-image: url("http://www.example.com/images/logo.png");
+}
+```
+
+In case you want an URL relative to the style sheet, you must send the message `relativeToStyleSheet`:
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector div class: 'logo' ]
+  with: [:style | style backgroundImage: 'images/logo.png' asZnUrl relativeToStyleSheet];
+  build
+```
+Evaluates to: 
+```css
+div.logo
+{
+	background-image: url("images/logo.png");
 }
 ```
 
@@ -274,7 +290,7 @@ or providing also the type or unit of the attribute (if no type or unit is speci
 ```smalltalk
 CascadingStyleSheetBuilder new 
   declareRuleSetFor: [:selector | selector div  ]
-  with: [:style | style width: (CssAttributeReference toAttributeNamed: 'height' ofType: CssLengthUnits pixels) ];
+  with: [:style | style width: (CssAttributeReference toAttributeNamed: 'height' ofType: CssLengthUnits pixel) ];
   build
 ```
 Evaluates to:
@@ -290,7 +306,7 @@ also it's possible to provide a fallback value in case the attribute is not pres
 ```smalltalk
 CascadingStyleSheetBuilder new 
   declareRuleSetFor: [:selector | selector div before ]
-  with: [:style | style content: (CssAttributeReference toAttributeNamed: 'title' ofType: 'string' withFallback: '"Missing title"') ];
+  with: [:style | style content: (CssAttributeReference toStringAttributeNamed: 'title' withFallback: 'Missing title') ];
   build
 ```
 Evaluates to:
@@ -298,6 +314,20 @@ Evaluates to:
 div::before
 {
 	content: attr(title string, "Missing title");
+}
+```
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector div before ]
+  with: [:style | style content: (CssAttributeReference toAttributeNamed: 'height' ofType: CssLengthUnits pixels withFallback: 10 px) ];
+  build
+```
+Evaluates to:
+```css
+div::before
+{
+	content: attr(height px, 10px);
 }
 ```
 
@@ -403,5 +433,25 @@ renders as:
 repeating-radial-gradient(yellow, green);
 ```
 
+#### Box Shadows
 
+This abstraction simplifies the use of the `box-shadow` property. Let's see some examples:
+
+```smalltalk
+CssBoxShadow horizontalOffset: 64 px verticalOffset: 64 px blurRadius: 12 px  spreadDistance: 40 px color: (CssSVGColors black newWithAlpha: 0.4)
+```
+renders as:
+```css
+64px 64px 12px 40px rgba(0,0,0,0.4)
+```
+
+```smalltalk
+(CssBoxShadow horizontalOffset: 64 px verticalOffset: 64 px blurRadius: 12 px  spreadDistance: 40 px color: (CssSVGColors black newWithAlpha: 0.4)) , 
+(CssBoxShadow horizontalOffset: 12 px verticalOffset: 11 px blurRadius: 0 px  spreadDistance: 8 px color: (CssSVGColors black newWithAlpha: 0.4)) beInset
+```
+renders as:
+```css
+64px 64px 12px 40px rgba(0,0,0,0.4), inset 12px 11px 0px 8px rgba(0,0,0,0.4)
+```
+			
 [Go to next chapter](Tutorial - Part II.md)
