@@ -201,7 +201,8 @@ CascadingStyleSheetBuilder new
 p[title*="hello"]
 {
 	color: blue;
-}```
+}
+```
 
 ### Pseudo-Classes
 The pseudo-class concept is introduced to allow selection based on information that lies outside of the document tree or that cannot be expressed using the simpler selectors. Most pseudo-classes are supported just by sending one of the following messages `link`, `visited`, `active`, `hover`, `focus`, `target`, `enabled`, `disabled` or `checked`.
