@@ -115,7 +115,7 @@ h1[title]
 }
 ```
 
-Exact attribute value matching:
+exact attribute value matching:
 ```smalltalk
 CascadingStyleSheetBuilder new 
   declareRuleSetFor: [:selector | selector span withAttribute: 'class' equalTo: 'example' ]
@@ -129,7 +129,7 @@ span[class="example"]
 }
 ```
 
-the other value selectors:
+inclusion:
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
@@ -143,7 +143,7 @@ a[rel~="copyright"]
 	color: blue;
 }
 ```
-and
+and:
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
@@ -160,7 +160,10 @@ a[hreflang|="en"]
 
 #### Substring matching attribute selectors
 
-This selectors are provided for matching substrings in the value of an attribute: `attribute:beginsWith:` , `attribute:endsWith:` and `attribute:includesSubstring:`. 
+This selectors are provided for matching substrings in the value of an attribute: 
+- `attribute:beginsWith:` 
+- `attribute:endsWith:` 
+- `attribute:includesSubstring:`
 
 ```smalltalk
 CascadingStyleSheetBuilder new 

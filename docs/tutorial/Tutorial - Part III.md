@@ -214,7 +214,7 @@ The `Units` package (available using the ConfigurationBrowser in Pharo) includes
 
 ### Seaside
 
-The library includes an optional group including some useful extensions. The [Seaside](www.seaside.st) framework includes your own class modeling URLs, when this configuration is loaded the instances of `WAUrl` can be used in the properties requiring an URI:
+The library includes an optional group including some useful extensions. The [Seaside](www.seaside.st) framework includes his own class modeling URLs, when this configuration is loaded the instances of `WAUrl` can be used in the properties requiring an URI:
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
