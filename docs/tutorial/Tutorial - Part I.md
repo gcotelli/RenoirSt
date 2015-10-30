@@ -320,7 +320,7 @@ div::before
 ```smalltalk
 CascadingStyleSheetBuilder new 
   declareRuleSetFor: [:selector | selector div before ]
-  with: [:style | style content: (CssAttributeReference toAttributeNamed: 'height' ofType: CssLengthUnits pixels withFallback: 10 px) ];
+  with: [:style | style content: (CssAttributeReference toAttributeNamed: 'height' ofType: CssLengthUnits pixel withFallback: 10 px) ];
   build
 ```
 Evaluates to:
