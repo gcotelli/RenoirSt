@@ -155,6 +155,56 @@ div
 
 > **Hint:** If you really want to use a vendor specific extension, It's better to create an extension method sending the vendorPropertyAt:put: message.
 
+## Font Face Rules
+
+The `@font-face` rule allows for linking to fonts that are automatically fetched and activated when needed. This allows authors to select a font that closely matches the design goals for a given page rather than limiting the font choice to a set of fonts available on a given platform. A set of font descriptors define the location of a font resource, either locally or externally, along with the style characteristics of an individual face.
+
+This support is implemented in the builder:
+```smalltalk
+CascadingStyleSheetBuilder new
+	declareFontFaceRuleWith: [ :style | 
+		style
+			fontFamily: 'Gentium';
+			src: 'http://example.com/fonts/gentium.woff' asZnUrl ];
+	build
+```
+renders as:
+```css
+@font-face
+{
+	font-family: Gentium;
+	src: url("http://example.com/fonts/gentium.woff");
+}
+```
+
+This kind of rule allows for multiple `src` definitions specifying the resources containing the data. This resources can be external (fonts fetched from a URL) or local (available in the user system). This kind of resources are supported using `CssLocalFontReference` and `CssExternalFontReference`. 
+
+Here's a more complex case showing this:
+```smalltalk
+CascadingStyleSheetBuilder new
+	declareFontFaceRuleWith:
+		[ :style | 
+		style
+			fontFamily: 'MainText';
+			src: (CssExternalFontReference locatedAt: 'gentium.eat' asZnUrl relativeToStyleSheet);
+			src: (CssLocalFontReference toFontNamed: 'Gentium')	, (CssExternalFontReference locatedAt: 'gentium.woff' asZnUrl relativeToStyleSheet withFormat: CssFontConstants woff);
+			src: (CssExternalFontReference svgFontLocatedAt: 'fonts.svg' asZnUrl relativeToStyleSheet withId: 'simple') ];
+	build
+``` 
+
+```css
+@font-face
+{
+	font-family: MainText;
+	src: url("gentium.eat");
+	src: local(Gentium), url("gentium.woff") format("woff");
+	src: url("fonts.svg#simple") format("svg");
+}
+```
+
+### References
+- http://www.w3.org/TR/css3-fonts/#font-face-rule
+
 ## Interaction with other frameworks and libraries
 
 ### Units
@@ -176,11 +226,11 @@ Evaluates to:
 ```css
 div.logo
 {
-    background-image: url("images/logo.png");
+    background-image: url("/images/logo.png");
 }
 ```
 
-This optional configuration also loads extensions to `CssDeclarationBlock` so it can be used as a `JSObject` in plugins requiring some style parameter.
+This optional configuration also loads extensions to `CssDeclarationBlock` so it can be used as a `JSObject` in plugins requiring some style parameter or in `style:` methods.
 
 To load this extensions you need to load in an image with Seaside already loaded the group `Deployment-Seaside-Extensions` or `Development-Seaside-Extensions` (if you want the test cases):
 
@@ -232,4 +282,3 @@ The available groups are:
 - Development: Deployment + Test cases
 - Deployment-Seaside-Extensions: Deployment + Seaside specific extensions
 - Development-Seaside-Extensions: Deployment-Seaside-Extensions + Test cases
-			

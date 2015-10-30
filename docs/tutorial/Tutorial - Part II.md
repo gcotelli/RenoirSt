@@ -7,7 +7,7 @@ So far our focus was on the *style* part of the rule. Let's focus now on the ava
 
 ### Type selectors
 
-These selectors match a specific element type in the DOM. The library provides out-of-the-box support for HTML elements, mostly using the same names that the `Seaside` framework. One example is the `div` selector used in the previous chapter. Another is the following:
+These selectors match a specific element type in the DOM. The library provides out-of-the-box support for HTML elements. One example is the `div` selector used in the previous chapter. Another is the following:
 
 ```smalltalk
 CascadingStyleSheetBuilder new 
@@ -21,6 +21,8 @@ ol
 	list-style-type: lower-roman;
 }
 ```
+
+To get a list of the supported type selectors inspect `CssSelector selectorsInProtocol: '*RenoirSt-HTML'`.
 
 ### Combinators
 
@@ -93,6 +95,111 @@ div.pastoral#account5
 ```
 > **Hint:** You should not hardcode the classes and ids, they should be obtained from the same object that holds them for the HTML generation. You probably have some code setting the class(es) and/or id(s) to a particular HTML element.
 
+### Attribute Selectors
+
+Attribute selectors are useful to match an element if that element has an attribute that matches the attribute represented by the selectors.
+
+#### Attribute presence and value selectors
+
+Attribute presence:
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector h1 havingAttribute: 'title' ]
+  with: [:style | style color: CssSVGColors blue ];
+  build
+```
+```css
+h1[title]
+{
+	color: blue;
+}
+```
+
+Exact attribute value matching:
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector span withAttribute: 'class' equalTo: 'example' ]
+  with: [:style | style color: CssSVGColors blue ];
+  build
+```
+```css
+span[class="example"]
+{
+	color: blue;
+}
+```
+
+the other value selectors:
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector anchor attribute: 'rel' includes: 'copyright' ]
+  with: [:style | style color: CssSVGColors blue ];
+  build
+```
+```css
+a[rel~="copyright"]
+{
+	color: blue;
+}
+```
+and
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector anchor firstValueOfAttribute: 'hreflang' beginsWith: 'en' ]
+  with: [:style | style color: CssSVGColors blue ];
+  build
+```
+```css
+a[hreflang|="en"]
+{
+	color: blue;
+}
+```
+
+#### Substring matching attribute selectors
+
+This selectors are provided for matching substrings in the value of an attribute: `attribute:beginsWith:` , `attribute:endsWith:` and `attribute:includesSubstring:`. 
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector anchor attribute: 'type' beginsWith: 'image/' ]
+  with: [:style | style color: CssSVGColors blue ];
+  build
+```
+```css
+a[type^="image/"]
+{
+	color: blue;
+}
+```
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector anchor attribute: 'type' endsWith: '.html' ]
+  with: [:style | style color: CssSVGColors blue ];
+  build
+```
+```css
+a[type$=".html"]
+{
+	color: blue;
+}
+```
+
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector paragraph attribute: 'title' includesSubstring: 'hello' ]
+  with: [:style | style color: CssSVGColors blue ];
+  build
+```
+```css
+p[title*="hello"]
+{
+	color: blue;
+}```
+
 ### Pseudo-Classes
 The pseudo-class concept is introduced to allow selection based on information that lies outside of the document tree or that cannot be expressed using the simpler selectors. Most pseudo-classes are supported just by sending one of the following messages `link`, `visited`, `active`, `hover`, `focus`, `target`, `enabled`, `disabled` or `checked`.
 
@@ -149,6 +256,24 @@ CascadingStyleSheetBuilder new
 :lang(es) > div
 {
 	quotes: "«" "»";
+}
+```
+
+#### Negation Pseudo-class:
+
+The negation pseudo-class, `:not(X)`, is a functional notation taking a simple selector (excluding the negation pseudo-class itself) as an argument. It represents an element that is not represented by its argument. For more information take a look at: http://www.w3.org/TR/css3-selectors/#negation.
+
+This selector is supported sending the message `not:`. Lets see an example:
+```smalltalk
+CascadingStyleSheetBuilder new 
+  declareRuleSetFor: [:selector | selector button not: (selector havingAttribute: 'DISABLED') ]
+  with: [:style | style color: CssSVGColors blue ];
+  build
+```
+```css
+button:not([DISABLED])
+{
+	color: blue;
 }
 ```
 #### Structural Pseudo-classes
