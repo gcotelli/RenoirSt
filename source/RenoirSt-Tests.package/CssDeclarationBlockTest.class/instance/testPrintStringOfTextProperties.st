@@ -8,4 +8,5 @@ testPrintStringOfTextProperties
 		assert: [ :style | style textIndent: 5 percent ] rendersProperty: 'text-indent' withValue: '5%';
 		assert: [ :style | style textTransform: CssConstants capitalize ] rendersProperty: 'text-transform' withValue: 'capitalize';
 		assert: [ :style | style whiteSpace: CssConstants nowrap ] rendersProperty: 'white-space' withValue: 'nowrap';
-		assert: [ :style | style wordSpacing: CssConstants normal ] rendersProperty: 'word-spacing' withValue: 'normal'
+		assert: [ :style | style wordSpacing: CssConstants normal ] rendersProperty: 'word-spacing' withValue: 'normal';
+		assert: [ :style | style wordWrap: CssConstants breakWord ] rendersProperty: 'word-wrap' withValue: 'break-word'
