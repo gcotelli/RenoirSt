@@ -1,6 +1,10 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"baseline:" : "GabrielOmarCotelli 10/22/2015 22:08",
-		"customProjectAttributes" : "GabrielOmarCotelli 10/19/2015 17:43" } }
+		"setUpGroups:" : "GabrielOmarCotelli 1/26/2017 21:19",
+		"customProjectAttributes" : "GabrielOmarCotelli 1/26/2017 21:20",
+		"setUpSeasideGroups:" : "GabrielOmarCotelli 1/26/2017 21:20",
+		"baseline:" : "GabrielOmarCotelli 1/26/2017 21:19",
+		"setUpDependencies:" : "GabrielOmarCotelli 1/26/2017 21:19"
+	},
+	"class" : { }
+}
